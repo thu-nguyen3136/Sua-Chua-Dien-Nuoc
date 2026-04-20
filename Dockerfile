@@ -1,6 +1,6 @@
 # Stage 1: Base
 FROM node:20-alpine AS base
-LABEL org.opencontainers.image.source="https://github.com/adminvpshub/Do-Cu-Binh-Van"
+LABEL org.opencontainers.image.source="https://github.com/adminvpshub/Sua-Chua-Dien-Nuoc"
 WORKDIR /app
 COPY package.json package-lock.json* ./
 
@@ -8,7 +8,7 @@ COPY package.json package-lock.json* ./
 FROM base AS dev
 RUN npm ci || npm install
 COPY . .
-ENV PORT=3009
+ENV PORT=3011
 CMD ["npm", "run", "dev"]
 
 # Stage 3: Builder for production
@@ -38,5 +38,5 @@ RUN mkdir -p /app/www/cgi-bin && \
     mv /tmp/download-log.sh /app/www/cgi-bin/download.sh && \
     chmod +x /app/www/cgi-bin/download.sh
 
-EXPOSE 3009
+EXPOSE 3011
 CMD httpd -p 127.0.0.1:8080 -h /app/www && nginx -g "daemon off;"

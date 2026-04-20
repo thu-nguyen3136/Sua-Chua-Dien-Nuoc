@@ -7,7 +7,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: adminvpshub/do-cu-binh-van
+  IMAGE_NAME: adminvpshub/sua-chua-dien-nuoc
 
 jobs:
   build-and-push-image:
@@ -81,4 +81,4 @@ jobs:
           
           eval "$SSH_CMD \"mkdir -p '$DEPLOY_PATH'\""
           cat docker-compose.prod.yml | eval "$SSH_CMD \"cat > '$DEPLOY_PATH/docker-compose.yml'\""
-          eval "$SSH_CMD \"cd '$DEPLOY_PATH' && sudo docker logout ghcr.io && echo '$GH_PAT' | sudo docker login ghcr.io -u '$GH_USER' --password-stdin && sudo docker compose pull && (sudo fuser -k 3009/tcp || true) && sudo docker ps -q --filter publish=3009 | xargs -r sudo docker rm -f && sudo docker compose up -d\""
+          eval "$SSH_CMD \"cd '$DEPLOY_PATH' && sudo docker logout ghcr.io && echo '$GH_PAT' | sudo docker login ghcr.io -u '$GH_USER' --password-stdin && sudo docker compose pull && (sudo fuser -k 3011/tcp || true) && sudo docker ps -q --filter publish=3011 | xargs -r sudo docker rm -f && sudo docker compose up -d\""
