@@ -1,0 +1,383 @@
+.site-wrapper {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.site-header {
+  box-shadow: var(--shadow);
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 3px solid var(--primary);
+}
+
+.top-bar {
+  background: var(--secondary);
+  color: white;
+  padding: 10px 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-hotline a {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.main-nav {
+  padding: 8px 0;
+}
+
+.nav-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-menu-toggle {
+  display: none;
+}
+
+.logo {
+  flex-shrink: 0;
+}
+
+.logo-img {
+  height: 55px;
+  width: auto;
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.nav-links li {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li a {
+  font-weight: 700;
+  color: var(--primary);
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li a:hover {
+  color: var(--secondary);
+}
+
+/* Submenu Styles */
+.has-submenu {
+  position: relative;
+}
+
+.has-submenu>a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.caret {
+  font-size: 0.6rem;
+  color: var(--primary);
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  background: white;
+  min-width: 260px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  border-top: 4px solid var(--primary);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px) translateX(-50%);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 10px 0;
+  z-index: 1001;
+  border-radius: 0 0 8px 8px;
+}
+
+.has-submenu:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) translateX(-50%);
+}
+
+.submenu li {
+  list-style: none;
+}
+
+.submenu li a {
+  display: block;
+  padding: 14px 25px;
+  text-transform: uppercase !important;
+  font-size: 0.85rem !important;
+  font-weight: 700;
+  color: var(--secondary);
+  border-bottom: 1px solid #f1f5f9;
+  letter-spacing: 0.5px;
+  justify-content: flex-start;
+}
+
+.submenu li:last-child a {
+  border-bottom: none;
+}
+
+.submenu li a:hover {
+  background: #fff8f0;
+  color: var(--primary) !important;
+  padding-left: 25px;
+}
+
+.nav-cta {
+  padding: 12px 25px;
+  border-radius: var(--radius);
+  font-size: 1.1rem;
+  box-shadow: 0 4px 15px rgba(255, 145, 0, 0.4);
+}
+
+.site-footer {
+  background: #1a1e21;
+  color: rgba(255, 255, 255, 0.85);
+  padding: 70px 0 0;
+}
+
+.footer-logo-wrapper {
+  background: white;
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.footer-logo {
+  height: 45px;
+  width: auto;
+  display: block;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 50px;
+  padding-bottom: 50px;
+}
+
+.footer-info p {
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.footer-info h3,
+.footer-links h3,
+.footer-locations h3 {
+  margin-bottom: 30px;
+  color: white;
+  font-size: 1.3rem;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer-info h3::after,
+.footer-links h3::after,
+.footer-locations h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background: var(--primary);
+}
+
+.footer-contact p {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-links ul li {
+  margin-bottom: 15px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.footer-links ul li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+}
+
+.footer-links ul li a:hover {
+  color: var(--primary);
+  padding-left: 5px;
+}
+
+.footer-locations p {
+  font-size: 0.9rem;
+  line-height: 2;
+}
+
+.footer-bottom {
+  background: #111416;
+  padding: 25px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.float-btn img {
+  width: 35px;
+  height: 35px;
+}
+
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links li a {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .nav-flex {
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 24px;
+    position: relative;
+    z-index: 1002;
+  }
+
+  .mobile-menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: var(--primary);
+    margin-bottom: 5px;
+    transition: var(--transition);
+    border-radius: 3px;
+  }
+
+  .mobile-menu-toggle.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .mobile-menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile-menu-toggle.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    background: white;
+    flex-direction: column;
+    padding: 100px 40px;
+    box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+    transition: right 0.4s ease-in-out;
+    z-index: 1001;
+    display: flex !important;
+    gap: 20px;
+    white-space: normal;
+  }
+
+  .nav-links.open {
+    right: 0;
+  }
+
+  .nav-links li {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links li a {
+    font-size: 1.1rem;
+    width: 100%;
+  }
+
+  .has-submenu .submenu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    border-top: none;
+    padding-left: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+  }
+
+  .has-submenu:hover .submenu {
+    max-height: 500px;
+  }
+
+  .submenu li {
+    border-bottom: none;
+    padding-bottom: 5px;
+  }
+
+  .submenu li a {
+    padding: 10px 0;
+    color: var(--text-light);
+  }
+
+  .nav-cta,
+  .top-bar .container span:first-child {
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .logo-img {
+    height: 45px;
+  }
+}
+
+
+.contact-section h2 {
+  color: #ff6600;
+  /* Bạn có thể đổi thành #f97316 hoặc #bc700a tùy sắc độ cam bạn thích */
+}

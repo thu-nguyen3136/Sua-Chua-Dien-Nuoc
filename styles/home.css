@@ -1,0 +1,403 @@
+.hero {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #fff;
+  overflow: hidden;
+}
+
+.hero-slider {
+  width: 100% !important;
+  height: 450px;
+  background: #fff;
+}
+
+@media (max-width: 1200px) {
+  .hero-slider {
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-slider {
+    height: 200px;
+  }
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.slider-nav {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.nav-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  border: 2px solid white;
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav-dot.active {
+  background: var(--primary);
+  transform: scale(1.2);
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.title-line {
+  width: 80px;
+  height: 4px;
+  background: var(--primary);
+  margin: 0 auto 20px;
+  border-radius: 2px;
+}
+
+.section-title p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: white;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  border-bottom: 4px solid transparent;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+  border-bottom: 4px solid var(--primary);
+}
+
+.service-img-wrapper {
+  height: 240px;
+  overflow: hidden;
+}
+
+.service-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.service-card:hover .service-img-wrapper img {
+  transform: scale(1.1);
+}
+
+.service-content {
+  padding: 30px;
+  text-align: center;
+}
+
+.service-content h3 {
+  margin-bottom: 15px;
+  color: var(--primary);
+  font-size: 1.4rem;
+}
+
+.service-content p {
+  margin-bottom: 20px;
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+.btn-readmore {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  transition: var(--transition);
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.btn-readmore:hover {
+  color: var(--secondary);
+  transform: translateX(5px);
+}
+
+/* Detailed grids */
+.detail-grid-section {
+  padding: 60px 0;
+  background: white;
+}
+
+.gray-bg {
+  background: #fbfbfb;
+}
+
+.sub-services {
+  padding: 40px 0 80px;
+}
+
+.services-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.sub-item {
+  background: white;
+  padding: 20px;
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.sub-item:hover {
+  background: var(--primary);
+  color: white;
+  transform: scale(1.05);
+}
+
+.sub-item img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  border: 3px solid #eee;
+}
+
+.sub-item span {
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: block;
+}
+
+.news-section {
+  padding: 40px 0;
+  background: white;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.news-card {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.news-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.news-card h4 {
+  padding: 20px;
+  font-size: 1rem;
+  color: var(--primary);
+  line-height: 1.4;
+}
+
+.why-us {
+  background: #fbfbfb;
+  padding: 60px 0;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.why-image {
+  position: relative;
+}
+
+.about-img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.exp-box {
+  position: absolute;
+  bottom: -30px;
+  right: 30px;
+  background: var(--primary);
+  color: white;
+  padding: 25px;
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(255, 145, 0, 0.3);
+}
+
+.exp-box .num {
+  font-size: 2.5rem;
+  font-weight: 800;
+  display: block;
+  line-height: 1;
+}
+
+.exp-box .txt {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.why-content .sub-title {
+  color: var(--primary);
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.why-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  color: var(--primary);
+}
+
+.why-content p {
+  margin-bottom: 30px;
+  color: var(--text-light);
+}
+
+.check-list li {
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.check-list li::before {
+  content: '✓';
+  width: 25px;
+  height: 25px;
+  background: var(--primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.cta-row {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.hotline-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotline-text span {
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+.hotline-text strong {
+  font-size: 1.4rem;
+  color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .section-title h2 {
+    font-size: 1.8rem;
+  }
+}
+
+
+.hero {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-slider {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  /* Bạn có thể set chiều cao cố định cho slider ở đây nếu muốn, ví dụ: height: 400px; */
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  /* Hoặc set height cụ thể như 400px, 500px... */
+  object-fit: contain;
+  /* Quan trọng nhất: Giúp ảnh tự lấp đầy khung mà không bị méo tỷ lệ */
+  display: block;
+}
