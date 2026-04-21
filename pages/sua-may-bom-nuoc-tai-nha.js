@@ -69,9 +69,6 @@ export default function SuaMayBomNuocTaiNha() {
 
               <p><strong>Bước 5: Bảo hành:</strong> Nhân viên sẽ dán tem bảo hành lên thiết bị. Cam kết bảo hành đúng thời gian quy định, chăm sóc khách hàng chu đáo, tận tình.</p>
             </div>
-
-            <img src="/sua-may-bom-tai-nha-7.png" alt="Lắp đặt máy bơm mới" className="content-img" />
-
             <h2 style={{ fontSize: '1.5rem', marginTop: '30px', color: 'var(--primary)' }}>Lý do bạn nên chọn dịch vụ sửa máy bơm của Bảo Trung</h2>
             <ul className="check-list-modern">
               <li><strong>Mạng lưới rộng khắp:</strong> Chi nhánh trải đều khắp các quận trên địa bàn TPHCM và các tỉnh lân cận. Với đội ngũ lớn mạnh, sẳn sàng phục vụ nhanh chóng và tận tình cho khách hàng.</li>
@@ -100,6 +97,8 @@ export default function SuaMayBomNuocTaiNha() {
             <img src="/sua-may-bom-tai-nha.png" alt="Sửa chữa ống nước vỡ" className="content-img" />
 
             <p style={{ marginTop: '20px' }}>Máy bơm nước là thiết bị không thể thiếu trong sinh hoạt hàng ngày, và việc sửa chữa kịp thời là điều vô cùng cần thiết khi xảy ra sự cố. Với đội ngũ thợ sửa máy bơm nước giàu kinh nghiệm, Điện nước Bảo Trung tự hào mang đến dịch vụ sửa máy bơm nước tại nhà nhanh chóng, an toàn, và hiệu quả nhất. Liên hệ ngay với Điện nước Bảo Trung: <strong>039.330.3524 - 0353.422.680</strong> để nhận được sự hỗ trợ tận tâm và chuyên nghiệp!</p>
+
+
 
             <div style={{ marginTop: '40px', padding: '25px', background: 'var(--secondary)', borderRadius: '12px', color: 'white' }}>
               <p style={{ margin: 0, color: 'white', fontStyle: 'italic' }}>"Điện nước Bảo Trung - giải pháp điện nước toàn diện cho mọi gia đình!"</p>
