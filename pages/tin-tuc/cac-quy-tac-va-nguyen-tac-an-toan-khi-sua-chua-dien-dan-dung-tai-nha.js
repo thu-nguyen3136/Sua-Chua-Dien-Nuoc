@@ -1,59 +1,86 @@
 import Layout from '../../components/Layout'
+import Link from 'next/link'
 
-export default function Article2() {
+export default function AnToanDienDanDung() {
   const hotline = "0353.422.680";
   const hotlineFull = "0353422680";
 
   return (
     <Layout 
-      title="Quy tắc an toàn khi sửa điện dân dụng tại nhà - Bảo Trung"
-      description="Hướng dẫn chi tiết các quy tắc và nguyên tắc an toàn bắt buộc phải tuân thủ khi tự sửa chữa điện tại nhà để tránh tai nạn."
+      title="Các Quy Tắc Và Nguyên Tắc An Toàn Khi Sửa Chữa Điện Dân Dụng Tại Nhà"
+      description="Tổng hợp các quy tắc và nguyên tắc an toàn điện quan trọng bạn cần biết trước khi tiến hành sửa chữa hệ thống điện tại nhà để đảm bảo an toàn tuyệt đối."
     >
-      <section className="page-header">
+      <section className="page-header" style={{ background: 'linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url("/cac-quy-tac.png")', backgroundSize: 'cover', backgroundPosition: 'center', color: 'white', padding: '80px 0', textAlign: 'center' }}>
         <div className="container">
-          <h1>QUY TẮC AN TOÀN KHI SỬA ĐIỆN TẠI NHÀ</h1>
-          <p>An toàn là trên hết - Nắm vững quy tắc bảo vệ bản thân và gia đình.</p>
+          <h1 style={{ textTransform: 'uppercase', fontSize: '2.2rem', maxWidth: '900px', margin: '0 auto' }}>CÁC QUY TẮC VÀ NGUYÊN TẮC AN TOÀN KHI SỬA CHỮA ĐIỆN DÂN DỤNG TẠI NHÀ</h1>
+          <p style={{ marginTop: '15px', opacity: 0.9 }}>An toàn là trên hết - Những điều bắt buộc phải biết khi tiếp xúc với điện.</p>
         </div>
       </section>
 
-      <section className="article-detail">
+      <section className="article-detail" style={{ padding: '60px 0', background: '#f8fafc' }}>
         <div className="container article-grid">
           <div className="content">
-            <img src="/cac-quy-tac.png" alt="An toàn điện dân dụng" className="featured-img" />
+            <p>Đối với các trường hợp quý khách tự sửa điện tại nhà thì vấn đề an toàn mọi người nên đặt lên hàng đầu và tham khảo trước khi tiến hành sửa chữa bất cứ thiết bị gì liên quan đến hệ thống điện nhà.</p>
+            <p>Một trong những quy hàng đầu trong quá trình thiết kế, sửa điện dân dụng đó là đảm bảo an toàn điện. Vậy quy tắc, nguyên tắc an toàn khi sửa chữa điện dân dụng được quy định ra sao? Điện nước Bảo Trung sẽ tổng hợp các thông tin để quý khách tham khảo.</p>
+
+            <h2 style={{ fontSize: '1.5rem', color: 'var(--primary)', margin: '30px 0 20px' }}>Thế nào là an toàn điện?</h2>
+            <p>An toàn điện là các biện pháp ứng phó, đề phòng các sự cố có thể xảy ra dẫn đến tai nạn điện. Khi áp dụng các biện pháp an toàn điện giúp chúng ta được bảo vệ an toàn hơn, tốt hơn khi tiếp xúc hoặc làm việc trong các môi trường có hệ thống điện như nhà máy, công trường, nhà ở,… tránh các tổn thương do điện gây ra như giật điện, bỏng, cháy, nổ,…</p>
+
+            <h2 style={{ fontSize: '1.5rem', color: 'var(--primary)', margin: '30px 0 20px' }}>Nguyên tắc an toàn trong quá trình sửa chữa</h2>
+            <p>Khi sửa điện tại nhà quý khách nên tham khảo các nguyên tắc an toàn trong quá trình sửa chữa để thực hiện đúng cách và đảm bảo an toàn điện. Dưới đây là các nguyên tắc quý khách cần tham khảo:</p>
+            <ul className="check-list-modern">
+                <li>Cần có các kiến thức cơ bản về hệ thống điện khi muốn sửa chữa.</li>
+                <li>Nắm rõ nguyên lý hoạt động của hệ thống điện trước khi sửa chữa.</li>
+                <li>Phải tuân thủ nguồn điện vào các thiết bị đóng ngắt trước như CB, cầu dao, cầu chì,…</li>
+                <li>Dùng đồng hồ vạn năng, ampe kìm để kiểm tra điện trong quá trình sửa chữa.</li>
+                <li>Luôn trang bị đầy đủ các dụng cụ bảo hộ, cách điện tốt như găng tay chuyên dụng, giày bảo hộ.</li>
+                <li>Dùng tua vít, bút thử điện, kìm cách điện để tiến hành sửa chữa sau khi đã cúp điện.</li>
+                <li>Treo bảng báo sửa chữa để đảm bảo không ai tới gần khu vực cúp điện trước đó.</li>
+            </ul>
+
+            <h2 style={{ fontSize: '1.5rem', color: 'var(--primary)', margin: '30px 0 20px' }}>Các quy tắc an toàn điện quan trọng</h2>
             
-            <p>Sửa chữa điện tại nhà là việc làm cần thiết để duy trì sinh hoạt, nhưng nó cũng tiềm ẩn nhiều rủi ro nếu bạn không nắm vững kỹ thuật và quy tắc an toàn. Trước khi bắt tay vào sửa bất kỳ thiết bị nào, hãy học thuộc 5 nguyên tắc vàng dưới đây.</p>
+            <h3 style={{ fontSize: '1.25rem', color: 'var(--secondary)', marginBottom: '10px' }}>Lắp thiết bị điện đóng ngắt đúng cách</h3>
+            <p>Khi lắp đặt, hoặc thi công hệ thống điện để đảm bảo an toàn thì phải có bản thiết kế mạch điện hoàn chỉnh theo đúng nguyên lý. Quý khách sẽ phải sử dụng các thiết bị đóng ngắt ở các nguồn chính sau đó đến nguồn từng khu vực. Đặc biệt lưu ý đến các khu vực sử dụng thiết bị công suất lớn hãy lắp các CB riêng cho từng thiết bị để tự động đóng ngắt dòng điện khi có sự cố chập điện, quá tải,…</p>
 
-            <h2>1. Ngắt nguồn điện hoàn toàn</h2>
-            <p>Đây là nguyên tắc quan trọng nhất. Hãy tắt aptomat tổng hoặc cầu dao cấp điện cho khu vực bạn định sửa chữa. Đừng bao giờ chủ quan chỉ tắt công tắc đèn hay ổ cắm.</p>
-            <p><strong>Lưu ý:</strong> Sau khi ngắt điện, hãy dùng bút thử điện kiểm tra lại một lần nữa để chắc chắn dòng điện đã được cắt hoàn toàn.</p>
+            <h3 style={{ fontSize: '1.25rem', color: 'var(--secondary)', marginBottom: '10px' }}>Chú ý chọn vị trí lắp đặt ổ điện, công tắc điện phù hợp</h3>
+            <p>Quý khách nên lắp đặt công tắc điện ở nơi khô ráo, thoáng mát và có độ cao tối thiểu 70-90cm. Còn với ổ cắm thì 30-50cm so với mặt sàn và chọn các vị trí khô ráo, thông thoáng để lắp đặt.</p>
 
-            <h2>2. Sử dụng dụng cụ cách điện chuẩn</h2>
-            <p>Chỉ sử dụng các loại kìm, tua vít có cán bọc nhựa cách điện chuyên dụng. Tránh sử dụng các dụng cụ bị nứt lớp nhựa bảo vệ hoặc dụng cụ cầm tay không có khả năng cách điện.</p>
-            <p><strong>Mẹo nhỏ:</strong> Nên đi giày cao su hoặc đứng trên thảm nhựa khô khi làm việc với điện để tăng cường khả năng cách điện với mặt đất.</p>
+            <h3 style={{ fontSize: '1.25rem', color: 'var(--secondary)', marginBottom: '10px' }}>Giữ khoảng cách với nguồn điện và các thiết bị điện trong nhà</h3>
+            <p>Đặc biệt là với nhà có trẻ nhỏ hoặc người không am hiểu hệ thống điện. Hãy nên tránh xa với các thiết bị điện trong nhà. Sử dụng các nắp đậy bảo vệ thiết bị điện để an toàn hơn trong quá trình sử dụng.</p>
 
-            <h2>3. Tránh môi trường ẩm ướt</h2>
-            <p>Nước là chất dẫn điện cực tốt. Tuyệt đối không sửa chữa điện khi tay đang ướt, chân trần chạm đất hoặc sàn nhà đang có nước đọng. Nếu khu vực sửa chữa bị ẩm, hãy dùng máy sấy hoặc lau khô hoàn toàn trước khi làm việc.</p>
+            <h3 style={{ fontSize: '1.25rem', color: 'var(--secondary)', marginBottom: '10px' }}>Sử dụng các thiết bị chất lượng</h3>
+            <p>Ông cha ta có câu: “tiền nào của đó” nên quý khách khi lắp đặt nên sử dụng các thiết bị điện chất lượng để đảm bảo an toàn và thời gian sử dụng lâu hơn. Chi phí có cao hơn nhưng bù lại thời gian sử dụng được dài hơn.</p>
 
-            <h2>4. Không làm việc một mình</h2>
-            <p>Khi sửa chữa các sự cố điện phức tạp, bạn nên có ít nhất một người bên cạnh để hỗ trợ. Người này sẽ giúp bạn quan sát, hỗ trợ dụng cụ và đặc biệt là có thể ngắt điện kịp thời nếu có sự cố xảy ra.</p>
+            <div style={{ background: '#fff7ed', padding: '30px', borderRadius: '15px', borderLeft: '6px solid var(--primary)', margin: '30px 0' }}>
+              <p style={{ margin: 0 }}><strong>Lưu ý:</strong> Để đảm bảo an toàn điện quý khách nên thường xuyên bảo dưỡng và thay thế các thiết bị điện trong nhà định kỳ. Sử dụng các thiết bị đo điện để kiểm tra khi có sự cố rò rỉ hoặc hư hỏng điện.</p>
+            </div>
 
-            <h2>5. Quy tắc một tay</h2>
-            <p>Nếu có thể, hãy cố gắng chỉ dùng một tay khi thao tác với các mối nối điện sống (trong trường hợp bắt buộc cực chẳng đã). Điều này giúp giảm thiểu nguy cơ dòng điện đi qua tim nếu chẳng may xảy ra giật điện.</p>
-
-            <div className="cta-box" style={{ background: '#f0f7ff', borderLeft: '5px solid #0084ff', padding: '30px', marginTop: '40px' }}>
-              <h3>Sự cố điện phức tạp?</h3>
-              <p>Đừng mạo hiểm nếu bạn cảm thấy không tự tin. Thợ điện Bảo Trung phục vụ 24/7, chuyên xử lý chập điện âm tường an toàn và nhanh chóng.</p>
-              <a href={`tel:${hotlineFull}`} className="btn btn-secondary" style={{ marginTop: '10px', background: '#0084ff', color: 'white' }}>📞 Gọi thợ điện: {hotline}</a>
+            <div className="cta-box" style={{ background: 'var(--secondary)', padding: '40px', borderRadius: '20px', color: 'white', textAlign: 'center', marginTop: '50px' }}>
+              <h3 style={{ color: 'white', fontSize: '1.8rem', marginBottom: '15px' }}>SỰ CỐ ĐIỆN PHỨC TẠP? ĐỪNG TỰ SỬA!</h3>
+              <p style={{ marginBottom: '25px', opacity: 0.9 }}>Gọi ngay thợ điện Bảo Trung để đảm bảo an toàn tuyệt đối cho gia đình bạn.</p>
+              <div style={{ display: 'flex', gap: '15px', justifyContent: 'center' }}>
+                <a href={`tel:${hotlineFull}`} className="btn btn-primary" style={{ fontSize: '1.2rem', padding: '15px 40px' }}>GỌI THỢ ĐIỆN: {hotline}</a>
+              </div>
             </div>
           </div>
 
           <div className="sidebar">
             <div className="info-box">
-              <h4>Kinh nghiệm hữu ích</h4>
-              <ul>
-                <li><a href="/tin-tuc/nguyen-nhan-dan-den-ong-nuoc-hu-hong-va-cach-khac-phuc">Lỗi ống nước thường gặp</a></li>
-                <li><a href="/tin-tuc/nhung-luu-y-an-toan-khi-sua-chua-dien-tai-nha-ma-ban-nen-biet">Lưu ý khi sửa điện</a></li>
-                <li><a href="/tin-tuc/kinin-nghiem-lap-dat-sua-chua-dien-nuoc">Kinh nghiệm lắp đặt</a></li>
+              <h4>KIẾN THỨC BỔ ÍCH</h4>
+              <ul className="sidebar-links">
+                <li><Link href="/tin-tuc/nguyen-nhan-dan-den-ong-nuoc-hu-hong-va-cach-khac-phuc">Nguyên nhân ống nước hỏng</Link></li>
+                <li><Link href="/tin-tuc/nhung-luu-y-an-toan-khi-sua-chua-dien-tai-nha-ma-ban-nen-biet">Lưu ý sửa điện an toàn</Link></li>
+                <li><Link href="/tin-tuc/kinh-nghiem-lap-dat-su-chua-dien-nuoc">Kinh nghiệm lắp đặt điện nước</Link></li>
+              </ul>
+            </div>
+            
+            <div className="info-box" style={{ marginTop: '30px', background: 'var(--primary)', color: 'white' }}>
+              <h4 style={{ color: 'white', borderColor: 'white' }}>DỊCH VỤ KHẨN CẤP</h4>
+              <ul className="sidebar-links white-links">
+                <li><Link href="/sua-chap-dien">Sửa chập điện 24/7</Link></li>
+                <li><Link href="/sua-dien-24h">Thợ điện trực đêm</Link></li>
+                <li><Link href="/sua-cong-to-dien">Kiểm tra công tơ điện</Link></li>
               </ul>
             </div>
           </div>
@@ -61,20 +88,29 @@ export default function Article2() {
       </section>
 
       <style jsx>{`
-        .page-header { background: var(--secondary); color: white; padding: 60px 0; text-align: center; }
-        .article-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; padding: 60px 0; }
+        .article-grid { display: grid; grid-template-columns: 2.5fr 1fr; gap: 50px; }
         .content { background: white; padding: 40px; border-radius: var(--radius); box-shadow: var(--shadow); }
-        .content h2 { color: var(--primary); margin: 30px 0 15px; border-bottom: 2px solid #eee; padding-bottom: 5px; }
-        .content p { margin-bottom: 20px; line-height: 1.8; color: var(--text-dark); }
-        .featured-img { width: 100%; border-radius: var(--radius); margin-bottom: 30px; }
+        .content p { line-height: 1.8; color: var(--text-dark); margin-bottom: 20px; }
         
-        .sidebar .info-box { background: white; padding: 30px; border-radius: var(--radius); box-shadow: var(--shadow); }
-        .sidebar h4 { margin-bottom: 20px; border-bottom: 2px solid var(--primary); padding-bottom: 10px; }
-        .sidebar ul li { margin-bottom: 15px; }
-        .sidebar ul li a { color: var(--text-dark); text-decoration: none; font-size: 0.95rem; }
-        .sidebar ul li a:hover { color: var(--primary); }
+        .check-list-modern { list-style: none; padding: 0; }
+        .check-list-modern li { position: relative; padding-left: 30px; margin-bottom: 15px; line-height: 1.7; color: var(--text-dark); }
+        .check-list-modern li::before { content: '✓'; position: absolute; left: 0; color: var(--primary); font-weight: bold; top: 0; }
 
-        @media (max-width: 768px) { .article-grid { grid-template-columns: 1fr; } }
+        .info-box { background: white; padding: 30px; border-radius: var(--radius); box-shadow: var(--shadow); }
+        .info-box h4 { margin-bottom: 20px; border-bottom: 2px solid var(--primary); padding-bottom: 10px; font-weight: 800; font-size: 1.1rem; }
+        .sidebar-links { list-style: none; padding: 0; }
+        .sidebar-links li { margin-bottom: 15px; border-bottom: 1px solid #f1f5f9; padding-bottom: 15px; }
+        .sidebar-links li:last-child { border-bottom: none; }
+        .sidebar-links li a { color: var(--text-dark); font-weight: 600; font-size: 0.95rem; transition: var(--transition); }
+        .sidebar-links li a:hover { color: var(--primary); padding-left: 5px; }
+        
+        .white-links li a { color: white; }
+        .white-links li a:hover { color: var(--secondary); }
+        .white-links li { border-bottom-color: rgba(255,255,255,0.2); }
+
+        @media (max-width: 992px) {
+          .article-grid { grid-template-columns: 1fr; }
+        }
       `}</style>
     </Layout>
   )

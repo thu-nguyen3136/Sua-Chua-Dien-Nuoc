@@ -1,140 +1,151 @@
 import Layout from '../components/Layout'
 import Link from 'next/link'
 
-export default function SuaMayBom() {
+export default function SuaMayBomNuocCategory() {
   const hotline = "0353.422.680";
   const hotlineFull = "0353422680";
 
   return (
-    <Layout 
-      title="Sửa Máy Bơm Nước Tại Nhà TP.HCM - Thay Motor, Sửa Bơm Tăng Áp"
-      description="Dịch vụ sửa máy bơm nước tại nhà TP.HCM uy tín. Chuyên sửa máy bơm không lên nước, cháy motor, kêu to, lắp đặt bơm tăng áp chính hãng. Bảo hành dài hạn."
+    <Layout
+      title="Sửa Máy Bơm Nước TP.HCM - Thợ Sửa Tại Nhà Uy Tín, Giá Rẻ"
+      description="Dịch vụ sửa máy bơm nước tại nhà TP.HCM chuyên nghiệp. Chuyên sửa máy bơm không lên nước, kêu to, hỏng motor, lắp đặt máy bơm tăng áp trọn gói."
     >
-      <section className="page-header">
+      <section className="page-header" style={{ background: 'linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url("/sua-may-bom-tai-nha.png")', backgroundSize: 'cover', backgroundPosition: 'center', color: 'white', padding: '100px 0', textAlign: 'center' }}>
         <div className="container">
-          <h1>Sửa Máy Bơm Nước Tại Nhà</h1>
-          <p>Dịch vụ sửa chữa, lắp đặt tất cả các loại máy bơm gia đình và công nghiệp tại TP.HCM.</p>
+          <h1 style={{ fontSize: '3rem', color: 'var(--primary)', marginBottom: '20px' }}>SỬA MÁY BƠM NƯỚC</h1>
+          <p style={{ fontSize: '1.2rem', maxWidth: '800px', margin: '0 auto' }}>Đội ngũ thợ cơ điện lành nghề, sửa nhanh mọi sự cố máy bơm gia đình và công nghiệp. Bảo hành dài hạn.</p>
         </div>
       </section>
 
-
-      <section className="service-detail">
-        <div className="container service-grid">
-          <div className="content">
-            <h2 style={{ fontSize: '2rem', marginBottom: '20px', color: 'var(--primary)' }}>DỊCH VỤ SỬA MÁY BƠM NƯỚC UY TÍN TP.HCM</h2>
-            <img src="/sua-may-bom-tai-nha.png" alt="Thợ sửa máy bơm chuyên nghiệp tại TP.HCM" className="featured-img" />
-            <p>Máy bơm nước đóng vai trò "trái tim" của hệ thống cấp nước gia đình. Một sự cố nhỏ như hỏng phao, cháy tụ hay mòn phớt cũng khiến sinh hoạt đảo lộn. <strong>Điện Nước Bảo Trung</strong> cung cấp thợ sửa máy bơm nước chuyên nghiệp, có mặt ngay sau 30 phút để giải quyết mọi phiền toái của bạn.</p>
-            
-            <div className="feature-box" style={{ borderLeftColor: '#27ae60', background: '#f0fff4' }}>
-              <h3>Các sự cố máy bơm chúng tôi xử lý:</h3>
-              <ul className="check-list">
-                <li>Máy bơm chạy nhưng không lên nước, nước yếu hoặc lúc có lúc không.</li>
-                <li>Máy bơm kêu to, rung lắc mạnh, có mùi khét hoặc rò rỉ điện ra vỏ.</li>
-                <li>Hư hỏng tụ điện, cháy motor, hỏng vòng bi hoặc phớt nước.</li>
-                <li>Máy bơm tăng áp kêu "tạch tạch" liên tục khi không sử dụng nước.</li>
-                <li>Lỗi phao cơ, phao điện khiến máy bơm không tự ngắt hoặc không tự chạy.</li>
-                <li>Lắp đặt máy bơm mới chính hãng: Panasonic, Hanil, Pentax, Ebara...</li>
-              </ul>
+      <section className="category-intro" style={{ padding: '60px 0', background: 'white' }}>
+        <div className="container">
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '50px', alignItems: 'center' }}>
+            <div>
+              <h2 style={{ color: 'var(--secondary)', fontSize: '2rem', marginBottom: '25px' }}>Giải Pháp Cho Nguồn Nước Luôn Mạnh</h2>
+              <p style={{ color: 'var(--text-light)', marginBottom: '15px', lineHeight: '1.8' }}>Máy bơm nước là thiết bị thiết yếu đảm bảo sinh hoạt hằng ngày. Tuy nhiên, sau thời gian dài sử dụng, máy bơm thường gặp các lỗi như cháy tụ, hỏng vòng bi, hoặc máy chạy nhưng nước không lên.</p>
+              <p style={{ color: 'var(--text-light)', marginBottom: '25px', lineHeight: '1.8' }}>Điện Nước Bảo Trung chuyên cung cấp thợ sửa máy bơm nước tại nhà với đầy đủ linh kiện chính hãng của các dòng máy Panasonic, Pentax, Ebara... cam kết khắc phục nhanh chóng để bạn có nước sử dụng ngay trong ngày.</p>
+              <div style={{ display: 'flex', gap: '20px' }}>
+                <a href={`tel:${hotlineFull}`} className="btn btn-primary" style={{ padding: '15px 40px' }}>GỌI HOTLINE: {hotline}</a>
+                <a href={`https://zalo.me/${hotlineFull}`} className="btn btn-secondary" style={{ padding: '15px 40px' }}>TƯ VẤN KỸ THUẬT</a>
+              </div>
             </div>
+            <div>
+              <img src="/sua-may-bom-tai-nha.png" alt="Sửa máy bơm nước" style={{ width: '100%', borderRadius: '20px', boxShadow: 'var(--shadow-lg)' }} />
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <div className="process-box" style={{ marginTop: '40px', background: '#f8f9fa', padding: '30px', borderRadius: 'var(--radius)' }}>
-              <h3 style={{ color: 'var(--secondary)', marginBottom: '20px', textAlign: 'center' }}>QUY TRÌNH KỸ THUẬT CHUYÊN NGHIỆP</h3>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '15px' }}>
-                <div style={{ textAlign: 'center' }}>
-                  <div style={{ fontSize: '1.5rem', marginBottom: '5px' }}>📞</div>
-                  <h4 style={{ fontSize: '0.9rem', marginBottom: '5px' }}>BƯỚC 1</h4>
-                  <p style={{ fontSize: '0.8rem' }}>Tiếp nhận cuộc gọi và tư vấn lỗi ban đầu</p>
-                </div>
-                <div style={{ textAlign: 'center' }}>
-                  <div style={{ fontSize: '1.5rem', marginBottom: '5px' }}>🚀</div>
-                  <h4 style={{ fontSize: '0.9rem', marginBottom: '5px' }}>BƯỚC 2</h4>
-                  <p style={{ fontSize: '0.8rem' }}>Thợ đến tận nhà khảo sát trong 30 phút</p>
-                </div>
-                <div style={{ textAlign: 'center' }}>
-                  <div style={{ fontSize: '1.5rem', marginBottom: '5px' }}>💰</div>
-                  <h4 style={{ fontSize: '0.9rem', marginBottom: '5px' }}>BƯỚC 3</h4>
-                  <p style={{ fontSize: '0.8rem' }}>Báo giá chi tiết linh kiện và tiền công</p>
-                </div>
-                <div style={{ textAlign: 'center' }}>
-                  <div style={{ fontSize: '1.5rem', marginBottom: '5px' }}>🔧</div>
-                  <h4 style={{ fontSize: '0.9rem', marginBottom: '5px' }}>BƯỚC 4</h4>
-                  <p style={{ fontSize: '0.8rem' }}>Tiến hành sửa chữa & chạy thử máy</p>
-                </div>
-                <div style={{ textAlign: 'center' }}>
-                  <div style={{ fontSize: '1.5rem', marginBottom: '5px' }}>🤝</div>
-                  <h4 style={{ fontSize: '0.9rem', marginBottom: '5px' }}>BƯỚC 5</h4>
-                  <p style={{ fontSize: '0.8rem' }}>Ký phiếu bảo hành & Hướng dẫn sử dụng</p>
-                </div>
+      <section className="detail-grid-section" style={{ background: '#f8fafc', paddingBottom: '80px' }}>
+        <div className="container">
+          <div className="section-title">
+            <h2>DỊCH VỤ MÁY BƠM NƯỚC</h2>
+            <div className="title-line"></div>
+          </div>
+
+          <div className="services-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))' }}>
+            <div className="service-card">
+              <div className="service-img-wrapper">
+                <img src="/sua-may-bom-tai-nha.png" alt="Sửa máy bơm nước tại nhà" />
+              </div>
+              <div className="service-content">
+                <h3>Sửa Máy Bơm Nước Tại Nhà</h3>
+                <p>Khắc phục các sự cố máy bơm không hoạt động, hỏng tụ, hỏng phớt, hỏng vòng bi nhanh chóng.</p>
+                <Link href="/sua-may-bom-nuoc-tai-nha" className="btn-readmore">Xem Chi Tiết &raquo;</Link>
               </div>
             </div>
 
-            <h2 style={{ marginTop: '40px', color: 'var(--primary)' }}>LỢI ÍCH KHI CHỌN BẢO TRUNG</h2>
-            <p>Hơn 5000+ khách hàng tại TP.HCM đã hài lòng với dịch vụ máy bơm của chúng tôi:</p>
-            <ul>
-              <li><strong>Minh bạch về giá:</strong> Tuyệt đối không có tình trạng "chặt chém" hay khai khống lỗi.</li>
-              <li><strong>Linh kiện chuẩn:</strong> Chỉ sử dụng linh kiện chính hãng, bền bỉ theo thời gian.</li>
-              <li><strong>Tay nghề giỏi:</strong> Thợ được đào tạo chuyên sâu về quấn motor và sửa bo mạch bơm tăng áp.</li>
-              <li><strong>Hậu mãi chu đáo:</strong> Bảo hành nhanh chóng, tận nơi nếu có sự cố sau khi sửa.</li>
-            </ul>
-          </div>
-
-          <div className="sidebar">
-            <div className="cta-box" style={{ background: 'var(--primary)' }}>
-              <h3>Hỏng Máy Bơm?</h3>
-              <p>Thợ phục vụ tận nơi, làm việc nhanh chóng.</p>
-              <a href={`tel:${hotlineFull}`} className="btn btn-secondary hotline-btn">{hotline}</a>
-              <a href={`https://zalo.me/${hotlineFull}`} className="btn btn-primary zalo-btn">Chát Zalo Tư Vấn</a>
-            </div>
-            
-            <div className="info-box">
-              <h4>Dịch Vụ Đi Kèm</h4>
-              <p style={{ fontSize: '0.85rem', color: '#666', marginBottom: '15px' }}>Giải pháp điện nước trọn gói cho bạn:</p>
-              <ul style={{ fontSize: '0.85rem' }}>
-                <li>✅ Vệ sinh bồn nước, bể nước 24/7</li>
-                <li>✅ Thay phao điện, phao cơ chống tràn</li>
-                <li>✅ Lắp hệ thống bơm tăng áp tự động</li>
-                <li>✅ Sửa giếng khoan, máy lọc nước</li>
-              </ul>
+            <div className="service-card">
+              <div className="service-img-wrapper">
+                <img src="/tho-sua-may-bom-nuoc.png" alt="Thợ sửa máy bơm nước" />
+              </div>
+              <div className="service-content">
+                <h3>Thợ Sửa Máy Bơm Nước</h3>
+                <p>Đội ngũ thợ tay nghề cao, đoán đúng bệnh, báo đúng giá. Chuyên sửa máy bơm tăng áp, bơm đẩy cao.</p>
+                <Link href="/tho-sua-may-bom-nuoc" className="btn-readmore">Xem Chi Tiết &raquo;</Link>
+              </div>
             </div>
 
-            <div className="info-box" style={{ marginTop: '20px' }}>
-              <h4>Cam Kết Bảo Hành</h4>
-              <p style={{ fontSize: '0.85rem', color: '#666' }}>Tất cả dịch vụ sửa máy bơm tại Bảo Trung đều đi kèm phiếu bảo hành chính thức.</p>
-              <div style={{ fontSize: '1.2rem', fontWeight: 'bold', color: 'var(--primary)', textAlign: 'center', marginTop: '10px' }}>
-                🛡️ 06 - 12 THÁNG
+            <div className="service-card">
+              <div className="service-img-wrapper">
+                <img src="/sua-may-bom-tai-nha.png" alt="Lắp đặt máy bơm" />
+              </div>
+              <div className="service-content">
+                <h3>Lắp Đặt Máy Bơm</h3>
+                <p>Tư vấn và thi công lắp đặt máy bơm mới cho gia đình, nhà cao tầng, hệ thống tưới tiêu tự động.</p>
+                <Link href="/lap-dat-may-bom" className="btn-readmore">Xem Chi Tiết &raquo;</Link>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="common-problems" style={{ padding: '80px 0', background: 'white' }}>
+        <div className="container">
+          <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+            <h2 style={{ fontSize: '2rem', color: 'var(--secondary)' }}>CÁC BỆNH THƯỜNG GẶP Ở MÁY BƠM</h2>
+            <p style={{ color: 'var(--text-light)', marginTop: '10px' }}>Đừng để việc mất nước ảnh hưởng đến sinh hoạt và công việc của bạn.</p>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '40px' }}>
+            <div className="problem-box">
+              <h4 style={{ color: 'var(--primary)', marginBottom: '15px' }}>Lỗi Vận Hành</h4>
+              <ul className="check-list-modern">
+                <li>Máy bơm chạy nhưng nước không lên bồn.</li>
+                <li>Máy bơm phát ra tiếng kêu to, rung lắc mạnh.</li>
+                <li>Máy bơm chạy liên tục không ngắt dù đã đầy nước.</li>
+                <li>Máy bị rò rỉ nước ở phần trục bơm hoặc đường ống.</li>
+              </ul>
+            </div>
+            <div className="problem-box">
+              <h4 style={{ color: 'var(--primary)', marginBottom: '15px' }}>Lỗi Hệ Thống Điện</h4>
+              <ul className="check-list-modern">
+                <li>Máy bơm không vào điện, không hoạt động.</li>
+                <li>Máy bơm bị rò điện ra vỏ cực kỳ nguy hiểm.</li>
+                <li>Máy chạy có mùi khét hoặc bốc khói từ motor.</li>
+                <li>Máy thường xuyên làm nhảy aptomat khi khởi động.</li>
+              </ul>
+            </div>
+            <div className="problem-box">
+              <h4 style={{ color: 'var(--primary)', marginBottom: '15px' }}>Dịch Vụ Lắp Đặt</h4>
+              <ul className="check-list-modern">
+                <li>Lắp đặt máy bơm tăng áp cho vòi sen, máy giặt.</li>
+                <li>Lắp hệ thống bơm đẩy cao cho nhà nhiều tầng.</li>
+                <li>Thay thế bình tích áp, rơ le điện tử cho máy bơm.</li>
+                <li>Thiết kế hệ thống bơm nước tự động thông minh.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section style={{ padding: '60px 0', background: 'var(--secondary)', color: 'white', textAlign: 'center' }}>
+        <div className="container">
+          <h2 style={{ fontSize: '2.2rem', marginBottom: '20px' }}>SỬA CHỮA NHANH - BẢO HÀNH CHU ĐÁO</h2>
+          <p style={{ fontSize: '1.1rem', marginBottom: '40px', opacity: '0.9' }}>Chúng tôi cam kết sử dụng linh kiện chính hãng 100%.</p>
+          <a href={`tel:${hotlineFull}`} className="btn btn-primary" style={{ fontSize: '1.3rem', padding: '15px 50px' }}>GỌI NGAY: {hotline}</a>
         </div>
       </section>
 
       <style jsx>{`
-        .page-header { background: var(--primary); color: white; padding: 60px 0; text-align: center; }
-        .page-header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .page-header { position: relative; }
+        .problem-box {
+          background: #f8fafc;
+          padding: 35px;
+          border-radius: 20px;
+          border-top: 5px solid var(--primary);
+          box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+        }
         
-        .service-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; }
-        .content { background: white; padding: 40px; border-radius: var(--radius); box-shadow: var(--shadow); }
-        .content h2 { color: var(--primary); margin: 30px 0 15px; }
-        .content p { margin-bottom: 20px; color: var(--text-light); }
+        .check-list-modern { list-style: none; padding: 0; }
+        .check-list-modern li { position: relative; padding-left: 25px; margin-bottom: 12px; color: var(--text-light); font-size: 0.95rem; }
+        .check-list-modern li::before { content: '●'; position: absolute; left: 0; color: var(--primary); }
         
-        .feature-box { background: #fef9f0; padding: 30px; border-radius: var(--radius); border-left: 5px solid var(--primary); margin: 30px 0; }
-        .check-list li { margin-bottom: 12px; position: relative; padding-left: 25px; }
-        .check-list li::before { content: '✓'; position: absolute; left: 0; color: var(--primary); font-weight: bold; }
-
-        .cta-section { background: #f9f9f9; padding: 25px; border-radius: var(--radius); margin-top: 30px; }
-        .cta-section ul li { margin-bottom: 10px; padding-left: 20px; position: relative; }
-        .cta-section ul li::before { content: '⭐'; position: absolute; left: 0; color: #f39c12; }
-
-        .cta-box { background: var(--primary); color: white; padding: 30px; border-radius: var(--radius); text-align: center; margin-bottom: 30px; }
-        .hotline-btn { display: block; width: 100%; margin: 20px 0 10px; font-size: 1.2rem; }
-        .zalo-btn { display: block; width: 100%; background: #0084ff; border: none; }
-
-        .info-box { background: white; padding: 30px; border-radius: var(--radius); box-shadow: var(--shadow); }
-        .info-box h4 { border-bottom: 2px solid var(--secondary); padding-bottom: 10px; margin-bottom: 15px; }
-        .info-box ul li { margin-bottom: 10px; font-size: 0.9rem; padding-left: 20px; position: relative; }
-        .info-box ul li::before { content: '⚙️'; position: absolute; left: 0; }
-
-        @media (max-width: 768px) { .service-grid { grid-template-columns: 1fr; } }
+        @media (max-width: 768px) {
+          .category-intro > div { grid-template-columns: 1fr !important; gap: 30px !important; }
+          .category-intro div:nth-child(2) { order: -1; }
+          h1 { font-size: 2rem !important; }
+        }
       `}</style>
     </Layout>
   )

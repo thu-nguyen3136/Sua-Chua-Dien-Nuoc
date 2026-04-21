@@ -49,7 +49,13 @@ export default function Layout({ children, title, description, hero }) {
               <li><Link href="/" onClick={() => setIsMenuOpen(false)}>TRANG CHỦ</Link></li>
               <li><Link href="/gioi-thieu" onClick={() => setIsMenuOpen(false)}>GIỚI THIỆU</Link></li>
               <li className="has-submenu">
-                <Link href="/sua-dien-nuoc">SỬA ĐIỆN NƯỚC<span className="caret">▾</span></Link>
+                <Link href="/sua-dien-nuoc" onClick={(e) => {
+                  if (window.innerWidth <= 768) {
+                    // On mobile, allow clicking the arrow area to toggle if needed
+                    // But simplified for now: just navigate or let hover handle
+                  }
+                  setIsMenuOpen(false);
+                }}>SỬA ĐIỆN NƯỚC<span className="caret">▾</span></Link>
                 <ul className="submenu">
                   <li><Link href="/sua-ong-nuoc-tai-nha" onClick={() => setIsMenuOpen(false)}>SỬA ỐNG NƯỚC TẠI NHÀ</Link></li>
                   <li><Link href="/sua-ro-ri-nuoc" onClick={() => setIsMenuOpen(false)}>SỬA RÒ RỈ NƯỚC</Link></li>
@@ -58,7 +64,7 @@ export default function Layout({ children, title, description, hero }) {
                 </ul>
               </li>
               <li className="has-submenu">
-                <Link href="/sua-dien-tai-nha">SỬA ĐIỆN TẠI NHÀ <span className="caret">▾</span></Link>
+                <Link href="/sua-dien-tai-nha" onClick={() => setIsMenuOpen(false)}>SỬA ĐIỆN TẠI NHÀ <span className="caret">▾</span></Link>
                 <ul className="submenu">
                   <li><Link href="/sua-chap-dien" onClick={() => setIsMenuOpen(false)}>SỬA CHẬP ĐIỆN</Link></li>
                   <li><Link href="/sua-cong-to-dien" onClick={() => setIsMenuOpen(false)}>SỬA CÔNG TƠ ĐIỆN</Link></li>
@@ -67,7 +73,7 @@ export default function Layout({ children, title, description, hero }) {
                 </ul>
               </li>
               <li className="has-submenu">
-                <Link href="/sua-may-bom-nuoc">SỬA MÁY BƠM <span className="caret">▾</span></Link>
+                <Link href="/sua-may-bom-nuoc" onClick={() => setIsMenuOpen(false)}>SỬA MÁY BƠM <span className="caret">▾</span></Link>
                 <ul className="submenu">
                   <li><Link href="/sua-may-bom-nuoc-tai-nha" onClick={() => setIsMenuOpen(false)}>SỬA MÁY BƠM NƯỚC TẠI NHÀ</Link></li>
                   <li><Link href="/tho-sua-may-bom-nuoc" onClick={() => setIsMenuOpen(false)}>THỢ SỬA MÁY BƠM NƯỚC</Link></li>

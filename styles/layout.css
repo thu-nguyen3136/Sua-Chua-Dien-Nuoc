@@ -366,8 +366,15 @@
     color: var(--text-light);
   }
 
-  .nav-cta,
-  .top-bar .container span:first-child {
+  .nav-cta {
+    display: none;
+  }
+
+  .top-bar .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+  }
 
   .footer-grid {
     grid-template-columns: 1fr;
