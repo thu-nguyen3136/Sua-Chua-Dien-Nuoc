@@ -113,6 +113,34 @@ export default function SuaRoRiNuoc() {
             <div style={{ marginTop: '40px', padding: '25px', background: 'var(--secondary)', borderRadius: '12px', color: 'white' }}>
               <p style={{ margin: 0, color: 'white', fontStyle: 'italic' }}>"Điện nước Bảo Trung - Giải pháp hiệu quả và nhanh chóng cho mọi sự cố rò rỉ nước, bục vỡ ống nước tại gia đình bạn. Chúng tôi cam kết mang lại sự an tâm tuyệt đối!"</p>
             </div>
+
+            <h2 style={{ marginTop: '40px', color: 'var(--primary)' }}>ĐỊA CHỈ LIÊN HỆ KHI CẦN SỬA ĐIỆN NƯỚC TP.HCM</h2>
+            <p>Chúng tôi chuyên cung cấp dịch vụ bảo trì, sửa chữa điện nước chuyên nghiệp, chống thấm dột. Có đội ngũ thợ chuyên nghiệp trực 24/24 ở khắp các quận trên thành phố, đảm bảo có mặt sau 20 - 30 phút.</p>
+
+            <div className="branch-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginTop: '20px', fontSize: '0.85rem' }}>
+              <div className="branch-col">
+                <p>📍 <strong>Trụ sở:</strong> 76 Nguyễn Đình Chính, P.15, Q. Phú Nhuận</p>
+                <p>📍 <strong>CN1:</strong> 157/3 Nguyễn Văn Hưởng, P. Thảo Điền, Q.2</p>
+                <p>📍 <strong>CN2:</strong> 278/4 Đ. Cách mạng Tháng 8, P.10, Q.3</p>
+                <p>📍 <strong>CN3:</strong> 366/6 Hoàng Diệu, P.6, Q.4</p>
+                <p>📍 <strong>CN4:</strong> 888/8/3 Trần Hưng Đạo, P.1, Q.5</p>
+                <p>📍 <strong>CN5:</strong> 520/6 Hồng Bàng, P.9, Q.6</p>
+                <p>📍 <strong>CN6:</strong> 74 Nguyễn Cao, P.Tân Phong, Q.7</p>
+                <p>📍 <strong>CN7:</strong> 856/7 Tạ Quang Bửu, P.5, Q.8</p>
+                <p>📍 <strong>CN8:</strong> 48 Võ Văn Kiệt, P. Hiệp Phú, Q.9</p>
+              </div>
+              <div className="branch-col">
+                <p>📍 <strong>CN9:</strong> 341/8 Sư Vạn Hạnh, P.10, Q.10</p>
+                <p>📍 <strong>CN10:</strong> 205/11 Lý Thường Kiệt, P.7, Q.11</p>
+                <p>📍 <strong>CN11:</strong> 171/3 Trường Chinh, P. Tân Thới Nhất, Q.12</p>
+                <p>📍 <strong>CN12:</strong> 285/13/1 Âu Cơ, P. Phú Trung, Tân Phú</p>
+                <p>📍 <strong>CN13:</strong> 187/1 An Dương Vương, An Lạc, Bình Tân</p>
+                <p>📍 <strong>CN14:</strong> 113 Phan Đăng Lưu, P.7, Phú Nhuận</p>
+                <p>📍 <strong>CN15:</strong> 367/1 Trường Chinh, P.14, Tân Bình</p>
+                <p>📍 <strong>CN16:</strong> 192/6 Quang Trung, P.10, Gò Vấp</p>
+                <p>📍 <strong>CN17:</strong> 216/8 Võ Văn Ngân, P. Bình Thọ, Thủ Đức</p>
+              </div>
+            </div>
           </div>
 
           <div className="sidebar">
@@ -155,6 +183,7 @@ export default function SuaRoRiNuoc() {
         @media (max-width: 768px) {
           .service-grid { grid-template-columns: 1fr; }
           .why-grid { grid-template-columns: 1fr !important; }
+          .branch-grid { grid-template-columns: 1fr !important; }
         }
       `}</style>
     </Layout>

@@ -84,9 +84,14 @@ export default function DoTimRoRiNuoc() {
 
             <img src="/tho-do-tim-ro-ri-nuoc-6.png" alt="Hoàn thiện công tác dò tìm rò rỉ" className="content-img" />
 
+            <h2 style={{ marginTop: '40px', color: 'var(--primary)' }}>ĐỊA CHỈ LIÊN HỆ KHI CẦN SỬA ĐIỆN NƯỚC TP.HCM</h2>
+            <p>Chúng tôi chuyên cung cấp dịch vụ bảo trì, sửa chữa điện nước chuyên nghiệp, chống thấm dột. Có đội ngũ thợ chuyên nghiệp trực 24/24 ở khắp các quận trên thành phố, đảm bảo có mặt sau 20 - 30 phút.</p>
+            <img src="/8.png" alt="Công tác dò tìm rò rỉ" className="content-img" />
             <div style={{ marginTop: '40px', padding: '25px', background: 'var(--secondary)', borderRadius: '12px', color: 'white' }}>
               <p style={{ margin: 0, color: 'white', fontStyle: 'italic' }}>"Điện nước Bảo Trung - Đơn vị chuyên bảo trì, sửa chữa điện nước, máy nước nóng chuyên nghiệp. Chúng tôi trực 24/24 ở khắp các quận huyện TP.HCM, cam kết có mặt sau 20 phút gọi!"</p>
             </div>
+
+
           </div>
 
           <div className="sidebar">
@@ -129,6 +134,7 @@ export default function DoTimRoRiNuoc() {
         @media (max-width: 768px) {
           .service-grid { grid-template-columns: 1fr; }
           .issue-grid { grid-template-columns: 1fr !important; }
+          .branch-grid { grid-template-columns: 1fr !important; }
         }
       `}</style>
     </Layout>
