@@ -49,19 +49,21 @@ export default function Layout({ children, title, description, hero }) {
               <li><Link href="/" onClick={() => setIsMenuOpen(false)}>TRANG CHỦ</Link></li>
               <li><Link href="/gioi-thieu" onClick={() => setIsMenuOpen(false)}>GIỚI THIỆU</Link></li>
               <li className="has-submenu">
-                <Link href="/sua-dien-tai-nha">SỬA ĐIỆN <span className="caret">▾</span></Link>
+                <Link href="/sua-dien-nuoc">SỬA ĐIỆN NƯỚC<span className="caret">▾</span></Link>
+                <ul className="submenu">
+                  <li><Link href="/sua-ong-nuoc-tai-nha" onClick={() => setIsMenuOpen(false)}>SỬA ỐNG NƯỚC TẠI NHÀ</Link></li>
+                  <li><Link href="/sua-ro-ri-nuoc" onClick={() => setIsMenuOpen(false)}>SỬA RÒ RỈ NƯỚC</Link></li>
+                  <li><Link href="/do-tim-ro-ri-nuoc" onClick={() => setIsMenuOpen(false)}>DÒ TÌM RÒ RỈ NƯỚC</Link></li>
+                  <li><Link href="/sua-dien-nuoc-tai-nha" onClick={() => setIsMenuOpen(false)}>SỬA ĐIỆN NƯỚC TẠI NHÀ</Link></li>
+                </ul>
+              </li>
+              <li className="has-submenu">
+                <Link href="/sua-dien-tai-nha">SỬA ĐIỆN TẠI NHÀ <span className="caret">▾</span></Link>
                 <ul className="submenu">
                   <li><Link href="/sua-chap-dien" onClick={() => setIsMenuOpen(false)}>SỬA CHẬP ĐIỆN</Link></li>
                   <li><Link href="/sua-cong-to-dien" onClick={() => setIsMenuOpen(false)}>SỬA CÔNG TƠ ĐIỆN</Link></li>
                   <li><Link href="/lap-dong-ho-dien" onClick={() => setIsMenuOpen(false)}>LẮP ĐỒNG HỒ ĐIỆN</Link></li>
-                </ul>
-              </li>
-              <li className="has-submenu">
-                <Link href="/sua-nuoc-tai-nha">SỬA NƯỚC <span className="caret">▾</span></Link>
-                <ul className="submenu">
-                  <li><Link href="/sua-ong-nuoc-tai-nha" onClick={() => setIsMenuOpen(false)}>SỬA ỐNG NƯỚC TẠI NHÀ</Link></li>
-                  <li><Link href="/sua-ong-nuoc-bi-vo" onClick={() => setIsMenuOpen(false)}>SỬA ỐNG NƯỚC BỊ VỠ</Link></li>
-                  <li><Link href="/tho-do-tim-ro-ri-nuoc" onClick={() => setIsMenuOpen(false)}>THỢ DÒ TÌM RÒ RỈ NƯỚC</Link></li>
+                  <li><Link href="/sua-dien-24h" onClick={() => setIsMenuOpen(false)}>SỬA ĐIỆN 24H</Link></li>
                 </ul>
               </li>
               <li className="has-submenu">
@@ -72,7 +74,6 @@ export default function Layout({ children, title, description, hero }) {
                   <li><Link href="/lap-dat-may-bom" onClick={() => setIsMenuOpen(false)}>LẮP ĐẶT MÁY BƠM</Link></li>
                 </ul>
               </li>
-              <li><Link href="/sua-dien-nuoc-tai-nha" onClick={() => setIsMenuOpen(false)}>ĐIỆN NƯỚC TẠI NHÀ</Link></li>
               <li><Link href="/tin-tuc" onClick={() => setIsMenuOpen(false)}>TIN TỨC</Link></li>
               <li><Link href="/lien-he" onClick={() => setIsMenuOpen(false)}>LIÊN HỆ</Link></li>
             </ul>
