@@ -245,7 +245,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* News/Tips Section */}
+      {/* News Section*/}
       <section className="news-section">
         <div className="container">
           <div className="section-title">
