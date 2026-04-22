@@ -45,36 +45,42 @@ export default function SuaMayBomNuocCategory() {
 
           <div className="services-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))' }}>
             <div className="service-card">
-              <div className="service-img-wrapper">
-                <img src="/sua-may-bom-tai-nha.png" alt="Sửa máy bơm nước tại nhà" />
-              </div>
-              <div className="service-content">
-                <h3>Sửa Máy Bơm Nước Tại Nhà</h3>
-                <p>Khắc phục các sự cố máy bơm không hoạt động, hỏng tụ, hỏng phớt, hỏng vòng bi nhanh chóng.</p>
-                <Link href="/sua-may-bom-nuoc-tai-nha" className="btn-readmore">Xem Chi Tiết &raquo;</Link>
-              </div>
+              <Link href="/sua-may-bom-nuoc-tai-nha" className="card-link-wrapper">
+                <div className="service-img-wrapper">
+                  <img src="/sua-may-bom-tai-nha.png" alt="Sửa máy bơm nước tại nhà" />
+                </div>
+                <div className="service-content">
+                  <h3>Sửa Máy Bơm Nước Tại Nhà</h3>
+                  <p>Khắc phục các sự cố máy bơm không hoạt động, hỏng tụ, hỏng phớt, hỏng vòng bi nhanh chóng.</p>
+                  <span className="btn-readmore">Xem Chi Tiết &raquo;</span>
+                </div>
+              </Link>
             </div>
 
             <div className="service-card">
-              <div className="service-img-wrapper">
-                <img src="/tho-sua-may-bom-nuoc.png" alt="Thợ sửa máy bơm nước" />
-              </div>
-              <div className="service-content">
-                <h3>Thợ Sửa Máy Bơm Nước</h3>
-                <p>Đội ngũ thợ tay nghề cao, đoán đúng bệnh, báo đúng giá. Chuyên sửa máy bơm tăng áp, bơm đẩy cao.</p>
-                <Link href="/tho-sua-may-bom-nuoc" className="btn-readmore">Xem Chi Tiết &raquo;</Link>
-              </div>
+              <Link href="/tho-sua-may-bom-nuoc" className="card-link-wrapper">
+                <div className="service-img-wrapper">
+                  <img src="/tho-sua-may-bom-nuoc.png" alt="Thợ sửa máy bơm nước" />
+                </div>
+                <div className="service-content">
+                  <h3>Thợ Sửa Máy Bơm Nước</h3>
+                  <p>Đội ngũ thợ tay nghề cao, đoán đúng bệnh, báo đúng giá. Chuyên sửa máy bơm tăng áp, bơm đẩy cao.</p>
+                  <span className="btn-readmore">Xem Chi Tiết &raquo;</span>
+                </div>
+              </Link>
             </div>
 
             <div className="service-card">
-              <div className="service-img-wrapper">
-                <img src="/sua-may-bom-tai-nha.png" alt="Lắp đặt máy bơm" />
-              </div>
-              <div className="service-content">
-                <h3>Lắp Đặt Máy Bơm</h3>
-                <p>Tư vấn và thi công lắp đặt máy bơm mới cho gia đình, nhà cao tầng, hệ thống tưới tiêu tự động.</p>
-                <Link href="/lap-dat-may-bom" className="btn-readmore">Xem Chi Tiết &raquo;</Link>
-              </div>
+              <Link href="/lap-dat-may-bom" className="card-link-wrapper">
+                <div className="service-img-wrapper">
+                  <img src="/sua-may-bom-tai-nha.png" alt="Lắp đặt máy bơm" />
+                </div>
+                <div className="service-content">
+                  <h3>Lắp Đặt Máy Bơm</h3>
+                  <p>Tư vấn và thi công lắp đặt máy bơm mới cho gia đình, nhà cao tầng, hệ thống tưới tiêu tự động.</p>
+                  <span className="btn-readmore">Xem Chi Tiết &raquo;</span>
+                </div>
+              </Link>
             </div>
           </div>
         </div>
