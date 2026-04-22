@@ -283,13 +283,20 @@ section {
     height: 48px;
     min-width: 48px;
     font-size: 0.9rem;
+    padding: 0;
+    width: 48px;
+    justify-content: center;
   }
 
   .float-hotline .hotline-number {
-    max-width: 150px;
-    /* Keep visible on mobile? Often better for conversion */
-    opacity: 1;
-    margin-left: 10px;
+    display: none;
+  }
+
+  .float-zalo {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    right: auto;
   }
 }
 
