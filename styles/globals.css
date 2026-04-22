@@ -185,13 +185,27 @@ section {
 }
 
 @keyframes lan-song {
-  0% { transform: scale(1); opacity: 0.6; }
-  100% { transform: scale(2.2); opacity: 0; }
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
 }
 
 @keyframes nhap-nhay {
-  from { filter: brightness(1); transform: scale(1); }
-  to { filter: brightness(1.5); transform: scale(1.05); }
+  from {
+    filter: brightness(1);
+    transform: scale(1);
+  }
+
+  to {
+    filter: brightness(1.5);
+    transform: scale(1.05);
+  }
 }
 
 .float-zalo {
@@ -234,7 +248,9 @@ section {
 
 /* Intensified Continuous Glow & Shine */
 @keyframes continuous-shine {
-  to { background-position: 200% center; }
+  to {
+    background-position: 200% center;
+  }
 }
 
 @keyframes continuous-glow {
@@ -242,6 +258,7 @@ section {
     box-shadow: 0 0 10px rgba(255, 145, 0, 0.6), 0 0 20px rgba(255, 145, 0, 0.4);
     filter: brightness(1);
   }
+
   to {
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.9), 0 0 45px rgba(255, 145, 0, 0.8);
     filter: brightness(1.4);
@@ -261,7 +278,7 @@ section {
     right: 20px;
     gap: 12px;
   }
-  
+
   .float-btn {
     height: 48px;
     min-width: 48px;
@@ -269,7 +286,8 @@ section {
   }
 
   .float-hotline .hotline-number {
-    max-width: 150px; /* Keep visible on mobile? Often better for conversion */
+    max-width: 150px;
+    /* Keep visible on mobile? Often better for conversion */
     opacity: 1;
     margin-left: 10px;
   }
@@ -295,21 +313,26 @@ section {
 }
 
 @media (max-width: 992px) {
-  .responsive-grid-3, .responsive-grid-4 {
+
+  .responsive-grid-3,
+  .responsive-grid-4 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 768px) {
-  .responsive-grid-2, .responsive-grid-3, .responsive-grid-4 {
+
+  .responsive-grid-2,
+  .responsive-grid-3,
+  .responsive-grid-4 {
     grid-template-columns: 1fr;
     gap: 15px;
   }
-  
+
   .content-img {
     margin: 15px 0 !important;
   }
-  
+
   .section-title h2 {
     font-size: 1.8rem;
   }
@@ -377,42 +400,53 @@ section {
 
 .exp-box {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  bottom: 10px !important;
+  right: 10px !important;
+  ;
   background: var(--primary);
   color: white;
-  padding: 20px;
-  border-radius: var(--radius);
+  padding: 6px 10px !important;
+  ;
+  /* giảm */
+  border-radius: 3px;
+  /* nhỏ lại */
   text-align: center;
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  /* nhẹ hơn */
   z-index: 10;
 }
 
 .exp-box .num {
   display: block;
-  font-size: 2.5rem;
-  font-weight: 800;
+  font-size: 1.2rem !important;
+  /* giảm từ 1.6 */
+  font-weight: 700;
   line-height: 1;
 }
 
 .exp-box .txt {
   display: block;
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 0.6rem !important;
+  /* nhỏ hơn */
+  font-weight: 500;
   text-transform: uppercase;
 }
 
+/* Mobile nhỏ thêm nữa */
 @media (max-width: 768px) {
   .exp-box {
-    padding: 12px;
-    bottom: 10px;
-    right: 10px;
+    padding: 4px 8px !important;
+    bottom: 6px !important;
+    right: 6px !important;
+    border-radius: 5px;
   }
+
   .exp-box .num {
-    font-size: 1.8rem;
+    font-size: 1rem;
   }
+
   .exp-box .txt {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
   }
 }
 
@@ -442,6 +476,7 @@ section {
   .page-header {
     padding: 60px 0 !important;
   }
+
   .page-header h1 {
     font-size: 1.8rem !important;
   }
@@ -491,7 +526,12 @@ section {
   .modern-h2 {
     font-size: 1.6rem;
   }
+
   .section-title-left {
     font-size: 1.3rem;
   }
+}
+
+.why-image {
+  position: relative;
 }
