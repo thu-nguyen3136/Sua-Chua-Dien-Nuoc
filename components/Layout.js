@@ -37,7 +37,7 @@ export default function Layout({ children, title, description, hero }) {
         <meta property="og:type" content="website" />
         <meta property="og:title" content={title || "Sửa Điện Nước Tại Nhà - Uy Tín, Chuyên Nghiệp 24/7"} />
         <meta property="og:description" content={description || "Dịch vụ sửa điện nước tại nhà TP.HCM. Chuyên sửa chập điện, mất điện, rò rỉ nước, sửa máy bơm nước. Gọi ngay thợ đến nhanh sau 15 phút."} />
-        <meta property="og:url" content="https://suadiennuoctainha.net/" />
+        <meta property="og:url" content={`https://suadiennuoctainha.net${router.asPath}`} />
         <meta property="og:site_name" content="Điện Nước Bảo Trung" />
       </Head>
 
