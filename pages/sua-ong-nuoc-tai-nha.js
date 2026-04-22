@@ -6,97 +6,98 @@ export default function SuaOngNuocTaiNha() {
   const hotlineFull = "0353422680";
 
   return (
-    <Layout 
+    <Layout
       title="Sửa Ống Nước Tại Nhà TP.HCM - Xử Lý Triệt Để Rò Rỉ, Tắc Nghẽn"
       description="Dịch vụ sửa chữa ống nước chuyên nghiệp tại TP.HCM. Xử lý ống nước rò rỉ, thông tắc bồn cầu, chậu rửa, lắp đặt thiết bị vệ sinh. Thợ giỏi, có mặt ngay sau 20 phút."
     >
       <section className="page-header">
         <div className="container">
           <h1>Sửa Ống Nước Tại Nhà TP.HCM</h1>
-          <p>Khắc phục mọi sự cố về đường ống cấp thoát nước - Uy tín, Tận tâm, Giá rẻ 24/7.</p>
+          <p>Khắc phục mọi sự cố ống nước - Nhanh chóng, chuyên nghiệp, giá rẻ.</p>
         </div>
       </section>
 
       <section className="service-detail">
         <div className="container service-grid">
           <div className="content">
-            <h2 style={{ fontSize: '2rem', marginBottom: '20px', color: 'var(--primary)' }}>GIẢI PHÁP SỬA CHỮA ĐƯỜNG ỐNG NƯỚC TOÀN DIỆN</h2>
-            <img src="/sua-ong-nuoc.png" alt="Sửa ống nước chuyên nghiệp" className="featured-img" />
-            
-            <p><strong>Điện nước Bảo Trung</strong> chuyên nhận sửa ống nước bị rò rỉ, ống nước bị tắc, thủng đường ống cấp thoát nước âm tường, âm nền tại các quận huyện TP. Hồ Chí Minh và các tỉnh lân cận. Chúng tôi cam kết mang lại sự hài lòng tuyệt đối với quy trình làm việc khoa học và đội ngũ thợ tay nghề cao.</p>
+            <h2 className="modern-h2" style={{ color: 'var(--primary)', marginBottom: '20px' }}>DỊCH VỤ SỬA ỐNG NƯỚC TẠI NHÀ CHUYÊN NGHIỆP</h2>
+            <img src="/1.png" alt="Sửa ống nước tại nhà chuyên nghiệp" className="content-img" />
 
-            <h3 style={{ borderLeft: '4px solid var(--primary)', paddingLeft: '15px', color: 'var(--secondary)', margin: '30px 0 15px' }}>CÁC SỰ CỐ ĐƯỜNG ỐNG NƯỚC THƯỜNG GẶP</h3>
-            <div className="issue-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginBottom: '30px' }}>
-              <div style={{ background: '#f8f9fa', padding: '20px', borderRadius: '8px' }}>
-                <h4 style={{ color: 'var(--secondary)' }}>🚫 Đường ống bị chặn</h4>
-                <p style={{ fontSize: '0.9rem' }}>Do thức ăn thừa, rác thải hoặc tóc rụng tích tụ lâu ngày làm bồn rửa, cống thoát nước bị nghẹt không thoát được nước.</p>
+            <p><strong>Điện Nước Bảo Trung</strong> chuyên nhận sửa ống nước, sửa ống nước bị rò rỉ, ống nước bị tắc, ống không thoát nước, thủng đường ống cấp thoát nước, ống nước hư hỏng… các vấn đề về ống nước tại các quận huyện TP. Hồ Chí Minh và các tỉnh phía Nam như Bình Dương, Long An, Đồng Nai…</p>
+
+            <p>Chúng tôi cam kết khắc phục nhanh chóng, an toàn và hiệu quả các sự cố về ống nước mà bạn gặp phải. Hãy liên hệ Hotline <strong>039.330.3524 - 0353.422.680</strong> để được tư vấn và hỗ trợ nhanh nhất!</p>
+
+            <img src="/2.png" alt="Thợ sửa ống nước đang làm việc" className="content-img" />
+
+            <h3 className="section-title-left">CÁC VẤN ĐỀ VỀ ỐNG NƯỚC THƯỜNG GẶP</h3>
+            <div className="responsive-grid-2" style={{ marginTop: '20px' }}>
+              <div className="issue-card">
+                <h4>💧 Đường ống bị rò rỉ</h4>
+                <p>Vấn đề phổ biến gây thất thoát nước và tăng hóa đơn tiền nước. Cần thợ chuyên nghiệp xử lý triệt để các vết nứt vỡ âm tường.</p>
               </div>
-              <div style={{ background: '#f8f9fa', padding: '20px', borderRadius: '8px' }}>
-                <h4 style={{ color: 'var(--secondary)' }}>🚽 Sự cố nhà vệ sinh</h4>
-                <p style={{ fontSize: '0.9rem' }}>Hệ thống ống xả bồn cầu bị tắc hoặc hư hỏng bộ xả khiến nước tràn ra ngoài hoặc không thể dội sạch.</p>
-              </div>
-              <div style={{ background: '#f8f9fa', padding: '20px', borderRadius: '8px' }}>
-                <h4 style={{ color: 'var(--secondary)' }}>💧 Đường ống bị rò rỉ</h4>
-                <p style={{ fontSize: '0.9rem' }}>Vết nứt trên đường ống âm tường làm thất thoát nước, gây thấm mốc và tăng tiền nước hàng tháng một cách bất thường.</p>
-              </div>
-              <div style={{ background: '#f8f9fa', padding: '20px', borderRadius: '8px' }}>
-                <h4 style={{ color: 'var(--secondary)' }}>🛠️ Thiết bị hư hỏng</h4>
-                <p style={{ fontSize: '0.9rem' }}>Van vòi nước, sen tắm, bồn rửa tay lavabo bị gãy, rò rỉ nước hoặc chảy yếu do cặn bẩn bám lâu ngày.</p>
+              <div className="issue-card">
+                <h4>🚫 Hệ thống cấp nước yếu</h4>
+                <p>Nguồn cấp nước bị yếu không đủ áp lực cho sinh hoạt, cần kiểm tra và cải tạo lại hệ thống đường ống hoặc lắp bơm tăng áp.</p>
               </div>
             </div>
 
-            <h3 style={{ borderLeft: '4px solid var(--primary)', paddingLeft: '15px', color: 'var(--secondary)', margin: '30px 0 15px' }}>HẠNG MỤC THI CÔNG CHI TIẾT</h3>
-            <ul>
-              <li><strong>Sửa chữa & Thay thế:</strong> Bồn cầu, chậu rửa, sen vòi, lavabo, van vòi nước các loại.</li>
-              <li><strong>Xử lý rò rỉ:</strong> Dò tìm và khắc phục triệt để đường ống nước bị bể, rò rỉ âm tường, âm nền.</li>
-              <li><strong>Lắp đặt hệ thống mới:</strong> Thi công đường ống nước nóng lạnh (ống PPR), hàn ống chịu nhiệt cho máy nước năng lượng mặt trời.</li>
-              <li><strong>Thông tắc chuyên nghiệp:</strong> Thông nghẹt bồn cầu, chậu rửa chén, thoát sàn bằng máy móc hiện đại, không đục phá.</li>
-              <li><strong>Cải tạo hệ thống:</strong> Lắp đặt máy bơm tăng áp, lắp đồng hồ nước riêng cho phòng trọ, căn hộ.</li>
+            <img src="/3.png" alt="Xử lý rò rỉ nước âm tường" className="content-img" />
+
+            <h3 className="section-title-left">DỊCH VỤ SỬA ỐNG NƯỚC CỦA CHÚNG TÔI BAO GỒM</h3>
+            <ul className="check-list-modern">
+              <li>Sửa chữa đường ống nước bị bục gãy, rò rỉ, mất nước.</li>
+              <li>Thông tắc bồn cầu, chậu rửa bát, lavabo, thoát sàn.</li>
+              <li>Lắp đặt thay thế vòi nước, vòi sen, xi phông, dây cấp.</li>
+              <li>Lắp đặt bồn cầu, bồn tiểu, bồn tắm, thiết bị vệ sinh.</li>
+              <li>Sửa chữa lắp đặt máy bơm nước gia đình, bơm tăng áp.</li>
+              <li>Xử lý ngăn mùi hôi toilet, nhà tắm triệt để.</li>
+              <li>Dò tìm rò rỉ nước ngầm bằng máy siêu âm hiện đại.</li>
             </ul>
 
-            <div className="process-box" style={{ marginTop: '40px', background: '#fef9f0', padding: '30px', borderRadius: 'var(--radius)' }}>
-              <h3 style={{ color: 'var(--primary)', marginBottom: '20px', textAlign: 'center' }}>QUY TRÌNH TIẾP NHẬN & XỬ LÝ</h3>
-              <div className="process-list">
-                <div style={{ display: 'flex', gap: '15px', marginBottom: '20px' }}>
-                  <div style={{ width: '30px', height: '30px', background: 'var(--primary)', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>1</div>
-                  <div><strong>Tiếp nhận:</strong> Ghi nhận tình trạng sự cố và phân tích các hạng mục công việc cần thực hiện.</div>
-                </div>
-                <div style={{ display: 'flex', gap: '15px', marginBottom: '20px' }}>
-                  <div style={{ width: '30px', height: '30px', background: 'var(--primary)', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>2</div>
-                  <div><strong>Tư vấn:</strong> Hướng dẫn khách hàng khóa van tổng hoặc xử lý tạm thời để tránh thiệt hại lan rộng.</div>
-                </div>
-                <div style={{ display: 'flex', gap: '15px', marginBottom: '20px' }}>
-                  <div style={{ width: '30px', height: '30px', background: 'var(--primary)', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>3</div>
-                  <div><strong>Khảo sát:</strong> Thợ trực tiếp đến hiện trường để kiểm tra, báo giá công khai trước khi thi công.</div>
-                </div>
-                <div style={{ display: 'flex', gap: '15px', marginBottom: '20px' }}>
-                  <div style={{ width: '30px', height: '30px', background: 'var(--primary)', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>4</div>
-                  <div><strong>Thi công:</strong> Thực hiện công việc nhanh chóng, đảm bảo vệ sinh sạch sẽ khu vực làm việc.</div>
-                </div>
-                <div style={{ display: 'flex', gap: '15px' }}>
-                  <div style={{ width: '30px', height: '30px', background: 'var(--primary)', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>5</div>
-                  <div><strong>Bàn giao:</strong> Kiểm tra lại hệ thống, nghiệm thu kết quả và viết phiếu bảo hành chu đáo.</div>
-                </div>
+            <img src="/sua-ong-nuoc-bi-vo-7.png" alt="Thi công sửa ống nước" className="content-img" />
+
+            <h2 style={{ marginTop: '40px', color: 'var(--primary)' }}>TẠI SAO NÊN CHỌN ĐIỆN NƯỚC BẢO TRUNG?</h2>
+            <div className="responsive-grid-2" style={{ marginTop: '20px' }}>
+              <div className="why-item">
+                <h4 style={{ color: 'var(--secondary)' }}>✅ Đội Ngũ Nhiều Kinh Nghiệm</h4>
+                <p style={{ fontSize: '0.9rem' }}>Đội ngũ thợ có tay nghề cao, được đào tạo bài bản, giải quyết mọi sự cố khó nhất một cách triệt để.</p>
+              </div>
+              <div className="why-item">
+                <h4 style={{ color: 'var(--secondary)' }}>✅ Phục Vụ Siêu Tốc</h4>
+                <p style={{ fontSize: '0.9rem' }}>Bố trí thợ ở tất cả các quận huyện TP.HCM và các tỉnh lân cận, đảm bảo có mặt nhanh nhất khi khách gọi.</p>
+                <img src="/7.png" alt="Phục vụ nhanh chóng" className="content-img" style={{ marginTop: '10px' }} />
               </div>
             </div>
 
-            <h2 style={{ marginTop: '40px', color: 'var(--primary)' }}>TẠI SAO HÀNG NGÀN KHÁCH HÀNG TIN CHỌN CHÚNG TÔI?</h2>
-            <div className="why-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '30px', marginTop: '20px' }}>
-              <div className="why-item">
-                <h4 style={{ color: 'var(--secondary)' }}>🌟 Chất Lượng Tuyệt Đối</h4>
-                <p style={{ fontSize: '0.9rem' }}>Lấy chữ TÍN làm trọng, chúng tôi luôn đề cao chất lượng và đảm bảo quyền lợi tối đa cho khách hàng.</p>
+            <div style={{ marginTop: '40px', padding: '25px', background: 'var(--secondary)', borderRadius: '12px', color: 'white' }}>
+              <p style={{ margin: 0, color: 'white', fontStyle: 'italic' }}>"Điện Nước Bảo Trung - Đối tác tin cậy của hàng trăm khách hàng đã và đang sử dụng dịch vụ trên toàn khu vực phía Nam. Chúng tôi làm việc 24/24 kể cả ngày lễ và chủ nhật để phục vụ bạn tốt nhất!"</p>
+            </div>
+
+            <h2 style={{ marginTop: '40px', color: 'var(--primary)' }}>ĐỊA CHỈ LIÊN HỆ KHI CẦN SỬA ĐIỆN NƯỚC TP.HCM</h2>
+            <p>Chúng tôi chuyên cung cấp dịch vụ bảo trì, sửa chữa điện nước chuyên nghiệp, chống thấm dột. Có đội ngũ thợ chuyên nghiệp trực 24/24 ở khắp các quận trên thành phố, đảm bảo có mặt sau 20 - 30 phút.</p>
+
+            <div className="branch-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginTop: '20px', fontSize: '0.85rem' }}>
+              <div className="branch-col">
+                <p>📍 <strong>Trụ sở:</strong> 76 Nguyễn Đình Chính, P.15, Q. Phú Nhuận</p>
+                <p>📍 <strong>CN1:</strong> 157/3 Nguyễn Văn Hưởng, P. Thảo Điền, Q.2</p>
+                <p>📍 <strong>CN2:</strong> 278/4 Đ. Cách mạng Tháng 8, P.10, Q.3</p>
+                <p>📍 <strong>CN3:</strong> 366/6 Hoàng Diệu, P.6, Q.4</p>
+                <p>📍 <strong>CN4:</strong> 888/8/3 Trần Hưng Đạo, P.1, Q.5</p>
+                <p>📍 <strong>CN5:</strong> 520/6 Hồng Bàng, P.9, Q.6</p>
+                <p>📍 <strong>CN6:</strong> 74 Nguyễn Cao, P.Tân Phong, Q.7</p>
+                <p>📍 <strong>CN7:</strong> 856/7 Tạ Quang Bửu, P.5, Q.8</p>
+                <p>📍 <strong>CN8:</strong> 48 Võ Văn Kiệt, P. Hiệp Phú, Q.9</p>
               </div>
-              <div className="why-item">
-                <h4 style={{ color: 'var(--secondary)' }}>💸 Giá Cả Cạnh Tranh</h4>
-                <p style={{ fontSize: '0.9rem' }}>Dịch vụ bình dân, giá rẻ và ổn định nhất thị trường, phù hợp với mọi gia đình và hộ kinh doanh.</p>
-              </div>
-              <div className="why-item">
-                <h4 style={{ color: 'var(--secondary)' }}>🕛 Phục Vụ 24/24</h4>
-                <p style={{ fontSize: '0.9rem' }}>Làm việc xuyên suốt các ngày lễ, Tết để đảm bảo sinh hoạt của khách hàng không bị gián đoạn.</p>
-              </div>
-              <div className="why-item">
-                <h4 style={{ color: 'var(--secondary)' }}>🛡️ Bảo Hành Rõ Ràng</h4>
-                <p style={{ fontSize: '0.9rem' }}>Chính sách hậu mãi dài hạn, luôn có mặt đúng hẹn khi nhận được yêu cầu bảo hành từ quý khách.</p>
+              <div className="branch-col">
+                <p>📍 <strong>CN9:</strong> 341/8 Sư Vạn Hạnh, P.10, Q.10</p>
+                <p>📍 <strong>CN10:</strong> 205/11 Lý Thường Kiệt, P.7, Q.11</p>
+                <p>📍 <strong>CN11:</strong> 171/3 Trường Chinh, P. Tân Thới Nhất, Q.12</p>
+                <p>📍 <strong>CN12:</strong> 285/13/1 Âu Cơ, P. Phú Trung, Tân Phú</p>
+                <p>📍 <strong>CN13:</strong> 187/1 An Dương Vương, An Lạc, Bình Tân</p>
+                <p>📍 <strong>CN14:</strong> 113 Phan Đăng Lưu, P.7, Phú Nhuận</p>
+                <p>📍 <strong>CN15:</strong> 367/1 Trường Chinh, P.14, Tân Bình</p>
+                <p>📍 <strong>CN16:</strong> 192/6 Quang Trung, P.10, Gò Vấp</p>
+                <p>📍 <strong>CN17:</strong> 216/8 Võ Văn Ngân, P. Bình Thọ, Thủ Đức</p>
               </div>
             </div>
           </div>
@@ -108,7 +109,7 @@ export default function SuaOngNuocTaiNha() {
               <a href={`tel:${hotlineFull}`} className="btn btn-secondary hotline-btn">{hotline}</a>
               <a href={`https://zalo.me/${hotlineFull}`} className="btn btn-primary zalo-btn">Chát Zalo Ngay</a>
             </div>
-            
+
             <div className="info-box">
               <h4 style={{ color: 'var(--primary)', borderBottomColor: 'var(--primary)' }}>Phạm Vi Phục Vụ</h4>
               <p style={{ fontSize: '0.85rem', color: '#666' }}>Chúng tôi có mặt tại tất cả các quận huyện TP.HCM và các tỉnh Phía Nam:</p>
@@ -129,16 +130,22 @@ export default function SuaOngNuocTaiNha() {
         .content { background: white; padding: 40px; border-radius: var(--radius); box-shadow: var(--shadow); }
         .content h2 { margin: 30px 0 15px; }
         .content p { margin-bottom: 20px; color: var(--text-light); line-height: 1.8; }
+        .content-img { width: 100%; border-radius: 12px; margin: 20px 0; box-shadow: var(--shadow); }
         .cta-box { color: white; padding: 30px; border-radius: var(--radius); text-align: center; margin-bottom: 30px; }
         .hotline-btn { display: block; width: 100%; margin: 20px 0 10px; font-size: 1.2rem; }
         .zalo-btn { display: block; width: 100%; background: #0084ff; border: none; }
         .info-box { background: white; padding: 30px; border-radius: var(--radius); box-shadow: var(--shadow); }
         .info-box h4 { border-bottom: 2px solid; padding-bottom: 10px; margin-bottom: 15px; }
-        .info-box ul li { margin-bottom: 10px; font-size: 0.9rem; padding-left: 20px; position: relative; }
-        .info-box ul li::before { content: '📍'; position: absolute; left: 0; }
+        .check-list-modern { list-style: none; padding: 0; }
+        .check-list-modern li { position: relative; padding-left: 30px; margin-bottom: 12px; color: var(--text-light); line-height: 1.6; font-size: 0.95rem; }
+        .check-list-modern li::before { content: '✓'; position: absolute; left: 0; color: var(--primary); font-weight: bold; font-size: 1.2rem; top: -2px; }
+        .responsive-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .issue-card { background: #f8fafc; padding: 20px; border-radius: 10px; border-left: 4px solid var(--secondary); }
+        .issue-card h4 { margin-bottom: 10px; color: var(--secondary); }
         @media (max-width: 768px) {
           .service-grid { grid-template-columns: 1fr; }
-          .issue-grid { grid-template-columns: 1fr !important; }
+          .responsive-grid-2 { grid-template-columns: 1fr; }
+          .branch-grid { grid-template-columns: 1fr !important; }
         }
       `}</style>
     </Layout>

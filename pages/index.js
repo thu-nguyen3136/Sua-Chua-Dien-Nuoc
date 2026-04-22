@@ -77,99 +77,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="services-section">
-        <div className="container">
-          <div className="section-title">
-            <h2>DỊCH VỤ SỬA ĐIỆN NƯỚC</h2>
-            <div className="title-line"></div>
-            <p>Giải pháp sửa chữa điện nước toàn diện, uy tín hàng đầu TP.HCM</p>
-          </div>
-
-          <div className="services-grid">
-            <div className="service-card">
-              <div className="service-img-wrapper">
-                <img src="/sua-dien-tai-nha.png" alt="Sửa Điện Tại Nhà" />
-              </div>
-              <div className="service-content">
-                <h3>SỬA ĐIỆN TẠI NHÀ</h3>
-                <p>Xử lý chập điện, mất điện, lắp đặt đồng hồ điện, thiết bị điện dân dụng an toàn.</p>
-                <Link href="/sua-dien-tai-nha" className="btn-readmore">Xem Chi Tiết &raquo;</Link>
-              </div>
-            </div>
-
-            <div className="service-card">
-              <div className="service-img-wrapper">
-                <img src="/sua-ong-nuoc.png" alt="Sửa Nước Tại Nhà" />
-              </div>
-              <div className="service-content">
-                <h3>SỬA NƯỚC TẠI NHÀ</h3>
-                <p>Dò tìm rò rỉ nước âm tường, sửa ống nước bục vỡ, thay thiết bị vệ sinh cao cấp.</p>
-                <Link href="/sua-nuoc-tai-nha" className="btn-readmore">Xem Chi Tiết &raquo;</Link>
-              </div>
-            </div>
-
-            <div className="service-card">
-              <div className="service-img-wrapper">
-                <img src="/sua-may-bom-tai-nha.png" alt="Sửa Máy Bơm Nước" />
-              </div>
-              <div className="service-content">
-                <h3>SỬA MÁY BƠM NƯỚC</h3>
-                <p>Khắc phục máy bơm không lên nước, cháy motor, lắp đặt bơm tăng áp chính hãng.</p>
-                <Link href="/sua-may-bom-nuoc" className="btn-readmore">Xem Chi Tiết &raquo;</Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Electrical Sub-Services Grid */}
+      {/* Sửa Điện Nước Sub-Services Grid */}
       <section className="detail-grid-section">
         <div className="container">
           <div className="section-title">
-            <h2>SỬA ĐIỆN TẠI NHÀ</h2>
-            <div className="title-line"></div>
-          </div>
-          <div className="services-grid">
-            <div className="service-card">
-              <div className="service-img-wrapper">
-                <img src="/sua-chap-dien.png" alt="Sửa chập điện" />
-              </div>
-              <div className="service-content">
-                <h3>SỬA CHẬP ĐIỆN</h3>
-                <p>Xử lý chập điện, cháy nổ điện, nhảy aptomat không rõ nguyên nhân 24/7.</p>
-                <Link href="/sua-chap-dien" className="btn-readmore">Xem Chi Tiết &raquo;</Link>
-              </div>
-            </div>
-            <div className="service-card">
-              <div className="service-img-wrapper">
-                <img src="/sua-cong-to-dien.png" alt="Sửa công tơ điện" />
-              </div>
-              <div className="service-content">
-                <h3>SỬA CÔNG TƠ ĐIỆN</h3>
-                <p>Nhận kiểm tra, sửa chữa công tơ điện, lắp đặt đồng hồ điện riêng cho phòng trọ.</p>
-                <Link href="/sua-cong-to-dien" className="btn-readmore">Xem Chi Tiết &raquo;</Link>
-              </div>
-            </div>
-            <div className="service-card">
-              <div className="service-img-wrapper">
-                <img src="/lap-dong-ho-dien.png" alt="Lắp đồng hồ điện" />
-              </div>
-              <div className="service-content">
-                <h3>LẮP ĐỒNG HỒ ĐIỆN</h3>
-                <p>Chuyên lắp đặt đồng hồ điện 1 pha, 3 pha cho hộ gia đình và kinh doanh.</p>
-                <Link href="/lap-dong-ho-dien" className="btn-readmore">Xem Chi Tiết &raquo;</Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Water Sub-Services Grid */}
-      <section className="detail-grid-section gray-bg">
-        <div className="container">
-          <div className="section-title">
-            <h2>SỬA NƯỚC TẠI NHÀ</h2>
+            <h2>SỬA ĐIỆN NƯỚC TẠI NHÀ</h2>
             <div className="title-line"></div>
           </div>
           <div className="services-grid">
@@ -185,12 +97,12 @@ export default function Home() {
             </div>
             <div className="service-card">
               <div className="service-img-wrapper">
-                <img src="/sua-ong-nuoc-bi-vo.png" alt="Sửa ống nước bục vỡ" />
+                <img src="/sua-ong-nuoc-bi-vo.png" alt="Sửa rò rỉ nước" />
               </div>
               <div className="service-content">
-                <h3>SỬA ỐNG NƯỚC BỤC VỠ</h3>
-                <p>Xử lý triệt để các sự cố vỡ ống nước, thay thế phụ kiện chính hãng bền bỉ.</p>
-                <Link href="/sua-ong-nuoc-bi-vo" className="btn-readmore">Xem Chi Tiết &raquo;</Link>
+                <h3>SỬA RÒ RỈ NƯỚC</h3>
+                <p>Xử lý triệt để các sự cố rò rỉ nước, vỡ ống nước, thay thế phụ kiện chính hãng.</p>
+                <Link href="/sua-ro-ri-nuoc" className="btn-readmore">Xem Chi Tiết &raquo;</Link>
               </div>
             </div>
             <div className="service-card">
@@ -199,15 +111,77 @@ export default function Home() {
               </div>
               <div className="service-content">
                 <h3>DÒ TÌM RÒ RỈ NƯỚC</h3>
-                <p>Sử dụng máy siêu âm hiện đại dò tìm chính xác vị trí rò rỉ nước âm tường.</p>
-                <Link href="/tho-do-tim-ro-ri-nuoc" className="btn-readmore">Xem Chi Tiết &raquo;</Link>
+                <p>Sử dụng máy siêu âm hiện đại dò tìm chính xác vị trí rò rỉ nước âm tường, âm nền.</p>
+                <Link href="/do-tim-ro-ri-nuoc" className="btn-readmore">Xem Chi Tiết &raquo;</Link>
+              </div>
+            </div>
+            <div className="service-card">
+              <div className="service-img-wrapper">
+                <img src="/sua-dien-tai-nha.png" alt="Sửa điện nước tại nhà" />
+              </div>
+              <div className="service-content">
+                <h3>SỬA ĐIỆN NƯỚC TẠI NHÀ</h3>
+                <p>Dịch vụ sửa chữa điện nước tổng hợp, xử lý mọi sự cố điện nước gia đình, văn phòng.</p>
+                <Link href="/sua-dien-nuoc-tai-nha" className="btn-readmore">Xem Chi Tiết &raquo;</Link>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Pump Sub-Services Grid */}
+      {/* Sửa Điện Tại Nhà Sub-Services Grid */}
+      <section className="detail-grid-section gray-bg">
+        <div className="container">
+          <div className="section-title">
+            <h2>SỬA ĐIỆN TẠI NHÀ</h2>
+            <div className="title-line"></div>
+          </div>
+          <div className="services-grid services-grid-4">
+            <div className="service-card">
+              <div className="service-img-wrapper">
+                <img src="/sua-chap-dien.png" alt="Sửa chập điện" />
+              </div>
+              <div className="service-content">
+                <h3>SỬA CHẬP ĐIỆN</h3>
+                <p>Xử lý chập điện, cháy nổ điện, nhảy aptomat không rõ nguyên nhân chuyên nghiệp.</p>
+                <Link href="/sua-chap-dien" className="btn-readmore">Xem Chi Tiết &raquo;</Link>
+              </div>
+            </div>
+            <div className="service-card">
+              <div className="service-img-wrapper">
+                <img src="/sua-cong-to-dien.png" alt="Sửa công tơ điện" />
+              </div>
+              <div className="service-content">
+                <h3>SỬA CÔNG TƠ ĐIỆN</h3>
+                <p>Kiểm tra, sửa chữa công tơ điện chạy sai, lắp đặt đồng hồ điện riêng cho phòng trọ.</p>
+                <Link href="/sua-cong-to-dien" className="btn-readmore">Xem Chi Tiết &raquo;</Link>
+              </div>
+            </div>
+            <div className="service-card">
+              <div className="service-img-wrapper">
+                <img src="/lap-dong-ho-dien.png" alt="Lắp đồng hồ điện" />
+              </div>
+              <div className="service-content">
+                <h3>LẮP ĐỒNG HỒ ĐIỆN</h3>
+                <p>Chuyên lắp đặt đồng hồ điện 1 pha, 3 pha cho hộ gia đình và kinh doanh, sản xuất.</p>
+                <Link href="/lap-dong-ho-dien" className="btn-readmore">Xem Chi Tiết &raquo;</Link>
+              </div>
+            </div>
+            <div className="service-card">
+              <div className="service-img-wrapper">
+                <img src="/sua-dien-tai-nha.png" alt="Sửa điện 24h" />
+              </div>
+              <div className="service-content">
+                <h3>SỬA ĐIỆN 24H</h3>
+                <p>Dịch vụ sửa điện khẩn cấp 24/7, có mặt ngay cả ban đêm để xử lý sự cố điện.</p>
+                <Link href="/sua-dien-24h" className="btn-readmore">Xem Chi Tiết &raquo;</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Sửa Máy Bơm Sub-Services Grid */}
       <section className="detail-grid-section">
         <div className="container">
           <div className="section-title">
@@ -217,10 +191,10 @@ export default function Home() {
           <div className="services-grid">
             <div className="service-card">
               <div className="service-img-wrapper">
-                <img src="/sua-may-bom-tai-nha.png" alt="Sửa máy bơm tại nhà" />
+                <img src="/sua-may-bom-tai-nha.png" alt="Sửa máy bơm nước tại nhà" />
               </div>
               <div className="service-content">
-                <h3>SỬA MÁY BƠM TẠI NHÀ</h3>
+                <h3>SỬA MÁY BƠM NƯỚC TẠI NHÀ</h3>
                 <p>Dịch vụ sửa máy bơm nước chuyên nghiệp, có mặt nhanh, giá rẻ tại TP.HCM.</p>
                 <Link href="/sua-may-bom-nuoc-tai-nha" className="btn-readmore">Xem Chi Tiết &raquo;</Link>
               </div>
@@ -248,7 +222,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
 
       {/* News/Tips Section */}
       <section className="news-section">

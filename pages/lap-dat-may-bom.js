@@ -6,7 +6,7 @@ export default function LapDatMayBom() {
   const hotlineFull = "0353422680";
 
   return (
-    <Layout 
+    <Layout
       title="Lắp Đặt Máy Bơm Nước TP.HCM - Tăng Áp, Đẩy Cao, Tưới Tiêu"
       description="Dịch vụ lắp đặt máy bơm nước gia đình, máy bơm công nghiệp tại TP.HCM. Tư vấn chọn bơm phù hợp, lắp đặt đúng kỹ thuật, an toàn và thẩm mỹ cao."
     >
@@ -22,7 +22,7 @@ export default function LapDatMayBom() {
           <div className="content">
             <h2 style={{ fontSize: '2rem', marginBottom: '20px', color: 'var(--primary)' }}>DỊCH VỤ LẮP ĐẶT MÁY BƠM NƯỚC TRỌN GÓI</h2>
             <img src="/sua-may-bom-tai-nha.png" alt="Lắp đặt máy bơm nước" className="featured-img" />
-            
+
             <p>Việc lựa chọn và lắp đặt máy bơm đúng kỹ thuật đóng vai trò sống còn trong việc đảm bảo nguồn nước ổn định và độ bền của thiết bị. <strong>Điện nước Bảo Trung</strong> cung cấp dịch vụ lắp đặt máy bơm nước trọn gói, từ khảo sát nhu cầu, tư vấn chọn máy đến thi công hoàn thiện hệ thống đường ống kết nối.</p>
 
             <h3 style={{ borderLeft: '4px solid var(--primary)', paddingLeft: '15px', color: 'var(--secondary)', margin: '30px 0 15px' }}>CÁC LOẠI MÁY BƠM CHÚNG TÔI CHUYÊN LẮP ĐẶT</h3>
@@ -44,6 +44,7 @@ export default function LapDatMayBom() {
                 <p style={{ fontSize: '0.85rem' }}>Lắp đặt hệ thống bơm cho sân vườn, khu vực nông nghiệp với công suất phù hợp theo diện tích.</p>
               </div>
             </div>
+            <img src="/tho-sua-may-bom-nuoc.png" alt="Lắp đặt máy bơm nước cho hộ gia đình" className="featured-img" />
 
             <h3 style={{ borderLeft: '4px solid var(--primary)', paddingLeft: '15px', color: 'var(--secondary)', margin: '30px 0 15px' }}>TIÊU CHUẨN LẮP ĐẶT CỦA BẢO TRUNG</h3>
             <ul>
@@ -69,12 +70,12 @@ export default function LapDatMayBom() {
 
           <div className="sidebar">
             <div className="cta-box" style={{ background: 'var(--primary)' }}>
-              <h3 style={{ color: 'white' }}>Tư Vấn Lập Đặt</h3>
+              <h3 style={{ color: 'white' }}>Tư Vấn Lắp Đặt</h3>
               <p>Khảo sát tận nơi - Báo giá ngay trong ngày!</p>
               <a href={`tel:${hotlineFull}`} className="btn btn-secondary hotline-btn">{hotline}</a>
               <a href={`https://zalo.me/${hotlineFull}`} className="btn btn-primary zalo-btn">Gửi Yêu Cầu Khảo Sát</a>
             </div>
-            
+
             <div className="info-box">
               <h4 style={{ color: 'var(--primary)', borderBottomColor: 'var(--primary)' }}>Hỗ Trợ Mọi Thương Hiệu</h4>
               <p style={{ fontSize: '0.85rem' }}>Thợ chúng tôi thành thạo lắp đặt các dòng máy bơm của: <strong>Panasonic, Pentax, Ebara, Lepono, Lucky Pro, Wilo, Hanil...</strong></p>

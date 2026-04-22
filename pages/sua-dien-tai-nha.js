@@ -1,183 +1,154 @@
 import Layout from '../components/Layout'
 import Link from 'next/link'
 
-export default function SuaDien() {
+export default function SuaDienTaiNhaCategory() {
   const hotline = "0353.422.680";
   const hotlineFull = "0353422680";
 
   return (
     <Layout 
-      title="Sửa Điện Tại Nhà TP.HCM - Xử Lý Chập Điện, Mất Điện 24/7"
-      description="Dịch vụ sửa điện tại nhà uy tín tại TP.HCM. Chuyên sửa chập điện, thay aptomat, lắp đồng hồ điện, sửa bóng đèn, ổ cắm. Thợ giỏi, giá rẻ, bảo hành lâu dài."
+      title="Sửa Điện Tại Nhà TP.HCM - Xử Lý Chập Điện, Lắp Đồng Hồ Điện 24/7"
+      description="Dịch vụ sửa điện tại nhà chuyên nghiệp tại TP.HCM. Chuyên xử lý chập điện, nhảy aptomat, sửa công tơ điện, lắp đồng hồ điện 1 pha/3 pha. Phục vụ 24/24."
     >
-      <section className="page-header">
+      <section className="page-header" style={{ background: 'linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url("/sua-dien-tai-nha.png")', backgroundSize: 'cover', backgroundPosition: 'center', color: 'white', padding: '100px 0', textAlign: 'center' }}>
         <div className="container">
-          <h1>Sửa Điện Tại Nhà TP.HCM</h1>
-          <p>Dịch vụ sửa chữa điện dân dụng an toàn, chuyên nghiệp, phục vụ tận nơi 24/7.</p>
+          <h1 style={{ fontSize: '3rem', color: 'var(--primary)', marginBottom: '20px' }}>SỬA ĐIỆN TẠI NHÀ</h1>
+          <p style={{ fontSize: '1.2rem', maxWidth: '800px', margin: '0 auto' }}>Thợ điện tay nghề cao, xử lý nhanh các sự cố chập cháy, mất điện. An toàn - Uy tín - Giá rẻ nhất TP.HCM.</p>
         </div>
       </section>
 
-
-      <section className="service-detail">
-        <div className="container service-grid">
-          <div className="content">
-            <h2 style={{ fontSize: '2rem', marginBottom: '20px' }}>DỊCH VỤ SỬA ĐIỆN TẠI NHÀ CHUYÊN NGHIỆP 24/7</h2>
-            <img src="/sua-dien-tai-nha.png" alt="Thợ sửa điện chuyên nghiệp tại TP.HCM" className="featured-img" />
-            <p>Trong cuộc sống hiện đại, điện năng là yếu tố không thể thiếu. Một sự cố nhỏ về điện cũng có thể gây gián đoạn sinh hoạt và tiềm ẩn nguy cơ cháy nổ cực kỳ nguy hiểm. <strong>Điện Nước Bảo Trung</strong> cung cấp giải pháp sửa điện tại nhà cấp tốc, giúp bạn xử lý mọi rắc rối chỉ trong "một nốt nhạc".</p>
-            
-            <div className="feature-box">
-              <h3>Các hạng mục sửa điện ưu tú:</h3>
-              <ul className="check-list">
-                <li>Dò tìm và xử lý chập điện âm tường, cháy nổ hệ thống dây dẫn.</li>
-                <li>Khắc phục tình trạng mất điện cục bộ hoặc mất điện toàn phần không rõ nguyên nhân.</li>
-                <li>Lắp đặt, thay thế các thiết bị điện: CB, Aptomat, ổ cắm, bóng đèn, quạt trần...</li>
-                <li>Lắp đặt đồng hồ điện (công tơ điện) phụ cho nhà trọ, căn hộ cho thuê.</li>
-                <li>Đi lại đường dây điện mới, thi công điện âm/nổi thẩm mỹ cho văn phòng, shop.</li>
-                <li>Bảo trì hệ thống điện định kỳ, kiểm tra tải cho các thiết bị công suất lớn.</li>
-              </ul>
+      <section className="category-intro" style={{ background: 'white' }}>
+        <div className="container">
+          <div className="responsive-grid-2" style={{ alignItems: 'center' }}>
+            <div>
+              <h2 className="modern-h2" style={{ color: 'var(--secondary)', marginBottom: '25px' }}>An Toàn Điện - Trách Nhiệm Hàng Đầu</h2>
+              <p style={{ color: 'var(--text-light)', marginBottom: '15px', lineHeight: '1.8' }}>Sự cố về điện luôn tiềm ẩn nguy cơ cháy nổ và nguy hiểm đến tính mạng. Vì vậy, việc lựa chọn một đội ngũ thợ điện có chuyên môn và kinh nghiệm là điều vô cùng quan trọng.</p>
+              <p style={{ color: 'var(--text-light)', marginBottom: '25px', lineHeight: '1.8' }}>Tại Điện Nước Bảo Trung, đội ngũ kỹ thuật viên của chúng tôi được đào tạo bài bản, trang bị máy móc hiện đại để tìm ra nhanh nhất vị trí chập điện âm tường, đảm bảo khắc phục triệt để và an toàn tuyệt đối cho gia đình bạn.</p>
+              <div className="cta-group" style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
+                <a href={`tel:${hotlineFull}`} className="btn btn-primary">GỌI THỢ NGAY: {hotline}</a>
+                <a href={`https://zalo.me/${hotlineFull}`} className="btn btn-secondary">NHẮN TIN ZALO</a>
+              </div>
             </div>
+            <div className="mobile-first-image">
+              <img src="/sua-dien-tai-nha.png" alt="Sửa điện tại nhà" style={{ width: '100%', borderRadius: '20px', boxShadow: 'var(--shadow-lg)' }} />
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <div className="process-box" style={{ marginTop: '40px', background: '#f8f9fa', padding: '30px', borderRadius: 'var(--radius)' }}>
-              <h3 style={{ color: 'var(--secondary)', marginBottom: '20px', textAlign: 'center' }}>QUY TRÌNH LÀM VIỆC CHUẨN 5 SAO</h3>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '15px' }}>
-                <div style={{ textAlign: 'center' }}>
-                  <div style={{ fontSize: '1.5rem', marginBottom: '5px' }}>📞</div>
-                  <h4 style={{ fontSize: '0.9rem', marginBottom: '5px' }}>BƯỚC 1</h4>
-                  <p style={{ fontSize: '0.8rem' }}>Tiếp nhận yêu cầu qua Hotline/Zalo</p>
-                </div>
-                <div style={{ textAlign: 'center' }}>
-                  <div style={{ fontSize: '1.5rem', marginBottom: '5px' }}>🕵️</div>
-                  <h4 style={{ fontSize: '0.9rem', marginBottom: '5px' }}>BƯỚC 2</h4>
-                  <p style={{ fontSize: '0.8rem' }}>Khảo sát & Báo giá miễn phí 100%</p>
-                </div>
-                <div style={{ textAlign: 'center' }}>
-                  <div style={{ fontSize: '1.5rem', marginBottom: '5px' }}>🛠️</div>
-                  <h4 style={{ fontSize: '0.9rem', marginBottom: '5px' }}>BƯỚC 3</h4>
-                  <p style={{ fontSize: '0.8rem' }}>Tiến hành sửa chữa an toàn, nhanh gọn</p>
-                </div>
-                <div style={{ textAlign: 'center' }}>
-                  <div style={{ fontSize: '1.5rem', marginBottom: '5px' }}>✅</div>
-                  <h4 style={{ fontSize: '0.9rem', marginBottom: '5px' }}>BƯỚC 4</h4>
-                  <p style={{ fontSize: '0.8rem' }}>Nghiệm thu, dọn dẹp vệ sinh sạch sẽ</p>
-                </div>
-                <div style={{ textAlign: 'center' }}>
-                  <div style={{ fontSize: '1.5rem', marginBottom: '5px' }}>🛡️</div>
-                  <h4 style={{ fontSize: '0.9rem', marginBottom: '5px' }}>BƯỚC 5</h4>
-                  <p style={{ fontSize: '0.8rem' }}>Kích hoạt bảo hành & Chăm sóc sau hàn</p>
-                </div>
+      <section className="detail-grid-section gray-bg">
+        <div className="container">
+          <div className="section-title">
+            <h2>DỊCH VỤ SỬA ĐIỆN CHUYÊN NGHIỆP</h2>
+            <div className="title-line"></div>
+          </div>
+
+          <div className="services-grid">
+            <div className="service-card">
+              <div className="service-img-wrapper">
+                <img src="/sua-chap-dien.png" alt="Sửa chập điện" />
+              </div>
+              <div className="service-content">
+                <h3>Sửa Chập Điện</h3>
+                <p>Xử lý chập điện, cháy nổ điện, nhảy aptomat không rõ nguyên nhân chuyên nghiệp.</p>
+                <Link href="/sua-chap-dien" className="btn-readmore">Xem Chi Tiết &raquo;</Link>
               </div>
             </div>
 
-            <h2 style={{ marginTop: '40px' }}>TẠI SAO NGƯỜI DÂN TP.HCM TIN DÙNG BẢO TRUNG?</h2>
-            <p>Với hơn 10 năm kinh nghiệm thực chiến, chúng tôi thấu hiểu những lo lắng của khách hàng khi gặp sự cố điện:</p>
-            <ul>
-              <li><strong>An toàn là số 1:</strong> Thợ được đào tạo bài bản, tuân thủ nghiêm ngặt quy tắc an toàn lao động.</li>
-              <li><strong>Giá cả minh bạch:</strong> Luôn báo giá trước khi làm, cam kết không phát sinh chi phí ẩn.</li>
-              <li><strong>Tốc độ vượt trội:</strong> Đội ngũ thợ túc trực tại tất cả các quận huyện, có mặt sau 15-30 phút.</li>
-              <li><strong>Bảo hành uy tín:</strong> Chính sách bảo hành từ 6-12 tháng, xử lý lỗi ngay lập tức.</li>
-            </ul>
-          </div>
+            <div className="service-card">
+              <div className="service-img-wrapper">
+                <img src="/sua-cong-to-dien.png" alt="Sửa công tơ điện" />
+              </div>
+              <div className="service-content">
+                <h3>Sửa Công Tơ Điện</h3>
+                <p>Kiểm tra, sửa chữa công tơ điện chạy sai, lắp đặt đồng hồ điện riêng cho phòng trọ.</p>
+                <Link href="/sua-cong-to-dien" className="btn-readmore">Xem Chi Tiết &raquo;</Link>
+              </div>
+            </div>
 
-          <div className="sidebar">
-            <div className="cta-box">
-              <h3>Cần Thợ Gấp?</h3>
-              <p>Liên hệ hotline để được tư vấn và báo giá ngay lập tức.</p>
-              <a href={`tel:${hotlineFull}`} className="btn btn-secondary hotline-btn">{hotline}</a>
-              <a href={`https://zalo.me/${hotlineFull}`} className="btn btn-primary zalo-btn">Chát Zalo Tư Vấn</a>
+            <div className="service-card">
+              <div className="service-img-wrapper">
+                <img src="/lap-dong-ho-dien.png" alt="Lắp đồng hồ điện" />
+              </div>
+              <div className="service-content">
+                <h3>Lắp Đồng Hồ Điện</h3>
+                <p>Chuyên lắp đặt đồng hồ điện 1 pha, 3 pha cho hộ gia đình và kinh doanh, sản xuất.</p>
+                <Link href="/lap-dong-ho-dien" className="btn-readmore">Xem Chi Tiết &raquo;</Link>
+              </div>
             </div>
-            
-            <div className="info-box">
-              <h4>Cam Kết Về Giá</h4>
-              <p style={{ fontSize: '0.85rem', color: '#666', marginBottom: '15px' }}>Chúng tôi luôn hướng tới mức giá cạnh tranh nhất thị trường:</p>
-              <ul style={{ fontSize: '0.85rem' }}>
-                <li>✅ Miễn phí công khảo sát</li>
-                <li>✅ Giảm 10% cho sinh viên & NPP</li>
-                <li>✅ Linh kiện thay thế giá gốc</li>
-                <li>✅ Hoàn tiền 100% nếu không hài lòng</li>
-              </ul>
-            </div>
-            
-            <div className="info-box" style={{ marginTop: '20px' }}>
-              <h4>Thời Gian Phục Vụ</h4>
-              <p style={{ fontSize: '0.85rem', color: '#666' }}>Chúng tôi làm việc không nghỉ lễ, bao gồm cả Thứ 7 và Chủ Nhật.</p>
-              <div style={{ fontSize: '1.2rem', fontWeight: 'bold', color: 'var(--primary)', textAlign: 'center', marginTop: '10px' }}>
-                ⏰ 24/7 TP.HCM
+
+            <div className="service-card">
+              <div className="service-img-wrapper">
+                <img src="/sua-dien-tai-nha.png" alt="Sửa điện 24h" />
+              </div>
+              <div className="service-content">
+                <h3>Sửa Điện 24H</h3>
+                <p>Dịch vụ sửa điện khẩn cấp 24/7, có mặt ngay cả ban đêm để xử lý sự cố điện.</p>
+                <Link href="/sua-dien-24h" className="btn-readmore">Xem Chi Tiết &raquo;</Link>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="common-problems">
+        <div className="container">
+          <div className="section-title">
+            <h2>KHI NÀO BẠN CẦN GỌI THỢ ĐIỆN?</h2>
+            <p style={{ color: 'var(--text-light)', marginTop: '10px' }}>Đừng tự sửa chữa nếu bạn không có chuyên môn và dụng cụ bảo hộ cần thiết.</p>
+          </div>
+
+          <div className="responsive-grid-3">
+            <div className="problem-box">
+              <h4 className="section-title-left">Sự Cố Khẩn Cấp</h4>
+              <ul className="check-list-modern">
+                <li>Aptomat (CB) nhảy liên tục không rõ lý do.</li>
+                <li>Có mùi khét, khói hoặc tia lửa điện từ ổ cắm, tủ điện.</li>
+                <li>Mất điện đột ngột trong khi các nhà xung quanh vẫn có.</li>
+                <li>Thiết bị điện bị rò điện ra vỏ gây giật.</li>
+              </ul>
+            </div>
+            <div className="problem-box">
+              <h4 className="section-title-left">Lắp Đặt & Cải Tạo</h4>
+              <ul className="check-list-modern">
+                <li>Lắp đặt hệ thống đèn chiếu sáng, đèn trang trí.</li>
+                <li>Đi lại đường dây điện âm tường hoặc điện nổi đẹp mắt.</li>
+                <li>Lắp đặt máy nước nóng, máy lạnh, quạt trần.</li>
+                <li>Thay thế ổ cắm, công tắc cũ bằng thiết bị hiện đại.</li>
+              </ul>
+            </div>
+            <div className="problem-box">
+              <h4 className="section-title-left">Đồng Hồ & Công Tơ</h4>
+              <ul className="check-list-modern">
+                <li>Lắp đồng hồ điện cho phòng trọ, mặt bằng kinh doanh.</li>
+                <li>Kiểm tra xem công tơ điện có chạy đúng hay không.</li>
+                <li>Tách nguồn điện, đi lại bảng điện riêng biệt.</li>
+                <li>Thay thế công tơ điện cũ, hỏng.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section style={{ background: 'var(--secondary)', color: 'white', textAlign: 'center' }}>
+        <div className="container">
+          <h2 className="modern-h2" style={{ marginBottom: '20px' }}>PHỤC VỤ TẬN TÂM - GIÁ CẢ MINH BẠCH</h2>
+          <p style={{ fontSize: '1.1rem', marginBottom: '40px', opacity: '0.9' }}>Báo giá rõ ràng trước khi làm, không phát sinh chi phí vô lý!</p>
+          <a href={`tel:${hotlineFull}`} className="btn btn-primary" style={{ fontSize: '1.3rem', padding: '15px 50px' }}>GỌI NGAY: {hotline}</a>
         </div>
       </section>
 
       <style jsx>{`
-        .page-header {
-          background: var(--primary);
-          color: white;
-          padding: 60px 0;
-          text-align: center;
-        }
-        .page-header h1 { font-size: 2.5rem; margin-bottom: 10px; }
-        
-        .service-grid {
-          display: grid;
-          grid-template-columns: 2fr 1fr;
-          gap: 40px;
-        }
-
-        .content {
-          background: white;
-          padding: 40px;
-          border-radius: var(--radius);
-          box-shadow: var(--shadow);
-        }
-        .content h2 { color: var(--primary); margin: 30px 0 15px; }
-        .content p { margin-bottom: 20px; color: var(--text-light); }
-        
-        .feature-box {
-          background: #f0f7ff;
+        .problem-box {
+          background: #f8fafc;
           padding: 30px;
-          border-radius: var(--radius);
-          border-left: 5px solid var(--primary);
-          margin: 30px 0;
+          border-radius: 20px;
+          box-shadow: 0 4px 15px rgba(0,0,0,0.02);
         }
-        .feature-box h3 { margin-bottom: 15px; font-size: 1.2rem; }
         
-        .check-list li {
-          margin-bottom: 12px;
-          position: relative;
-          padding-left: 25px;
-        }
-        .check-list li::before {
-          content: '✓';
-          position: absolute;
-          left: 0;
-          color: var(--primary);
-          font-weight: bold;
-        }
-
-        .cta-box {
-          background: var(--primary);
-          color: white;
-          padding: 30px;
-          border-radius: var(--radius);
-          text-align: center;
-          margin-bottom: 30px;
-        }
-        .cta-box h3 { color: var(--secondary); margin-bottom: 10px; }
-        .hotline-btn { display: block; width: 100%; margin: 20px 0 10px; font-size: 1.2rem; }
-        .zalo-btn { display: block; width: 100%; background: #0084ff; border: none; }
-
-        .info-box {
-          background: white;
-          padding: 30px;
-          border-radius: var(--radius);
-          box-shadow: var(--shadow);
-        }
-        .info-box h4 { border-bottom: 2px solid var(--secondary); padding-bottom: 10px; margin-bottom: 15px; }
-        .info-box ul li { margin-bottom: 10px; font-size: 0.9rem; padding-left: 20px; position: relative; }
-        .info-box ul li::before { content: '⭐'; position: absolute; left: 0; }
-
         @media (max-width: 768px) {
-          .service-grid { grid-template-columns: 1fr; }
+          .cta-group .btn { width: 100%; text-align: center; }
+          .mobile-first-image { order: -1; }
         }
       `}</style>
     </Layout>

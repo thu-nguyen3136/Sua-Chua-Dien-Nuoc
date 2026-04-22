@@ -1,58 +1,69 @@
 import Layout from '../../components/Layout'
+import Link from 'next/link'
 
-export default function Article4() {
+export default function KinhNghiemLDPhatSuaDienNuoc() {
   const hotline = "0353.422.680";
   const hotlineFull = "0353422680";
 
   return (
     <Layout 
-      title="Kinh nghiệm lắp đặt sửa chữa điện nước bền bỉ - Bảo Trung"
-      description="Chia sẻ những kinh nghiệm thực tế trong việc lắp đặt và sửa chữa hệ thống điện nước để đảm bảo sự ổn định và tiết kiệm chi phí lâu dài."
+      title="Kinh Nghiệm Lắp Đặt Sửa Chữa Điện Nước Bền Bỉ Và An Toàn"
+      description="Chia sẻ những kinh nghiệm vàng trong việc lắp đặt và bảo trì hệ thống điện nước gia đình giúp tăng tuổi thọ thiết bị và đảm bảo an toàn tuyệt đối."
     >
-      <section className="page-header">
+      <section className="page-header" style={{ background: 'linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url("/kinh-nghiem.png")', backgroundSize: 'cover', backgroundPosition: 'center', color: 'white', padding: '80px 0', textAlign: 'center' }}>
         <div className="container">
-          <h1>KINH NGHIỆM LẮP ĐẶT & SỬA CHỮA ĐIỆN NƯỚC</h1>
-          <p>Bí quyết xây dựng hệ thống điện nước ổn định, bền bỉ theo thời gian.</p>
+          <h1 style={{ textTransform: 'uppercase', fontSize: '2.5rem' }}>KINH NGHIỆM LẮP ĐẶT SỬA CHỮA ĐIỆN NƯỚC</h1>
+          <p style={{ marginTop: '15px', opacity: 0.9 }}>Bí quyết để có hệ thống điện nước ổn định, tiết kiệm chi phí bảo trì.</p>
         </div>
       </section>
 
-      <section className="article-detail">
+      <section className="article-detail" style={{ padding: '60px 0', background: '#f8fafc' }}>
         <div className="container article-grid">
           <div className="content">
             <img src="/kinh-nghiem.png" alt="Kinh nghiệm thi công điện nước" className="featured-img" />
             
-            <p>Hệ thống điện nước được ví như hệ thần kinh và hệ tuần hoàn của một ngôi nhà. Việc lắp đặt đúng ngay từ đầu không chỉ giúp bạn yên tâm trong quá trình sử dụng mà còn giúp tiết kiệm rất nhiều chi phí sửa chữa sau này. Dưới đây là những kinh nghiệm "xương máu" từ đội ngũ thợ lành nghề của Bảo Trung.</p>
+            <p>Điện nước đóng vai trò quan trọng đối với đời sống hàng ngày của chúng ta. Tuy nhiên để có thể lắp đặt được hệ thống điện nước hoạt động hiệu quả và an toàn, các bạn cần phải hiểu biết về điện nước và kinh nghiệm lắp đặt.</p>
+            <p>Trong quá trình sử dụng hệ thống điện nước các bạn cũng sẽ gặp phải những sự cố và hư hỏng điện nước không thể lường trước được. Sửa chữa điện nước Bảo Trung sẽ chia sẻ một số kinh nghiệm lắp đặt, sửa chữa điện nước để các bạn có thể tự mình xây dựng nên một hệ thống hoạt động hiệu quả, an toàn cũng như khắc phục được những hư hỏng bất ngờ.</p>
 
-            <h2>1. Thiết kế sơ đồ chi tiết trước khi thi công</h2>
-            <p>Đừng bao giờ thi công theo kiểu "vừa làm vừa tính". Hãy yêu cầu một bản vẽ sơ đồ điện nước chi tiết. Điều này giúp thợ thi công chính xác và quan trọng nhất là giúp bạn dễ dàng tìm ra vị trí hỏng hóc hoặc tránh khoan trúng dây/ống khi muốn sửa sang nhà sau này.</p>
+            <h2 style={{ fontSize: '1.5rem', color: 'var(--primary)', margin: '30px 0 20px' }}>Kinh nghiệm lắp đặt hệ thống mới</h2>
+            <p>Để có một hệ thống điện nước hoạt động hiệu quả và lâu dài, các bạn cần chuẩn bị những thiết bị và dây dẫn tốt nhất, đồng thời lưu ý các điểm sau:</p>
+            <ul className="check-list-modern">
+                <li><strong>Điện âm tường/sàn:</strong> Cần bọc cách điện và luồn trong ống bảo vệ (hệ thống ống cứng hoặc ruột gà) phù hợp để tránh bị mục, hở dây sau thời gian dài sử dụng.</li>
+                <li><strong>Vị trí lắp đặt:</strong> Cầu dao, công tắc, phích cắm nên được lắp ở nơi khô ráo, dễ sử dụng nhưng phải tránh xa tầm tay trẻ nhỏ.</li>
+                <li><strong>Tránh khu vực ẩm:</strong> Không nên kéo dây điện ngang qua nhà tắm, nhà vệ sinh nếu không có biện pháp chống thấm và bảo vệ chuyên dụng.</li>
+                <li><strong>Chất lượng ống nước:</strong> Nên chọn các loại ống nhựa chịu áp lực tốt (như Bình Minh, Tiền Phong) để tăng tuổi thọ và giảm thiểu sự cố bục vỡ ngầm.</li>
+                <li><strong>Lắp đặt ống nước:</strong> Nên đi ống chìm trong tường để hạn chế va chạm cơ học bên ngoài gây nứt vỡ ống.</li>
+            </ul>
 
-            <h2>2. Phân chia lộ trình (Zone) thông minh</h2>
-            <p>Hệ thống điện nên được chia thành nhiều nhánh độc lập: Nhánh chiếu sáng, nhánh ổ cắm, nhánh cho các thiết bị công suất lớn (máy lạnh, máy nước nóng). Mỗi nhánh nên có Aptomat bảo vệ riêng. Khi một nhánh gặp sự cố, các khu vực khác vẫn có điện phục vụ sinh hoạt.</p>
+            <h2 style={{ fontSize: '1.5rem', color: 'var(--primary)', margin: '30px 0 20px' }}>Kinh nghiệm xử lý sự cố bất ngờ</h2>
+            <p>Khi sử dụng, nếu gặp sự cố, hãy bình tĩnh thực hiện theo các bước sau để đảm bảo an toàn:</p>
+            <ul className="check-list-modern">
+                <li><strong>Khắc phục chập cháy:</strong> Ngay khi có cháy nổ hoặc mùi khét, phải ngắt cầu dao tổng ngay lập tức trước khi kiểm tra hay tiến hành sửa chữa.</li>
+                <li><strong>Xác định nguyên nhân:</strong> Luôn tìm hiểu rõ "tại sao nó hỏng" trước khi thay thế. Ví dụ: Máy bơm kêu to có thể do vòng bi, đừng vội thay cả máy.</li>
+                <li><strong>Xử lý rò rỉ nước:</strong> Nếu ống nước bục vỡ, hãy khóa van tổng và tìm vị trí rò rỉ. Nếu sự cố âm tường phức tạp, hãy sử dụng dịch vụ dò tìm rò rỉ chuyên nghiệp.</li>
+                <li><strong>Liên hệ thợ chuyên môn:</strong> Với các thiết bị khó như máy bơm, máy nước nóng, mạch điện tử... nếu không có chuyên môn, hãy gọi thợ để tránh làm hỏng thêm hoặc gây nguy hiểm.</li>
+            </ul>
 
-            <h2>3. Lựa chọn vật liệu dựa trên độ bền, không phải giá cả</h2>
-            <p>Dây điện nên chọn loại có lõi đồng chuẩn (như Cadivi), ống nước nên chọn loại có độ dày tốt (như Bình Minh). Chi phí vật tư cao cấp chỉ chiếm một phần nhỏ trong tổng giá trị ngôi nhà, nhưng giá trị an toàn mà nó mang lại là vô giá.</p>
-            <p><strong>Kinh nghiệm:</strong> Đối với đường nước nóng, hãy luôn sử dụng ống PPR chịu nhiệt để tránh việc ống bị biến dạng, rò rỉ sau vài năm sử dụng.</p>
+            <div style={{ background: '#ecfdf5', padding: '30px', borderRadius: '15px', borderLeft: '6px solid #10b981', margin: '30px 0' }}>
+              <p style={{ margin: 0 }}><strong>Kết luận:</strong> Một hệ thống điện nước tốt ngay từ đầu sẽ giúp bạn tiết kiệm hàng chục triệu đồng chi phí sửa chữa trong tương lai. Hãy chú trọng vào chất lượng vật tư và trình độ tay nghề của thợ thi công.</p>
+            </div>
 
-            <h2>4. Chú trọng các vị trí "hiểm yếu"</h2>
-            <p>Các vị trí như hộp kỹ thuật, các mối nối âm tường, vị trí lắp đặt máy bơm, bồn nước cần được thi công cực kỳ cẩn thận. Hãy yêu cầu thợ thử áp đường nước và đo độ cách điện của dây dẫn trước khi trát tường/lát nền.</p>
-
-            <h2>5. Bảo trì định kỳ là cách tiết kiệm nhất</h2>
-            <p>Đừng đợi đến khi hỏng mới sửa. Việc kiểm tra định kỳ 6 tháng một lần giúp phát hiện sớm các dấu hiệu quá tải điện hoặc rò rỉ nước nhỏ, giúp bạn xử lý nhanh gọn với chi phí thấp nhất.</p>
-
-            <div className="cta-box" style={{ background: '#fef9f0', borderLeft: '5px solid var(--primary)', padding: '30px', marginTop: '40px' }}>
-              <h3>Bạn đang xây nhà hoặc muốn cải tạo?</h3>
-              <p>Liên hệ Bảo Trung để được tư vấn sơ đồ điện nước tối ưu và thi công chuyên nghiệp với chế độ bảo hành dài hạn nhất tại TP.HCM.</p>
-              <a href={`tel:${hotlineFull}`} className="btn btn-primary" style={{ marginTop: '10px' }}>📞 Tư vấn kỹ thuật: {hotline}</a>
+            <div className="cta-box" style={{ background: 'var(--secondary)', padding: '40px', borderRadius: '20px', color: 'white', textAlign: 'center', marginTop: '50px' }}>
+              <h3 style={{ color: 'white', fontSize: '1.8rem', marginBottom: '15px' }}>THI CÔNG & SỬA CHỮA CHUYÊN NGHIỆP</h3>
+              <p style={{ marginBottom: '25px', opacity: 0.9 }}>Bảo Trung nhận thi công trọn gói hệ thống điện nước nhà phố, chung cư giá tốt nhất.</p>
+              <div style={{ display: 'flex', gap: '15px', justifyContent: 'center' }}>
+                <a href={`tel:${hotlineFull}`} className="btn btn-primary" style={{ fontSize: '1.2rem', padding: '15px 40px' }}>📞 NHẬN BÁO GIÁ: {hotline}</a>
+              </div>
             </div>
           </div>
 
           <div className="sidebar">
             <div className="info-box">
-              <h4>Kiến thức liên quan</h4>
-              <ul>
-                <li><a href="/tin-tuc/nguyen-nhan-dan-den-ong-nuoc-hu-hong-va-cach-khac-phuc">Nguyên nhân hỏng ống nước</a></li>
-                <li><a href="/tin-tuc/cac-quy-tac-va-nguyen-tac-an-toan-khi-sua-chua-dien-dan-dung-tai-nha">Quy tắc an toàn điện</a></li>
-                <li><a href="/tin-tuc/nhung-luu-y-an-toan-khi-sua-chua-dien-tai-nha-ma-ban-nen-biet">Lưu ý sửa điện an toàn</a></li>
+              <h4>KIẾN THỨC CÙNG CHUYÊN MỤC</h4>
+              <ul className="sidebar-links">
+                <li><Link href="/tin-tuc/cac-quy-tac-va-nguyen-tac-an-toan-khi-sua-chua-dien-dan-dung-tai-nha">Quy tắc an toàn điện</Link></li>
+                <li><Link href="/tin-tuc/nhung-luu-y-an-toan-khi-sua-chua-dien-tai-nha-ma-ban-nen-biet">Lưu ý sửa điện an toàn</Link></li>
+                <li><Link href="/tin-tuc/nguyen-nhan-dan-den-ong-nuoc-hu-hong-va-cach-khac-phuc">Nguyên nhân ống nước hỏng</Link></li>
               </ul>
             </div>
           </div>
@@ -60,20 +71,26 @@ export default function Article4() {
       </section>
 
       <style jsx>{`
-        .page-header { background: var(--secondary); color: white; padding: 60px 0; text-align: center; }
-        .article-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; padding: 60px 0; }
+        .article-grid { display: grid; grid-template-columns: 2.5fr 1fr; gap: 50px; }
         .content { background: white; padding: 40px; border-radius: var(--radius); box-shadow: var(--shadow); }
-        .content h2 { color: var(--primary); margin: 30px 0 15px; border-bottom: 2px solid #eee; padding-bottom: 5px; }
-        .content p { margin-bottom: 20px; line-height: 1.8; color: var(--text-dark); }
-        .featured-img { width: 100%; border-radius: var(--radius); margin-bottom: 30px; }
+        .featured-img { width: 100%; border-radius: var(--radius); margin-bottom: 30px; box-shadow: var(--shadow); }
+        .content p { line-height: 1.8; color: var(--text-dark); margin-bottom: 20px; }
         
-        .sidebar .info-box { background: white; padding: 30px; border-radius: var(--radius); box-shadow: var(--shadow); }
-        .sidebar h4 { margin-bottom: 20px; border-bottom: 2px solid var(--primary); padding-bottom: 10px; }
-        .sidebar ul li { margin-bottom: 15px; }
-        .sidebar ul li a { color: var(--text-dark); text-decoration: none; font-size: 0.95rem; }
-        .sidebar ul li a:hover { color: var(--primary); }
+        .check-list-modern { list-style: none; padding: 0; }
+        .check-list-modern li { position: relative; padding-left: 30px; margin-bottom: 15px; line-height: 1.7; color: var(--text-dark); }
+        .check-list-modern li::before { content: '●'; position: absolute; left: 0; color: var(--primary); font-size: 1.2rem; top: -2px; }
 
-        @media (max-width: 768px) { .article-grid { grid-template-columns: 1fr; } }
+        .info-box { background: white; padding: 30px; border-radius: var(--radius); box-shadow: var(--shadow); }
+        .info-box h4 { margin-bottom: 20px; border-bottom: 2px solid var(--primary); padding-bottom: 10px; font-weight: 800; font-size: 1.1rem; }
+        .sidebar-links { list-style: none; padding: 0; }
+        .sidebar-links li { margin-bottom: 15px; border-bottom: 1px solid #f1f5f9; padding-bottom: 15px; }
+        .sidebar-links li:last-child { border-bottom: none; }
+        .sidebar-links li a { color: var(--text-dark); font-weight: 600; font-size: 0.95rem; transition: var(--transition); }
+        .sidebar-links li a:hover { color: var(--primary); padding-left: 5px; }
+
+        @media (max-width: 992px) {
+          .article-grid { grid-template-columns: 1fr; }
+        }
       `}</style>
     </Layout>
   )
