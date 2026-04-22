@@ -20,7 +20,7 @@ export default function SuaDienNuocTaiNha() {
       <section className="service-detail">
         <div className="container service-grid">
           <div className="content">
-            <h2 style={{ fontSize: '2rem', marginBottom: '20px', color: 'var(--primary)' }}>DỊCH VỤ SỬA ĐIỆN NƯỚC TẠI NHÀ CHUYÊN NGHIỆP</h2>
+            <h2 className="detail-title">DỊCH VỤ SỬA ĐIỆN NƯỚC TẠI NHÀ CHUYÊN NGHIỆP</h2>
             <img src="/4.png" alt="Sửa điện nước tại nhà TPHCM" className="featured-img" />
 
             <p>Dịch vụ <strong>sửa điện nước tại nhà TPHCM</strong> của Điện nước Bảo Trung mang đến giải pháp hoàn hảo cho mọi nhu cầu sửa chữa điện và nước. Với đội ngũ chuyên viên tay nghề cao, chúng tôi tự hào cung cấp dịch vụ sửa chữa điện, sửa chập điện và sửa nước tại các quận huyện của TP. Hồ Chí Minh, cũng như các tỉnh lân cận như Bình Dương, Đồng Nai, Long An.</p>
@@ -72,7 +72,7 @@ export default function SuaDienNuocTaiNha() {
             <img src="/2.png" alt="Nghiệm thu công trình sửa điện nước" className="content-img" />
 
             <h2 style={{ marginTop: '40px', color: 'var(--primary)' }}>TẠI SAO NÊN CHỌN ĐIỆN NƯỚC BẢO TRUNG?</h2>
-            <div className="why-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '30px', marginTop: '20px' }}>
+            <div className="why-grid">
               <div className="why-item">
                 <h4 style={{ color: 'var(--secondary)' }}>👷 Thợ Chuyên Nghiệp</h4>
                 <p style={{ fontSize: '0.9rem' }}>Đội ngũ thợ tay nghề cao, kinh nghiệm dày dặn, được đào tạo bài bản và luôn tận tình với khách hàng.</p>
@@ -97,7 +97,7 @@ export default function SuaDienNuocTaiNha() {
             <h2 style={{ marginTop: '40px', color: 'var(--primary)' }}>ĐỊA CHỈ LIÊN HỆ KHI CẦN SỬA ĐIỆN NƯỚC TP.HCM</h2>
             <p>Chúng tôi phục vụ tại tất cả các quận huyện TP.HCM: Quận 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, Bình Thạnh, Gò Vấp, Tân Bình, Tân Phú, Phú Nhuận, Thủ Đức...</p>
 
-            <div className="branch-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginTop: '20px', fontSize: '0.85rem' }}>
+            <div className="branch-grid">
               <div className="branch-col">
                 <p>📍 Sửa điện nước tại nhà Quận 1</p>
                 <p>📍 Sửa điện nước tại nhà Quận 2</p>
@@ -164,10 +164,20 @@ export default function SuaDienNuocTaiNha() {
         .check-list-modern { list-style: none; padding: 0; }
         .check-list-modern li { position: relative; padding-left: 30px; margin-bottom: 12px; color: var(--text-light); line-height: 1.6; font-size: 0.95rem; }
         .check-list-modern li::before { content: '✓'; position: absolute; left: 0; color: var(--primary); font-weight: bold; font-size: 1.2rem; top: -2px; }
+        .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 20px; }
+        .branch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; font-size: 0.85rem; }
+
+        .detail-title { font-size: 2rem; margin-bottom: 20px; color: var(--primary); }
+        .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 20px; }
+        .branch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; font-size: 0.85rem; }
+
         @media (max-width: 768px) {
-          .service-grid { grid-template-columns: 1fr; }
-          .why-grid { grid-template-columns: 1fr !important; }
-          .branch-grid { grid-template-columns: 1fr !important; }
+          .service-grid { grid-template-columns: 1fr; gap: 30px; }
+          .content { padding: 25px; }
+          .detail-title { font-size: 1.5rem !important; }
+          .why-grid, .branch-grid { grid-template-columns: 1fr !important; }
+          .page-header h1 { font-size: 1.8rem; }
+          .content p { font-size: 0.95rem; }
         }
       `}</style>
     </Layout>

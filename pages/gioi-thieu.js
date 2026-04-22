@@ -55,11 +55,20 @@ export default function GioiThieu() {
         .text-content h2 { color: var(--primary); margin-bottom: 20px; }
         .text-content h3 { color: var(--primary); margin: 40px 0 15px; }
         .text-content p { margin-bottom: 20px; font-size: 1.1rem; color: var(--text-dark); }
-        
         .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; margin-top: 50px; text-align: center; }
         .stat-item { padding: 30px; background: #f8f9fa; border-radius: var(--radius); }
         .stat-num { display: block; font-size: 2rem; font-weight: 800; color: var(--secondary); margin-bottom: 5px; }
         .stat-text { font-size: 0.9rem; font-weight: 600; color: var(--text-light); }
+
+        @media (max-width: 768px) {
+          .about-content { padding: 40px 0; }
+          .text-content h2 { font-size: 1.6rem; }
+          .text-content h3 { font-size: 1.3rem; margin: 30px 0 10px; }
+          .text-content p { font-size: 1rem; line-height: 1.6; }
+          .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 15px; }
+          .stat-item { padding: 15px; }
+          .stat-num { font-size: 1.5rem; }
+        }
       `}</style>
     </Layout>
   )

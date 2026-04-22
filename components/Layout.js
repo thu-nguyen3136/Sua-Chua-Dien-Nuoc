@@ -71,30 +71,22 @@ export default function Layout({ children, title, description, hero }) {
               <li><Link href="/" onClick={handleLinkClick}>TRANG CHỦ</Link></li>
               <li><Link href="/gioi-thieu" onClick={handleLinkClick}>GIỚI THIỆU</Link></li>
               <li className={`has-submenu ${openSubmenu === 1 ? 'active' : ''}`}>
-                <Link href="/sua-dien-nuoc" onClick={(e) => {
-                  if (window.innerWidth <= 768) {
-                    e.preventDefault();
-                    toggleSubmenu(e, 1);
-                  } else {
-                    handleLinkClick();
-                  }
-                }}>SỬA ĐIỆN NƯỚC <span className="caret-toggle" onClick={(e) => toggleSubmenu(e, 1)}>▾</span></Link>
+                <div className="nav-link-wrapper">
+                  <Link href="/sua-dien-nuoc" onClick={handleLinkClick}>SỬA ĐIỆN NƯỚC</Link>
+                  <span className="caret-toggle" onClick={(e) => toggleSubmenu(e, 1)}>▾</span>
+                </div>
                 <ul className="submenu">
                   <li><Link href="/sua-ong-nuoc-tai-nha" onClick={handleLinkClick}>SỬA ỐNG NƯỚC TẠI NHÀ</Link></li>
                   <li><Link href="/sua-ro-ri-nuoc" onClick={handleLinkClick}>SỬA RÒ RỈ NƯỚC</Link></li>
                   <li><Link href="/do-tim-ro-ri-nuoc" onClick={handleLinkClick}>DÒ TÌM RÒ RỈ NƯỚC</Link></li>
-                  <li><Link href="/sua-dien-nuoc" onClick={handleLinkClick}>TẤT CẢ DỊCH VỤ NƯỚC</Link></li>
+                  <li><Link href="/sua-dien-nuoc-tai-nha" onClick={handleLinkClick}>SỬA ĐIỆN NƯỚC TẠI NHÀ</Link></li>
                 </ul>
               </li>
               <li className={`has-submenu ${openSubmenu === 2 ? 'active' : ''}`}>
-                <Link href="/sua-dien-tai-nha" onClick={(e) => {
-                  if (window.innerWidth <= 768) {
-                    e.preventDefault();
-                    toggleSubmenu(e, 2);
-                  } else {
-                    handleLinkClick();
-                  }
-                }}>SỬA ĐIỆN TẠI NHÀ <span className="caret-toggle" onClick={(e) => toggleSubmenu(e, 2)}>▾</span></Link>
+                <div className="nav-link-wrapper">
+                  <Link href="/sua-dien-tai-nha" onClick={handleLinkClick}>SỬA ĐIỆN TẠI NHÀ</Link>
+                  <span className="caret-toggle" onClick={(e) => toggleSubmenu(e, 2)}>▾</span>
+                </div>
                 <ul className="submenu">
                   <li><Link href="/sua-chap-dien" onClick={handleLinkClick}>SỬA CHẬP ĐIỆN</Link></li>
                   <li><Link href="/sua-cong-to-dien" onClick={handleLinkClick}>SỬA CÔNG TƠ ĐIỆN</Link></li>
@@ -103,14 +95,10 @@ export default function Layout({ children, title, description, hero }) {
                 </ul>
               </li>
               <li className={`has-submenu ${openSubmenu === 3 ? 'active' : ''}`}>
-                <Link href="/sua-may-bom-nuoc" onClick={(e) => {
-                  if (window.innerWidth <= 768) {
-                    e.preventDefault();
-                    toggleSubmenu(e, 3);
-                  } else {
-                    handleLinkClick();
-                  }
-                }}>SỬA MÁY BƠM <span className="caret-toggle" onClick={(e) => toggleSubmenu(e, 3)}>▾</span></Link>
+                <div className="nav-link-wrapper">
+                  <Link href="/sua-may-bom-nuoc" onClick={handleLinkClick}>SỬA MÁY BƠM</Link>
+                  <span className="caret-toggle" onClick={(e) => toggleSubmenu(e, 3)}>▾</span>
+                </div>
                 <ul className="submenu">
                   <li><Link href="/sua-may-bom-nuoc-tai-nha" onClick={handleLinkClick}>SỬA MÁY BƠM NƯỚC TẠI NHÀ</Link></li>
                   <li><Link href="/tho-sua-may-bom-nuoc" onClick={handleLinkClick}>THỢ SỬA MÁY BƠM NƯỚC</Link></li>
@@ -140,11 +128,6 @@ export default function Layout({ children, title, description, hero }) {
               Chúng tôi cam kết mang đến giải pháp sửa chữa an toàn, chuyên nghiệp và
               tận tâm cho mọi gia đình Việt.
             </p>
-            <div className="footer-social">
-              <a href="#" className="social-link">FB</a>
-              <a href="#" className="social-link">ZL</a>
-              <a href="#" className="social-link">YT</a>
-            </div>
           </div>
 
           <div className="footer-col services-col">
