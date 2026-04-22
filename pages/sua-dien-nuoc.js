@@ -12,8 +12,8 @@ export default function SuaDienNuocCategory() {
     >
       <section className="page-header" style={{ background: 'linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url("/sua-dien-tai-nha.png")', backgroundSize: 'cover', backgroundPosition: 'center', color: 'white', padding: '100px 0', textAlign: 'center' }}>
         <div className="container">
-          <h1 style={{ fontSize: '3rem', color: 'var(--primary)', marginBottom: '20px' }}>DỊCH VỤ SỬA ĐIỆN NƯỚC</h1>
-          <p style={{ fontSize: '1.2rem', maxWidth: '800px', margin: '0 auto' }}>Giải pháp toàn diện cho hệ thống điện nước gia đình bạn. Xử lý triệt để mọi sự cố rò rỉ, bục vỡ và chập cháy.</p>
+          <h1 className="category-title">DỊCH VỤ SỬA ĐIỆN NƯỚC</h1>
+          <p className="category-subtitle">Giải pháp toàn diện cho hệ thống điện nước gia đình bạn. Xử lý triệt để mọi sự cố rò rỉ, bục vỡ và chập cháy.</p>
         </div>
       </section>
 
@@ -24,9 +24,9 @@ export default function SuaDienNuocCategory() {
               <h2 style={{ color: 'var(--secondary)', fontSize: '2rem', marginBottom: '25px' }}>Chuyên Nghiệp - Tận Tâm - Giá Rẻ</h2>
               <p style={{ color: 'var(--text-light)', marginBottom: '15px', lineHeight: '1.8' }}>Hệ thống điện nước là "mạch máu" của ngôi nhà. Một sự cố nhỏ cũng có thể gây phiền toái lớn hoặc thậm chí nguy hiểm. Điện Nước Bảo Trung thấu hiểu điều đó và luôn sẵn sàng hỗ trợ bạn bất cứ lúc nào.</p>
               <p style={{ color: 'var(--text-light)', marginBottom: '25px', lineHeight: '1.8' }}>Với hơn 10 năm kinh nghiệm, chúng tôi tự tin xử lý những ca khó nhất như rò rỉ nước âm tường không rõ nguyên nhân hay hệ thống điện cũ kỹ hay hỏng hóc.</p>
-              <div style={{ display: 'flex', gap: '20px' }}>
-                <a href={`tel:${hotlineFull}`} className="btn btn-primary" style={{ padding: '15px 40px' }}>GỌI NGAY: {hotline}</a>
-                <a href={`https://zalo.me/${hotlineFull}`} className="btn btn-secondary" style={{ padding: '15px 40px' }}>TƯ VẤN QUA ZALO</a>
+              <div className="cta-flex">
+                <a href={`tel:${hotlineFull}`} className="btn btn-primary">GỌI NGAY: {hotline}</a>
+                <a href={`https://zalo.me/${hotlineFull}`} className="btn btn-secondary">TƯ VẤN ZALO</a>
               </div>
             </div>
             <div>
@@ -153,10 +153,18 @@ export default function SuaDienNuocCategory() {
         .check-list-modern li::before { content: '●'; position: absolute; left: 0; color: var(--primary); }
         
         @media (max-width: 768px) {
-          .category-intro > div { grid-template-columns: 1fr !important; gap: 30px !important; }
+          .category-intro > div { grid-template-columns: 1fr !important; gap: 30px !important; text-align: center; }
           .category-intro div:nth-child(2) { order: -1; }
-          h1 { font-size: 2rem !important; }
+          .category-title { font-size: 1.8rem !important; }
+          .category-subtitle { font-size: 1rem !important; }
+          .cta-flex { flex-direction: column; gap: 15px; }
+          .cta-flex .btn { width: 100%; padding: 12px 0 !important; }
+          h2 { font-size: 1.5rem !important; }
         }
+
+        .category-title { font-size: 3rem; color: var(--primary); margin-bottom: 20px; font-weight: 800; }
+        .category-subtitle { font-size: 1.2rem; max-width: 800px; margin: 0 auto; }
+        .cta-flex { display: flex; gap: 20px; }
       `}</style>
     </Layout>
   )

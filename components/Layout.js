@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { useState } from 'react'
+import { useRouter } from 'next/router'
 
 export default function Layout({ children, title, description, hero }) {
+  const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openSubmenu, setOpenSubmenu] = useState(null); // Track open submenu on mobile
 
@@ -31,7 +33,12 @@ export default function Layout({ children, title, description, hero }) {
         <link rel="icon" href="/favicon.ico?v=1" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=1" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=1" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=1" />
+        <link rel="canonical" href={`https://suadiennuoctainha.net${router.asPath === '/' ? '' : router.asPath}`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={title || "Sửa Điện Nước Tại Nhà - Uy Tín, Chuyên Nghiệp 24/7"} />
+        <meta property="og:description" content={description || "Dịch vụ sửa điện nước tại nhà TP.HCM. Chuyên sửa chập điện, mất điện, rò rỉ nước, sửa máy bơm nước. Gọi ngay thợ đến nhanh sau 15 phút."} />
+        <meta property="og:url" content="https://suadiennuoctainha.net/" />
+        <meta property="og:site_name" content="Điện Nước Bảo Trung" />
       </Head>
 
       <header className="site-header">

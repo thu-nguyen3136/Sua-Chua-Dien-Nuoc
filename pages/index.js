@@ -65,7 +65,7 @@ export default function Home() {
                 <li><strong>Bảo hành uy tín:</strong> Lên đến 12 tháng.</li>
                 <li><strong>Thợ giỏi:</strong> Có chứng chỉ đào tạo chuyên sâu.</li>
               </ul>
-              <div className="cta-row">
+              <div className="cta-row mobile-cta">
                 <a href={`tel:${hotlineFull}`} className="btn btn-primary">TƯ VẤN NGAY</a>
                 <div className="hotline-text">
                   <span>Hotline 24/7</span>

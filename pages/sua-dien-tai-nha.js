@@ -12,8 +12,8 @@ export default function SuaDienTaiNhaCategory() {
     >
       <section className="page-header" style={{ background: 'linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url("/sua-dien-tai-nha.png")', backgroundSize: 'cover', backgroundPosition: 'center', color: 'white', padding: '100px 0', textAlign: 'center' }}>
         <div className="container">
-          <h1 style={{ fontSize: '3rem', color: 'var(--primary)', marginBottom: '20px' }}>SỬA ĐIỆN TẠI NHÀ</h1>
-          <p style={{ fontSize: '1.2rem', maxWidth: '800px', margin: '0 auto' }}>Thợ điện tay nghề cao, xử lý nhanh các sự cố chập cháy, mất điện. An toàn - Uy tín - Giá rẻ nhất TP.HCM.</p>
+          <h1 className="category-title">SỬA ĐIỆN TẠI NHÀ</h1>
+          <p className="category-subtitle">Thợ điện tay nghề cao, xử lý nhanh các sự cố chập cháy, mất điện. An toàn - Uy tín - Giá rẻ nhất TP.HCM.</p>
         </div>
       </section>
 
@@ -24,7 +24,7 @@ export default function SuaDienTaiNhaCategory() {
               <h2 className="modern-h2" style={{ color: 'var(--secondary)', marginBottom: '25px' }}>An Toàn Điện - Trách Nhiệm Hàng Đầu</h2>
               <p style={{ color: 'var(--text-light)', marginBottom: '15px', lineHeight: '1.8' }}>Sự cố về điện luôn tiềm ẩn nguy cơ cháy nổ và nguy hiểm đến tính mạng. Vì vậy, việc lựa chọn một đội ngũ thợ điện có chuyên môn và kinh nghiệm là điều vô cùng quan trọng.</p>
               <p style={{ color: 'var(--text-light)', marginBottom: '25px', lineHeight: '1.8' }}>Tại Điện Nước Bảo Trung, đội ngũ kỹ thuật viên của chúng tôi được đào tạo bài bản, trang bị máy móc hiện đại để tìm ra nhanh nhất vị trí chập điện âm tường, đảm bảo khắc phục triệt để và an toàn tuyệt đối cho gia đình bạn.</p>
-              <div className="cta-group" style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
+              <div className="cta-flex">
                 <a href={`tel:${hotlineFull}`} className="btn btn-primary">GỌI THỢ NGAY: {hotline}</a>
                 <a href={`https://zalo.me/${hotlineFull}`} className="btn btn-secondary">NHẮN TIN ZALO</a>
               </div>
@@ -147,9 +147,17 @@ export default function SuaDienTaiNhaCategory() {
         }
         
         @media (max-width: 768px) {
-          .cta-group .btn { width: 100%; text-align: center; }
+          .category-title { font-size: 1.8rem !important; }
+          .category-subtitle { font-size: 1rem !important; }
+          .cta-flex { flex-direction: column; gap: 15px; }
+          .cta-flex .btn { width: 100%; text-align: center; padding: 12px 0 !important; }
           .mobile-first-image { order: -1; }
+          h2 { font-size: 1.5rem !important; }
         }
+
+        .category-title { font-size: 3rem; color: var(--primary); margin-bottom: 20px; font-weight: 800; }
+        .category-subtitle { font-size: 1.2rem; max-width: 800px; margin: 0 auto; }
+        .cta-flex { display: flex; gap: 20px; }
       `}</style>
     </Layout>
   )
