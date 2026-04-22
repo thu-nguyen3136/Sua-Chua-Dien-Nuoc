@@ -20,26 +20,26 @@ export default function LapDatMayBom() {
       <section className="service-detail">
         <div className="container service-grid">
           <div className="content">
-            <h2 style={{ fontSize: '2rem', marginBottom: '20px', color: 'var(--primary)' }}>DỊCH VỤ LẮP ĐẶT MÁY BƠM NƯỚC TRỌN GÓI</h2>
+            <h2 className="detail-title">DỊCH VỤ LẬP ĐẶT MÁY BƠM NƯỚC TRỌN GÓI</h2>
             <img src="/sua-may-bom-tai-nha.png" alt="Lắp đặt máy bơm nước" className="featured-img" />
 
             <p>Việc lựa chọn và lắp đặt máy bơm đúng kỹ thuật đóng vai trò sống còn trong việc đảm bảo nguồn nước ổn định và độ bền của thiết bị. <strong>Điện nước Bảo Trung</strong> cung cấp dịch vụ lắp đặt máy bơm nước trọn gói, từ khảo sát nhu cầu, tư vấn chọn máy đến thi công hoàn thiện hệ thống đường ống kết nối.</p>
 
             <h3 style={{ borderLeft: '4px solid var(--primary)', paddingLeft: '15px', color: 'var(--secondary)', margin: '30px 0 15px' }}>CÁC LOẠI MÁY BƠM CHÚNG TÔI CHUYÊN LẮP ĐẶT</h3>
-            <div className="install-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px', marginBottom: '30px' }}>
-              <div style={{ background: '#f0f4f8', padding: '20px', borderRadius: '12px' }}>
+            <div className="install-grid">
+              <div className="install-item">
                 <h4 style={{ color: 'var(--secondary)', fontSize: '1.1rem' }}>🚀 Máy Bơm Tăng Áp</h4>
                 <p style={{ fontSize: '0.85rem' }}>Giúp áp lực nước tại vòi sen, máy giặt, bồn rửa luôn mạnh mẽ, khắc phục tình trạng nước yếu ở các tầng cao.</p>
               </div>
-              <div style={{ background: '#f0f4f8', padding: '20px', borderRadius: '12px' }}>
+              <div className="install-item">
                 <h4 style={{ color: 'var(--secondary)', fontSize: '1.1rem' }}>🏢 Máy Bơm Đẩy Cao</h4>
                 <p style={{ fontSize: '0.85rem' }}>Chuyên dụng để đưa nước từ bể ngầm lên bồn chứa trên sân thượng của các tòa nhà cao tầng, nhà phố.</p>
               </div>
-              <div style={{ background: '#f0f4f8', padding: '20px', borderRadius: '12px' }}>
+              <div className="install-item">
                 <h4 style={{ color: 'var(--secondary)', fontSize: '1.1rem' }}>🚿 Máy Bơm Hút Sâu</h4>
                 <p style={{ fontSize: '0.85rem' }}>Lắp đặt cho các giếng khoan, giếng đào có mực nước tĩnh sâu, đảm bảo hút nước ổn định.</p>
               </div>
-              <div style={{ background: '#f0f4f8', padding: '20px', borderRadius: '12px' }}>
+              <div className="install-item">
                 <h4 style={{ color: 'var(--secondary)', fontSize: '1.1rem' }}>🌱 Máy Bơm Tưới Tiêu</h4>
                 <p style={{ fontSize: '0.85rem' }}>Lắp đặt hệ thống bơm cho sân vườn, khu vực nông nghiệp với công suất phù hợp theo diện tích.</p>
               </div>
@@ -96,9 +96,20 @@ export default function LapDatMayBom() {
         .zalo-btn { display: block; width: 100%; background: #0084ff; border: none; }
         .info-box { background: white; padding: 30px; border-radius: var(--radius); box-shadow: var(--shadow); }
         .info-box h4 { border-bottom: 2px solid; padding-bottom: 10px; margin-bottom: 15px; }
+        .install-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .install-item { background: #f0f4f8; padding: 20px; borderRadius: 12px; }
+
+        .detail-title { font-size: 2rem; margin-bottom: 20px; color: var(--primary); }
+        .install-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .install-item { background: #f0f4f8; padding: 20px; borderRadius: 12px; }
+
         @media (max-width: 768px) {
-          .service-grid { grid-template-columns: 1fr; }
+          .service-grid { grid-template-columns: 1fr; gap: 30px; }
+          .content { padding: 25px; }
+          .detail-title { font-size: 1.5rem !important; }
           .install-grid { grid-template-columns: 1fr !important; }
+          .page-header h1 { font-size: 1.8rem; }
+          .content p { font-size: 0.95rem; }
         }
       `}</style>
     </Layout>

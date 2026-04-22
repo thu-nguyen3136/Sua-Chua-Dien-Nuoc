@@ -20,7 +20,7 @@ export default function SuaRoRiNuoc() {
       <section className="service-detail">
         <div className="container service-grid">
           <div className="content">
-            <h2 style={{ fontSize: '2rem', marginBottom: '20px', color: 'var(--primary)' }}>DỊCH VỤ SỬA RÒ RỈ NƯỚC & SỬA ỐNG NƯỚC BỊ VỠ</h2>
+            <h2 className="detail-title">DỊCH VỤ SỬA RÒ RỈ NƯỚC & SỬA ỐNG NƯỚC BỊ VỠ</h2>
             <img src="/sua-ong-nuoc-bi-vo-1.png" alt="Sửa rò rỉ nước chuyên nghiệp" className="featured-img" />
 
             <p><strong>Điện Nước Bảo Trung</strong> tự hào là đơn vị hàng đầu cung cấp dịch vụ <strong>sửa rò rỉ nước</strong> và <strong>sửa ống nước bị vỡ</strong> chuyên nghiệp tại TP.HCM. Với kinh nghiệm nhiều năm trong nghề, chúng tôi cam kết xử lý nhanh chóng, triệt để mọi sự cố, giúp khách hàng tiết kiệm thời gian và chi phí.</p>
@@ -86,26 +86,26 @@ export default function SuaRoRiNuoc() {
             <img src="/sua-ong-nuoc-bi-vo-6.png" alt="Hoàn thiện sửa chữa ống nước bục vỡ" className="content-img" />
 
             <h2 style={{ marginTop: '40px', color: 'var(--primary)' }}>TẠI SAO NÊN CHỌN ĐIỆN NƯỚC BẢO TRUNG?</h2>
-            <div className="why-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '30px', marginTop: '20px' }}>
-              <div className="why-item">
-                <h4 style={{ color: 'var(--secondary)' }}>👷 Chuyên Nghiệp & Tận Tâm</h4>
-                <p style={{ fontSize: '0.9rem' }}>Nhiệt tình hỗ trợ và tận tâm trong mọi nhiệm vụ, giải quyết nhanh gọn sự cố không làm lãng phí thời gian của bạn.</p>
+            <div className="why-grid">
+                <div className="why-item">
+                  <h4 style={{ color: 'var(--secondary)' }}>👷 Chuyên Nghiệp & Tận Tâm</h4>
+                  <p style={{ fontSize: '0.9rem' }}>Nhiệt tình hỗ trợ và tận tâm trong mọi nhiệm vụ, giải quyết nhanh gọn sự cố không làm lãng phí thời gian của bạn.</p>
+                </div>
+                <div className="why-item">
+                  <h4 style={{ color: 'var(--secondary)' }}>💎 Uy Tín Lâu Năm</h4>
+                  <p style={{ fontSize: '0.9rem' }}>Là đơn vị có thâm niên trong nghề <strong>sửa rò rỉ nước</strong>, chúng tôi đã xử lý hàng ngàn ca bục vỡ ống nước khó nhất.</p>
+                </div>
+                <div className="why-item">
+                  <h4 style={{ color: 'var(--secondary)' }}>💰 Giá Cả Phải Chăng</h4>
+                  <p style={{ fontSize: '0.9rem' }}>Đưa ra phương pháp sửa chữa ít tốn kém nhất nhưng vẫn đảm bảo hiệu quả sử dụng lâu dài.</p>
+                </div>
+                <div className="why-item">
+                  <h4 style={{ color: 'var(--secondary)' }}>🛠️ Giải Pháp Triệt Để</h4>
+                  <p style={{ fontSize: '0.9rem' }}>Sử dụng vật liệu chính hãng, máy móc hiện đại giúp tìm đúng bệnh, sửa đúng chỗ.</p>
+                </div>
               </div>
-              <div className="why-item">
-                <h4 style={{ color: 'var(--secondary)' }}>💎 Uy Tín Lâu Năm</h4>
-                <p style={{ fontSize: '0.9rem' }}>Là đơn vị có thâm niên trong nghề <strong>sửa rò rỉ nước</strong>, chúng tôi đã xử lý hàng ngàn ca bục vỡ ống nước khó nhất.</p>
-              </div>
-              <div className="why-item">
-                <h4 style={{ color: 'var(--secondary)' }}>💰 Giá Cả Phải Chăng</h4>
-                <p style={{ fontSize: '0.9rem' }}>Đưa ra phương pháp sửa chữa ít tốn kém nhất nhưng vẫn đảm bảo hiệu quả sử dụng lâu dài.</p>
-              </div>
-              <div className="why-item">
-                <h4 style={{ color: 'var(--secondary)' }}>🛠️ Giải Pháp Triệt Để</h4>
-                <p style={{ fontSize: '0.9rem' }}>Sử dụng vật liệu chính hãng, máy móc hiện đại giúp tìm đúng bệnh, sửa đúng chỗ.</p>
-              </div>
-            </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginTop: '30px' }}>
+            <div className="image-pair-grid">
               <img src="/sua-ong-nuoc-bi-vo-7.png" alt="Kết quả sửa chữa rò rỉ nước sạch sẽ" style={{ width: '100%', borderRadius: '12px', boxShadow: 'var(--shadow)' }} />
               <img src="/sua-ong-nuoc-bi-vo-8.png" alt="Hệ thống nước sau khi được sửa chữa" style={{ width: '100%', borderRadius: '12px', boxShadow: 'var(--shadow)' }} />
             </div>
@@ -117,7 +117,7 @@ export default function SuaRoRiNuoc() {
             <h2 style={{ marginTop: '40px', color: 'var(--primary)' }}>ĐỊA CHỈ LIÊN HỆ KHI CẦN SỬA ĐIỆN NƯỚC TP.HCM</h2>
             <p>Chúng tôi chuyên cung cấp dịch vụ bảo trì, sửa chữa điện nước chuyên nghiệp, chống thấm dột. Có đội ngũ thợ chuyên nghiệp trực 24/24 ở khắp các quận trên thành phố, đảm bảo có mặt sau 20 - 30 phút.</p>
 
-            <div className="branch-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginTop: '20px', fontSize: '0.85rem' }}>
+            <div className="branch-grid">
               <div className="branch-col">
                 <p>📍 <strong>Trụ sở:</strong> 76 Nguyễn Đình Chính, P.15, Q. Phú Nhuận</p>
                 <p>📍 <strong>CN1:</strong> 157/3 Nguyễn Văn Hưởng, P. Thảo Điền, Q.2</p>
@@ -180,10 +180,19 @@ export default function SuaRoRiNuoc() {
         .check-list-modern { list-style: none; padding: 0; }
         .check-list-modern li { position: relative; padding-left: 30px; margin-bottom: 12px; color: var(--text-light); line-height: 1.6; font-size: 0.95rem; }
         .check-list-modern li::before { content: '✓'; position: absolute; left: 0; color: var(--primary); font-weight: bold; font-size: 1.2rem; top: -2px; }
+        .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 20px; }
+        .image-pair-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px; }
+        .branch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; font-size: 0.85rem; }
+
+        .detail-title { font-size: 2rem; margin-bottom: 20px; color: var(--primary); }
+
         @media (max-width: 768px) {
-          .service-grid { grid-template-columns: 1fr; }
-          .why-grid { grid-template-columns: 1fr !important; }
-          .branch-grid { grid-template-columns: 1fr !important; }
+          .service-grid { grid-template-columns: 1fr; gap: 30px; }
+          .content { padding: 25px; }
+          .detail-title { font-size: 1.5rem !important; }
+          .why-grid, .image-pair-grid, .branch-grid { grid-template-columns: 1fr !important; }
+          .page-header h1 { font-size: 1.8rem; }
+          .content p { font-size: 0.95rem; }
         }
       `}</style>
     </Layout>

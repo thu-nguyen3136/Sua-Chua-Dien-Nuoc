@@ -19,7 +19,7 @@ export default function SuaDienNuocCategory() {
 
       <section className="category-intro" style={{ padding: '10px 0', background: 'white' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '50px', alignItems: 'center' }}>
+          <div className="category-intro-grid">
             <div>
               <h2 style={{ color: 'var(--secondary)', fontSize: '2rem', marginBottom: '25px' }}>Chuyên Nghiệp - Tận Tâm - Giá Rẻ</h2>
               <p style={{ color: 'var(--text-light)', marginBottom: '15px', lineHeight: '1.8' }}>Hệ thống điện nước là "mạch máu" của ngôi nhà. Một sự cố nhỏ cũng có thể gây phiền toái lớn hoặc thậm chí nguy hiểm. Điện Nước Bảo Trung thấu hiểu điều đó và luôn sẵn sàng hỗ trợ bạn bất cứ lúc nào.</p>
@@ -153,7 +153,7 @@ export default function SuaDienNuocCategory() {
         .check-list-modern li::before { content: '●'; position: absolute; left: 0; color: var(--primary); }
         
         @media (max-width: 768px) {
-          .category-intro > div { grid-template-columns: 1fr !important; gap: 30px !important; text-align: center; }
+          .category-intro-grid { grid-template-columns: 1fr !important; gap: 30px !important; text-align: center; }
           .category-intro div:nth-child(2) { order: -1; }
           .category-title { font-size: 1.8rem !important; }
           .category-subtitle { font-size: 1rem !important; }
@@ -162,6 +162,7 @@ export default function SuaDienNuocCategory() {
           h2 { font-size: 1.5rem !important; }
         }
 
+        .category-intro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; alignItems: center; }
         .category-title { font-size: 3rem; color: var(--primary); margin-bottom: 20px; font-weight: 800; }
         .category-subtitle { font-size: 1.2rem; max-width: 800px; margin: 0 auto; }
         .cta-flex { display: flex; gap: 20px; }

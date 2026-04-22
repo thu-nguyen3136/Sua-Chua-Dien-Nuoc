@@ -20,7 +20,7 @@ export default function DoTimRoRiNuoc() {
       <section className="service-detail">
         <div className="container service-grid">
           <div className="content">
-            <h2 style={{ fontSize: '2rem', marginBottom: '20px', color: 'var(--primary)' }}>GIẢI PHÁP DÒ TÌM RÒ RỈ NƯỚC HIỆU QUẢ</h2>
+            <h2 className="detail-title">GIẢI PHÁP DÒ TÌM RÒ RỈ NƯỚC HIỆU QUẢ</h2>
             <img src="/tho-do-tim-ro-ri-nuoc.png" alt="Dò tìm rò rỉ nước bằng máy siêu âm" className="featured-img" />
 
             <p><strong>Rò rỉ nước</strong> từ các đường ống âm tường, âm nền là một nguyên nhân gây lãng phí tài chính đáng kể cho các hộ gia đình và doanh nghiệp. Có những sự cố có thể nhìn thấy, nhưng phần lớn là rò rỉ ngầm khó quan sát bằng mắt thường. <strong>Điện Nước Bảo Trung</strong> cung cấp giải pháp máy siêu âm dò tìm chính xác 100% vị trí bục vỡ để xử lý dứt điểm.</p>
@@ -39,22 +39,22 @@ export default function DoTimRoRiNuoc() {
 
             <img src="/tho-do-tim-ro-ri-nuoc-3.png" alt="Thợ điện nước sử dụng máy dò tìm hiện đại" className="content-img" />
 
-            <h2 style={{ fontSize: '1.8rem', marginTop: '30px', color: 'var(--secondary)' }}>CÁCH KIỂM TRA PHÁT HIỆN RÒ RỈ NƯỚC ĐƠN GIẢN</h2>
+            <h2 className="detail-title-secondary">CÁCH KIỂM TRA PHÁT HIỆN RÒ RỈ NƯỚC ĐƠN GIẢN</h2>
             <p>Bạn có thể tự kiểm tra hệ thống nước tại nhà qua 3 dấu hiệu sau:</p>
-            <div className="issue-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginBottom: '30px' }}>
-              <div style={{ background: '#f8f9fa', padding: '20px', borderRadius: '8px' }}>
+            <div className="issue-grid">
+              <div className="issue-item">
                 <h4 style={{ color: 'var(--secondary)' }}>📈 Tiền nước tăng vọt</h4>
                 <p style={{ fontSize: '0.9rem' }}>Hóa đơn tiền nước tăng đột ngột mặc dù nhu cầu sử dụng của gia đình không thay đổi.</p>
               </div>
-              <div style={{ background: '#f8f9fa', padding: '20px', borderRadius: '8px' }}>
+              <div className="issue-item">
                 <h4 style={{ color: 'var(--secondary)' }}>⏲️ Đồng hồ nước quay</h4>
                 <p style={{ fontSize: '0.9rem' }}>Đồng hồ nước vẫn quay đều khi bạn đã khóa tất cả các vòi nước và thiết bị trong nhà.</p>
               </div>
-              <div style={{ background: '#f8f9fa', padding: '20px', borderRadius: '8px' }}>
+              <div className="issue-item">
                 <h4 style={{ color: 'var(--secondary)' }}>🏗️ Bồn chứa nhanh cạn</h4>
                 <p style={{ fontSize: '0.9rem' }}>Nước ở bồn chứa bị cạn vào buổi sáng một cách vô lý hoặc máy bơm tăng áp chạy liên tục.</p>
               </div>
-              <div style={{ background: '#f8f9fa', padding: '20px', borderRadius: '8px' }}>
+              <div className="issue-item">
                 <h4 style={{ color: 'var(--secondary)' }}>🧱 Thấm mốc đột ngột</h4>
                 <p style={{ fontSize: '0.9rem' }}>Tường hoặc sàn nhà bỗng nhiên bị ẩm mốc, loang nổ nước dọc theo hộp kỹ thuật hoặc đường ống.</p>
               </div>
@@ -131,10 +131,20 @@ export default function DoTimRoRiNuoc() {
         .check-list-modern { list-style: none; padding: 0; }
         .check-list-modern li { position: relative; padding-left: 30px; margin-bottom: 12px; color: var(--text-light); line-height: 1.6; font-size: 0.95rem; }
         .check-list-modern li::before { content: '✓'; position: absolute; left: 0; color: var(--primary); font-weight: bold; font-size: 1.2rem; top: -2px; }
+        .issue-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 30px; }
+        .issue-item { background: #f8f9fa; padding: 20px; border-radius: 8px; }
+        
+        .detail-title { font-size: 2rem; margin-bottom: 20px; color: var(--primary); }
+        .detail-title-secondary { font-size: 1.8rem; margin-top: 30px; color: var(--secondary); }
+        
         @media (max-width: 768px) {
-          .service-grid { grid-template-columns: 1fr; }
+          .service-grid { grid-template-columns: 1fr; gap: 30px; }
+          .content { padding: 25px; }
+          .detail-title { font-size: 1.5rem !important; }
+          .detail-title-secondary { font-size: 1.4rem !important; }
           .issue-grid { grid-template-columns: 1fr !important; }
-          .branch-grid { grid-template-columns: 1fr !important; }
+          .page-header h1 { font-size: 1.8rem; }
+          .content p { font-size: 0.95rem; }
         }
       `}</style>
     </Layout>

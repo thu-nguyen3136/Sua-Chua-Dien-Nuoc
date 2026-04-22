@@ -20,7 +20,12 @@
 
 @media (max-width: 768px) {
   .hero-slider {
-    height: 200px;
+    height: auto !important;
+    aspect-ratio: 16/8; /* Wider ratio to fit full banners better */
+    background: #fff;
+  }
+  .hero-img {
+    object-fit: contain !important; /* Forces full image to show */
   }
 }
 
@@ -390,7 +395,9 @@
   }
 
   .hero-slider {
-    height: 220px;
+    height: auto !important;
+    aspect-ratio: 16/8;
+    background: #fff;
   }
 }
 
