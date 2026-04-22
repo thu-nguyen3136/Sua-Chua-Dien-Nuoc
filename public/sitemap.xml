@@ -1,93 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://suadiennuoctainha.net/</loc>
-    <lastmod>2024-04-20</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://diennuocbaotrung.com/</loc>
+    <lastmod>2026-04-22</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://suadiennuoctainha.net/gioi-thieu</loc>
-    <lastmod>2024-04-20</lastmod>
+    <loc>https://diennuocbaotrung.com/gioi-thieu</loc>
+    <lastmod>2026-04-22</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://suadiennuoctainha.net/sua-dien-tai-nha</loc>
-    <lastmod>2024-04-20</lastmod>
+    <loc>https://diennuocbaotrung.com/sua-dien-nuoc</loc>
+    <lastmod>2026-04-22</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://suadiennuoctainha.net/sua-nuoc-tai-nha</loc>
-    <lastmod>2024-04-20</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://suadiennuoctainha.net/sua-may-bom-nuoc</loc>
-    <lastmod>2024-04-20</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://suadiennuoctainha.net/lien-he</loc>
-    <lastmod>2024-04-20</lastmod>
+    <loc>https://diennuocbaotrung.com/sua-ong-nuoc-tai-nha</loc>
+    <lastmod>2026-04-22</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://suadiennuoctainha.net/sua-chap-dien</loc>
-    <lastmod>2024-04-20</lastmod>
+    <loc>https://diennuocbaotrung.com/sua-ro-ri-nuoc</loc>
+    <lastmod>2026-04-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://diennuocbaotrung.com/do-tim-ro-ri-nuoc</loc>
+    <lastmod>2026-04-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://diennuocbaotrung.com/sua-dien-nuoc-tai-nha</loc>
+    <lastmod>2026-04-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://diennuocbaotrung.com/sua-dien-tai-nha</loc>
+    <lastmod>2026-04-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://diennuocbaotrung.com/sua-chap-dien</loc>
+    <lastmod>2026-04-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://diennuocbaotrung.com/sua-cong-to-dien</loc>
+    <lastmod>2026-04-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://diennuocbaotrung.com/lap-dong-ho-dien</loc>
+    <lastmod>2026-04-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://diennuocbaotrung.com/sua-dien-24h</loc>
+    <lastmod>2026-04-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://diennuocbaotrung.com/sua-may-bom-nuoc</loc>
+    <lastmod>2026-04-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://diennuocbaotrung.com/sua-may-bom-nuoc-tai-nha</loc>
+    <lastmod>2026-04-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://diennuocbaotrung.com/tho-sua-may-bom-nuoc</loc>
+    <lastmod>2026-04-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://diennuocbaotrung.com/lap-dat-may-bom</loc>
+    <lastmod>2026-04-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://diennuocbaotrung.com/tin-tuc</loc>
+    <lastmod>2026-04-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://suadiennuoctainha.net/sua-cong-to-dien</loc>
-    <lastmod>2024-04-20</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://suadiennuoctainha.net/lap-dong-ho-dien</loc>
-    <lastmod>2024-04-20</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://suadiennuoctainha.net/sua-ong-nuoc-tai-nha</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://suadiennuoctainha.net/sua-ong-nuoc-bi-vo</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://suadiennuoctainha.net/tho-do-tim-ro-ri-nuoc</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://suadiennuoctainha.net/sua-may-bom-nuoc-tai-nha</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://suadiennuoctainha.net/tho-sua-may-bom-nuoc</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://suadiennuoctainha.net/lap-dat-may-bom</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://suadiennuoctainha.net/tin-tuc</loc>
+    <loc>https://diennuocbaotrung.com/tin-tuc/nguyen-nhan-dan-den-ong-nuoc-hu-hong-va-cach-khac-phuc</loc>
+    <lastmod>2026-04-22</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://suadiennuoctainha.net/tin-tuc/nguyen-nhan-dan-den-ong-nuoc-hu-hong-va-cach-khac-phuc</loc>
-    <priority>0.5</priority>
+    <loc>https://diennuocbaotrung.com/tin-tuc/cac-quy-tac-va-nguyen-tac-an-toan-khi-sua-chua-dien-dan-dung-tai-nha</loc>
+    <lastmod>2026-04-22</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://suadiennuoctainha.net/tin-tuc/cac-quy-tac-va-nguyen-tac-an-toan-khi-sua-chua-dien-dan-dung-tai-nha</loc>
-    <priority>0.5</priority>
+    <loc>https://diennuocbaotrung.com/tin-tuc/nhung-luu-y-an-toan-khi-sua-chua-dien-tai-nha-ma-ban-nen-biet</loc>
+    <lastmod>2026-04-22</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://suadiennuoctainha.net/tin-tuc/nhung-luu-y-an-toan-khi-sua-chua-dien-tai-nha-ma-ban-nen-biet</loc>
-    <priority>0.5</priority>
+    <loc>https://diennuocbaotrung.com/tin-tuc/kinh-nghiem-lap-dat-sua-chua-dien-nuoc</loc>
+    <lastmod>2026-04-22</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://suadiennuoctainha.net/tin-tuc/kinh-nghiem-lap-dat-sua-chua-dien-nuoc</loc>
-    <priority>0.5</priority>
+    <loc>https://diennuocbaotrung.com/lien-he</loc>
+    <lastmod>2026-04-22</lastmod>
+    <priority>0.7</priority>
   </url>
 </urlset>

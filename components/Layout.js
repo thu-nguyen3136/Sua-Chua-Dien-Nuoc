@@ -4,6 +4,21 @@ import { useState } from 'react'
 
 export default function Layout({ children, title, description, hero }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [openSubmenu, setOpenSubmenu] = useState(null); // Track open submenu on mobile
+
+  const toggleSubmenu = (e, index) => {
+    if (window.innerWidth <= 768) {
+      e.preventDefault();
+      e.stopPropagation();
+      setOpenSubmenu(openSubmenu === index ? null : index);
+    }
+  };
+
+  const handleLinkClick = () => {
+    setIsMenuOpen(false);
+    setOpenSubmenu(null);
+  };
+
   const hotline = "0353.422.680";
   const hotlineFull = "0353422680";
 
@@ -16,7 +31,7 @@ export default function Layout({ children, title, description, hero }) {
         <link rel="icon" href="/favicon.ico?v=1" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=1" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=1" />
-        <link rel="apple-touch-icon" href="/favicon-32x32.png?v=1" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=1" />
       </Head>
 
       <header className="site-header">
@@ -46,80 +61,147 @@ export default function Layout({ children, title, description, hero }) {
             </button>
 
             <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
-              <li><Link href="/" onClick={() => setIsMenuOpen(false)}>TRANG CHỦ</Link></li>
-              <li><Link href="/gioi-thieu" onClick={() => setIsMenuOpen(false)}>GIỚI THIỆU</Link></li>
-              <li className="has-submenu">
+              <li><Link href="/" onClick={handleLinkClick}>TRANG CHỦ</Link></li>
+              <li><Link href="/gioi-thieu" onClick={handleLinkClick}>GIỚI THIỆU</Link></li>
+              <li className={`has-submenu ${openSubmenu === 1 ? 'active' : ''}`}>
                 <Link href="/sua-dien-nuoc" onClick={(e) => {
                   if (window.innerWidth <= 768) {
-                    // On mobile, allow clicking the arrow area to toggle if needed
-                    // But simplified for now: just navigate or let hover handle
+                    e.preventDefault();
+                    toggleSubmenu(e, 1);
+                  } else {
+                    handleLinkClick();
                   }
-                  setIsMenuOpen(false);
-                }}>SỬA ĐIỆN NƯỚC<span className="caret">▾</span></Link>
+                }}>SỬA ĐIỆN NƯỚC <span className="caret-toggle" onClick={(e) => toggleSubmenu(e, 1)}>▾</span></Link>
                 <ul className="submenu">
-                  <li><Link href="/sua-ong-nuoc-tai-nha" onClick={() => setIsMenuOpen(false)}>SỬA ỐNG NƯỚC TẠI NHÀ</Link></li>
-                  <li><Link href="/sua-ro-ri-nuoc" onClick={() => setIsMenuOpen(false)}>SỬA RÒ RỈ NƯỚC</Link></li>
-                  <li><Link href="/do-tim-ro-ri-nuoc" onClick={() => setIsMenuOpen(false)}>DÒ TÌM RÒ RỈ NƯỚC</Link></li>
-                  <li><Link href="/sua-dien-nuoc-tai-nha" onClick={() => setIsMenuOpen(false)}>SỬA ĐIỆN NƯỚC TẠI NHÀ</Link></li>
+                  <li><Link href="/sua-ong-nuoc-tai-nha" onClick={handleLinkClick}>SỬA ỐNG NƯỚC TẠI NHÀ</Link></li>
+                  <li><Link href="/sua-ro-ri-nuoc" onClick={handleLinkClick}>SỬA RÒ RỈ NƯỚC</Link></li>
+                  <li><Link href="/do-tim-ro-ri-nuoc" onClick={handleLinkClick}>DÒ TÌM RÒ RỈ NƯỚC</Link></li>
+                  <li><Link href="/sua-dien-nuoc" onClick={handleLinkClick}>TẤT CẢ DỊCH VỤ NƯỚC</Link></li>
                 </ul>
               </li>
-              <li className="has-submenu">
-                <Link href="/sua-dien-tai-nha" onClick={() => setIsMenuOpen(false)}>SỬA ĐIỆN TẠI NHÀ <span className="caret">▾</span></Link>
+              <li className={`has-submenu ${openSubmenu === 2 ? 'active' : ''}`}>
+                <Link href="/sua-dien-tai-nha" onClick={(e) => {
+                  if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    toggleSubmenu(e, 2);
+                  } else {
+                    handleLinkClick();
+                  }
+                }}>SỬA ĐIỆN TẠI NHÀ <span className="caret-toggle" onClick={(e) => toggleSubmenu(e, 2)}>▾</span></Link>
                 <ul className="submenu">
-                  <li><Link href="/sua-chap-dien" onClick={() => setIsMenuOpen(false)}>SỬA CHẬP ĐIỆN</Link></li>
-                  <li><Link href="/sua-cong-to-dien" onClick={() => setIsMenuOpen(false)}>SỬA CÔNG TƠ ĐIỆN</Link></li>
-                  <li><Link href="/lap-dong-ho-dien" onClick={() => setIsMenuOpen(false)}>LẮP ĐỒNG HỒ ĐIỆN</Link></li>
-                  <li><Link href="/sua-dien-24h" onClick={() => setIsMenuOpen(false)}>SỬA ĐIỆN 24H</Link></li>
+                  <li><Link href="/sua-chap-dien" onClick={handleLinkClick}>SỬA CHẬP ĐIỆN</Link></li>
+                  <li><Link href="/sua-cong-to-dien" onClick={handleLinkClick}>SỬA CÔNG TƠ ĐIỆN</Link></li>
+                  <li><Link href="/lap-dong-ho-dien" onClick={handleLinkClick}>LẮP ĐỒNG HỒ ĐIỆN</Link></li>
+                  <li><Link href="/sua-dien-24h" onClick={handleLinkClick}>SỬA ĐIỆN 24H</Link></li>
                 </ul>
               </li>
-              <li className="has-submenu">
-                <Link href="/sua-may-bom-nuoc" onClick={() => setIsMenuOpen(false)}>SỬA MÁY BƠM <span className="caret">▾</span></Link>
+              <li className={`has-submenu ${openSubmenu === 3 ? 'active' : ''}`}>
+                <Link href="/sua-may-bom-nuoc" onClick={(e) => {
+                  if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    toggleSubmenu(e, 3);
+                  } else {
+                    handleLinkClick();
+                  }
+                }}>SỬA MÁY BƠM <span className="caret-toggle" onClick={(e) => toggleSubmenu(e, 3)}>▾</span></Link>
                 <ul className="submenu">
-                  <li><Link href="/sua-may-bom-nuoc-tai-nha" onClick={() => setIsMenuOpen(false)}>SỬA MÁY BƠM NƯỚC TẠI NHÀ</Link></li>
-                  <li><Link href="/tho-sua-may-bom-nuoc" onClick={() => setIsMenuOpen(false)}>THỢ SỬA MÁY BƠM NƯỚC</Link></li>
-                  <li><Link href="/lap-dat-may-bom" onClick={() => setIsMenuOpen(false)}>LẮP ĐẶT MÁY BƠM</Link></li>
+                  <li><Link href="/sua-may-bom-nuoc-tai-nha" onClick={handleLinkClick}>SỬA MÁY BƠM NƯỚC TẠI NHÀ</Link></li>
+                  <li><Link href="/tho-sua-may-bom-nuoc" onClick={handleLinkClick}>THỢ SỬA MÁY BƠM NƯỚC</Link></li>
+                  <li><Link href="/lap-dat-may-bom" onClick={handleLinkClick}>LẮP ĐẶT MÁY BƠM</Link></li>
                 </ul>
               </li>
-              <li><Link href="/tin-tuc" onClick={() => setIsMenuOpen(false)}>TIN TỨC</Link></li>
-              <li><Link href="/lien-he" onClick={() => setIsMenuOpen(false)}>LIÊN HỆ</Link></li>
+              <li><Link href="/tin-tuc" onClick={handleLinkClick}>TIN TỨC</Link></li>
+              <li><Link href="/lien-he" onClick={handleLinkClick}>LIÊN HỆ</Link></li>
             </ul>
           </div>
         </nav>
       </header>
+
 
       {hero}
 
       <main>{children}</main>
 
       <footer className="site-footer">
-        <div className="container footer-grid">
-          <div className="footer-info">
+        <div className="container footer-main">
+          <div className="footer-col brand-col">
             <div className="footer-logo-wrapper">
-              <img src="/logo.png" alt="Logo" className="footer-logo" />
+              <img src="/logo.png" alt="Điện Nước Bảo Trung" className="footer-logo" />
             </div>
-            <p>Điện Nước Bảo Trung - Chuyên cung cấp dịch vụ sửa chữa điện nước, máy bơm nước uy tín, chuyên nghiệp tại TP. Hồ Chí Minh. Phục vụ 24/7, có mặt sau 15-30 phút.</p>
-            <div className="footer-contact">
-              <p>📍 CS Chính: 76 Nguyễn Đình Chính, P.15, Q. Phú Nhuận, TP.HCM</p>
-              <p>📞 Hotline 1: {hotline}</p>
-              <p>📞 Hotline 2: 039.330.3524</p>
-              <p>✉️ Email: diennuocbaotrung@gmail.com</p>
+            <p className="footer-about">
+              Điện Nước Bảo Trung tự hào là đơn vị kỹ thuật hàng đầu tại TP.HCM.
+              Chúng tôi cam kết mang đến giải pháp sửa chữa an toàn, chuyên nghiệp và
+              tận tâm cho mọi gia đình Việt.
+            </p>
+            <div className="footer-social">
+              <a href="#" className="social-link">FB</a>
+              <a href="#" className="social-link">ZL</a>
+              <a href="#" className="social-link">YT</a>
             </div>
           </div>
 
-          <div className="footer-links">
-            <h3>Dịch Vụ Chính</h3>
-            <ul>
-              <li><Link href="/sua-dien-tai-nha">Sửa chập điện âm tường</Link></li>
-              <li><Link href="/sua-dien-tai-nha">Lắp đồng hồ điện 1 pha/3 pha</Link></li>
-              <li><Link href="/sua-nuoc-tai-nha">Dò tìm rò rỉ nước âm tường</Link></li>
-              <li><Link href="/sua-nuoc-tai-nha">Sửa ống nước bục vỡ</Link></li>
-              <li><Link href="/sua-may-bom-nuoc">Sửa máy bơm nước các loại</Link></li>
+          <div className="footer-col services-col">
+            <h3>Dịch Vụ Nổi Bật</h3>
+            <ul className="footer-nav">
+              <li><Link href="/sua-chap-dien">Xử Lý Chập Điện</Link></li>
+              <li><Link href="/sua-ong-nuoc-tai-nha">Sửa Ống Nước Rò Rỉ</Link></li>
+              <li><Link href="/sua-may-bom-nuoc-tai-nha">Sửa Máy Bơm Nước</Link></li>
+              <li><Link href="/do-tim-ro-ri-nuoc">Dò Tìm Rò Rỉ Âm Tường</Link></li>
+              <li><Link href="/lap-dong-ho-dien">Lắp Đặt Đồng Hồ Điện</Link></li>
+              <li><Link href="/sua-dien-nuoc">Thợ Sửa Điện Nước 24H</Link></li>
             </ul>
           </div>
 
-          <div className="footer-locations">
-            <h3>Khu Vực Phục Vụ</h3>
-            <p>Chúng tôi có đội ngũ thợ trực tại tất cả các quận huyện: Quận 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, Bình Tân, Bình Thạnh, Gò Vấp, Phú Nhuận, Tân Bình, Tân Phú, Thủ Đức, Hóc Môn, Nhà Bè, Bình Chánh...</p>
+          <div className="footer-col contact-col">
+            <h3>Kết Nối Với Chúng Tôi</h3>
+            <div className="contact-items">
+              <div className="contact-item">
+                <span className="icon">📍</span>
+                <div>
+                  <strong>Trụ sở chính:</strong>
+                  <p>76 Nguyễn Đình Chính, P.15, Q. Phú Nhuận</p>
+                </div>
+              </div>
+              <div className="contact-item">
+                <span className="icon">📞</span>
+                <div>
+                  <strong>Hotline 24/7:</strong>
+                  <p><a href="tel:0353422680" className="highlight-text">0353.422.680</a> - <a href="tel:0393303524">039.330.3524</a></p>
+                </div>
+              </div>
+              <div className="contact-item">
+                <span className="icon">✉️</span>
+                <div>
+                  <strong>Email hỗ trợ:</strong>
+                  <p>diennuocbaotrung@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="footer-locations-bar">
+          <div className="container">
+            <h3>Hệ Thống Chi Nhánh Toàn Thành Phố</h3>
+            <div className="locations-grid-modern">
+              <span><strong>Q.2:</strong> 157/3 Nguyễn Văn Hưởng</span>
+              <span><strong>Q.3:</strong> 278/4 Cách mạng Tháng 8</span>
+              <span><strong>Q.4:</strong> 366/6 Hoàng Diệu</span>
+              <span><strong>Q.5:</strong> 888/8/3 Trần Hưng Đạo</span>
+              <span><strong>Q.6:</strong> 520/6 Hồng Bàng</span>
+              <span><strong>Q.7:</strong> 74 Nguyễn Cao</span>
+              <span><strong>Q.8:</strong> 856/7 Tạ Quang Bửu</span>
+              <span><strong>Q.9:</strong> 48 Võ Văn Kiệt</span>
+              <span><strong>Q.10:</strong> 341/8 Sư Vạn Hạnh</span>
+              <span><strong>Q.11:</strong> 205/11 Lý Thường Kiệt</span>
+              <span><strong>Q.12:</strong> 171/3 Trường Chinh</span>
+              <span><strong>Tân Phú:</strong> 285/13/1 Âu Cơ</span>
+              <span><strong>Bình Tân:</strong> 187/1 An Dương Vương</span>
+              <span><strong>Phú Nhuận:</strong> 113 Phan Đăng Lưu</span>
+              <span><strong>Tân Bình:</strong> 367/1 Trường Chinh</span>
+              <span><strong>Gò Vấp:</strong> 192/6 Quang Trung</span>
+              <span><strong>Thủ Đức:</strong> 216/8 Võ Văn Ngân</span>
+            </div>
           </div>
         </div>
         <div className="footer-bottom">
@@ -130,12 +212,20 @@ export default function Layout({ children, title, description, hero }) {
       </footer>
 
       <div className="floating-contact">
-        <a href="tel:0353422680" className="float-btn float-hotline red-glow" title="Gọi Hotline 1">
-          <span className="phone-icon">📞</span>
+        <a href="tel:0353422680" className="float-btn float-hotline" title="Gọi Hotline 1">
+          <span className="phone-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+          </span>
           <span className="hotline-number">0353.422.680</span>
         </a>
-        <a href="tel:0393303524" className="float-btn float-hotline red-glow" title="Gọi Hotline 2">
-          <span className="phone-icon">📞</span>
+        <a href="tel:0393303524" className="float-btn float-hotline" title="Gọi Hotline 2">
+          <span className="phone-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+          </span>
           <span className="hotline-number">039.330.3524</span>
         </a>
         <a href="https://zalo.me/0353422680" target="_blank" rel="noreferrer" className="float-btn float-zalo blue-glow" title="Zalo">
