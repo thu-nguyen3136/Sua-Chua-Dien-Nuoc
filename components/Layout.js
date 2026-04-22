@@ -218,8 +218,16 @@ export default function Layout({ children, title, description, hero }) {
           </span>
           <span className="hotline-number">039.330.3524</span>
         </a>
+      </div>
+
+      <div className="floating-left">
         <a href="https://zalo.me/0353422680" target="_blank" rel="noreferrer" className="float-btn float-zalo blue-glow" title="Zalo">
           <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo" />
+        </a>
+        <a href="sms:0353422680" className="float-btn float-sms green-glow" title="Gửi Tin Nhắn SMS">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="white">
+            <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+          </svg>
         </a>
       </div>
     </div>

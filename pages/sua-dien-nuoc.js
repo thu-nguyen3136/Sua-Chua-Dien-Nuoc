@@ -45,47 +45,55 @@ export default function SuaDienNuocCategory() {
 
           <div className="services-grid">
             <div className="service-card">
-              <div className="service-img-wrapper">
-                <img src="/sua-ong-nuoc.png" alt="Sửa ống nước" />
-              </div>
-              <div className="service-content">
-                <h3>Sửa Ống Nước Tại Nhà</h3>
-                <p>Khắc phục rò rỉ, tắc nghẽn, hư hỏng hệ thống ống cấp thoát nước nhanh chóng.</p>
-                <Link href="/sua-ong-nuoc-tai-nha" className="btn-readmore">Xem Chi Tiết &raquo;</Link>
-              </div>
+              <Link href="/sua-ong-nuoc-tai-nha" className="card-link-wrapper">
+                <div className="service-img-wrapper">
+                  <img src="/sua-ong-nuoc.png" alt="Sửa ống nước" />
+                </div>
+                <div className="service-content">
+                  <h3>Sửa Ống Nước Tại Nhà</h3>
+                  <p>Khắc phục rò rỉ, tắc nghẽn, hư hỏng hệ thống ống cấp thoát nước nhanh chóng.</p>
+                  <span className="btn-readmore">Xem Chi Tiết &raquo;</span>
+                </div>
+              </Link>
             </div>
 
             <div className="service-card">
-              <div className="service-img-wrapper">
-                <img src="/sua-ong-nuoc-bi-vo.png" alt="Sửa rò rỉ nước" />
-              </div>
-              <div className="service-content">
-                <h3>Sửa Rò Rỉ Nước</h3>
-                <p>Xử lý triệt để các sự cố rò rỉ nước, vỡ ống nước, thay thế phụ kiện chính hãng.</p>
-                <Link href="/sua-ro-ri-nuoc" className="btn-readmore">Xem Chi Tiết &raquo;</Link>
-              </div>
+              <Link href="/sua-ro-ri-nuoc" className="card-link-wrapper">
+                <div className="service-img-wrapper">
+                  <img src="/sua-ong-nuoc-bi-vo.png" alt="Sửa rò rỉ nước" />
+                </div>
+                <div className="service-content">
+                  <h3>Sửa Rò Rỉ Nước</h3>
+                  <p>Xử lý triệt để các sự cố rò rỉ nước, vỡ ống nước, thay thế phụ kiện chính hãng.</p>
+                  <span className="btn-readmore">Xem Chi Tiết &raquo;</span>
+                </div>
+              </Link>
             </div>
 
             <div className="service-card">
-              <div className="service-img-wrapper">
-                <img src="/tho-do-tim-ro-ri-nuoc.png" alt="Dò tìm rò rỉ nước" />
-              </div>
-              <div className="service-content">
-                <h3>Dò Tìm Rò Rỉ Nước</h3>
-                <p>Sử dụng máy siêu âm hiện đại dò tìm chính xác vị trí rò rỉ nước âm tường, âm nền.</p>
-                <Link href="/do-tim-ro-ri-nuoc" className="btn-readmore">Xem Chi Tiết &raquo;</Link>
-              </div>
+              <Link href="/do-tim-ro-ri-nuoc" className="card-link-wrapper">
+                <div className="service-img-wrapper">
+                  <img src="/tho-do-tim-ro-ri-nuoc.png" alt="Dò tìm rò rỉ nước" />
+                </div>
+                <div className="service-content">
+                  <h3>Dò Tìm Rò Rỉ Nước</h3>
+                  <p>Sử dụng máy siêu âm hiện đại dò tìm chính xác vị trí rò rỉ nước âm tường, âm nền.</p>
+                  <span className="btn-readmore">Xem Chi Tiết &raquo;</span>
+                </div>
+              </Link>
             </div>
 
             <div className="service-card">
-              <div className="service-img-wrapper">
-                <img src="/sua-dien-tai-nha.png" alt="Sửa điện nước tại nhà" />
-              </div>
-              <div className="service-content">
-                <h3>Sửa Điện Nước Tại Nhà</h3>
-                <p>Dịch vụ sửa chữa điện nước tổng hợp, xử lý mọi sự cố điện nước gia đình, văn phòng.</p>
-                <Link href="/sua-dien-nuoc-tai-nha" className="btn-readmore">Xem Chi Tiết &raquo;</Link>
-              </div>
+              <Link href="/sua-dien-nuoc-tai-nha" className="card-link-wrapper">
+                <div className="service-img-wrapper">
+                  <img src="/sua-dien-tai-nha.png" alt="Sửa điện nước tại nhà" />
+                </div>
+                <div className="service-content">
+                  <h3>Sửa Điện Nước Tại Nhà</h3>
+                  <p>Dịch vụ sửa chữa điện nước tổng hợp, xử lý mọi sự cố điện nước gia đình, văn phòng.</p>
+                  <span className="btn-readmore">Xem Chi Tiết &raquo;</span>
+                </div>
+              </Link>
             </div>
           </div>
         </div>

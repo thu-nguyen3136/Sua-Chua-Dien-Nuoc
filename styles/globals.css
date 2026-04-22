@@ -208,17 +208,35 @@ section {
   }
 }
 
-.float-zalo {
-  background: #0068ff;
+.float-zalo, .float-sms {
   padding: 0;
   width: 54px;
   justify-content: center;
+}
+
+.float-zalo {
+  background: #0068ff;
+}
+
+.float-sms {
+  background: #2ecc71;
 }
 
 .float-zalo img {
   width: 32px;
   height: 32px;
   transition: transform 0.3s ease;
+}
+
+.floating-left {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
 }
 
 /* Hover Effects */
@@ -265,6 +283,15 @@ section {
   }
 }
 
+.green-glow {
+  box-shadow: 0 0 10px rgba(46, 204, 113, 0.4);
+}
+
+.green-glow:hover {
+  box-shadow: 0 0 20px rgba(46, 204, 113, 0.8) !important;
+}
+
+/* Icons */
 .phone-icon {
   font-size: 20px;
   display: flex;
@@ -292,11 +319,10 @@ section {
     display: none;
   }
 
-  .float-zalo {
-    position: fixed;
-    left: 20px;
+  .floating-left {
     bottom: 20px;
-    right: auto;
+    left: 20px;
+    gap: 12px;
   }
 }
 
