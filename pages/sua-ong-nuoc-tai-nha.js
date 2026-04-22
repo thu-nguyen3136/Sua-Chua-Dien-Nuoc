@@ -143,9 +143,13 @@ export default function SuaOngNuocTaiNha() {
         .issue-card { background: #f8fafc; padding: 20px; border-radius: 10px; border-left: 4px solid var(--secondary); }
         .issue-card h4 { margin-bottom: 10px; color: var(--secondary); }
         @media (max-width: 768px) {
-          .service-grid { grid-template-columns: 1fr; }
+          .service-grid { grid-template-columns: 1fr; gap: 30px; }
+          .content { padding: 25px; }
           .responsive-grid-2 { grid-template-columns: 1fr; }
           .branch-grid { grid-template-columns: 1fr !important; }
+          .page-header h1 { font-size: 1.8rem; }
+          .cta-box { padding: 20px; }
+          .hotline-btn { font-size: 1.1rem; }
         }
       `}</style>
     </Layout>

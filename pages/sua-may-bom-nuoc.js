@@ -12,8 +12,8 @@ export default function SuaMayBomNuocCategory() {
     >
       <section className="page-header" style={{ background: 'linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url("/sua-may-bom-tai-nha.png")', backgroundSize: 'cover', backgroundPosition: 'center', color: 'white', padding: '100px 0', textAlign: 'center' }}>
         <div className="container">
-          <h1 style={{ fontSize: '3rem', color: 'var(--primary)', marginBottom: '20px' }}>SỬA MÁY BƠM NƯỚC</h1>
-          <p style={{ fontSize: '1.2rem', maxWidth: '800px', margin: '0 auto' }}>Đội ngũ thợ cơ điện lành nghề, sửa nhanh mọi sự cố máy bơm gia đình và công nghiệp. Bảo hành dài hạn.</p>
+          <h1 className="category-title">SỬA MÁY BƠM NƯỚC</h1>
+          <p className="category-subtitle">Đội ngũ thợ cơ điện lành nghề, sửa nhanh mọi sự cố máy bơm gia đình và công nghiệp. Bảo hành dài hạn.</p>
         </div>
       </section>
 
@@ -24,9 +24,9 @@ export default function SuaMayBomNuocCategory() {
               <h2 style={{ color: 'var(--secondary)', fontSize: '2rem', marginBottom: '25px' }}>Giải Pháp Cho Nguồn Nước Luôn Mạnh</h2>
               <p style={{ color: 'var(--text-light)', marginBottom: '15px', lineHeight: '1.8' }}>Máy bơm nước là thiết bị thiết yếu đảm bảo sinh hoạt hằng ngày. Tuy nhiên, sau thời gian dài sử dụng, máy bơm thường gặp các lỗi như cháy tụ, hỏng vòng bi, hoặc máy chạy nhưng nước không lên.</p>
               <p style={{ color: 'var(--text-light)', marginBottom: '25px', lineHeight: '1.8' }}>Điện Nước Bảo Trung chuyên cung cấp thợ sửa máy bơm nước tại nhà với đầy đủ linh kiện chính hãng của các dòng máy Panasonic, Pentax, Ebara... cam kết khắc phục nhanh chóng để bạn có nước sử dụng ngay trong ngày.</p>
-              <div style={{ display: 'flex', gap: '20px' }}>
-                <a href={`tel:${hotlineFull}`} className="btn btn-primary" style={{ padding: '15px 40px' }}>GỌI HOTLINE: {hotline}</a>
-                <a href={`https://zalo.me/${hotlineFull}`} className="btn btn-secondary" style={{ padding: '15px 40px' }}>TƯ VẤN KỸ THUẬT</a>
+              <div className="cta-flex">
+                <a href={`tel:${hotlineFull}`} className="btn btn-primary">GỌI HOTLINE: {hotline}</a>
+                <a href={`https://zalo.me/${hotlineFull}`} className="btn btn-secondary">TƯ VẤN KỸ THUẬT</a>
               </div>
             </div>
             <div>
@@ -142,10 +142,18 @@ export default function SuaMayBomNuocCategory() {
         .check-list-modern li::before { content: '●'; position: absolute; left: 0; color: var(--primary); }
         
         @media (max-width: 768px) {
-          .category-intro > div { grid-template-columns: 1fr !important; gap: 30px !important; }
+          .category-intro > div { grid-template-columns: 1fr !important; gap: 30px !important; text-align: center; }
           .category-intro div:nth-child(2) { order: -1; }
-          h1 { font-size: 2rem !important; }
+          .category-title { font-size: 1.8rem !important; }
+          .category-subtitle { font-size: 1rem !important; }
+          .cta-flex { flex-direction: column; gap: 15px; }
+          .cta-flex .btn { width: 100%; text-align: center; padding: 12px 0 !important; }
+          h2 { font-size: 1.5rem !important; }
         }
+
+        .category-title { font-size: 3rem; color: var(--primary); margin-bottom: 20px; font-weight: 800; }
+        .category-subtitle { font-size: 1.2rem; max-width: 800px; margin: 0 auto; }
+        .cta-flex { display: flex; gap: 20px; }
       `}</style>
     </Layout>
   )

@@ -136,7 +136,13 @@ export default function LienHe() {
         .quick-call { margin-top: 30px; text-align: center; border-top: 1px dashed #ddd; padding-top: 20px; }
         .call-now-btn { display: inline-block; margin-top: 10px; font-size: 1.8rem; font-weight: 800; color: var(--accent); }
 
-        @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
+        @media (max-width: 768px) { 
+          .contact-grid { grid-template-columns: 1fr; gap: 40px; } 
+          .info-item { gap: 15px; }
+          .info-item .icon { width: 40px; height: 40px; font-size: 1.2rem; }
+          .page-header h1 { font-size: 2rem; }
+          .contact-map-container h2 { font-size: 1.5rem; }
+        }
       `}</style>
     </Layout>
   )
