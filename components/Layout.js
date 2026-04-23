@@ -33,10 +33,12 @@ export default function Layout({ children, title, description, hero }) {
         <link rel="icon" href="/favicon.ico?v=1" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=1" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=1" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/logo-square.png" />
         <link rel="canonical" href={`https://suadiennuoctainha.net${router.asPath === '/' ? '' : router.asPath}`} />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={title || "Sửa Điện Nước Tại Nhà - Uy Tín, Chuyên Nghiệp 24/7"} />
         <meta property="og:description" content={description || "Dịch vụ sửa điện nước tại nhà TP.HCM. Chuyên sửa chập điện, mất điện, rò rỉ nước, sửa máy bơm nước. Gọi ngay thợ đến nhanh sau 15 phút."} />
+        <meta property="og:image" content="https://suadiennuoctainha.net/logo.png" />
         <meta property="og:url" content={`https://suadiennuoctainha.net${router.asPath}`} />
         <meta property="og:site_name" content="Điện Nước Bảo Trung" />
       </Head>
